@@ -1,0 +1,27 @@
+.footer-wrapper {
+    background: #1c67a9;
+    margin-top: 37px;
+    padding-top: 17px;
+    color: white;
+}
+
+.footer-input {
+    background: none;
+    color: white;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.footer-graphic {
+    width: 30px;
+    margin: 10px;
+}
