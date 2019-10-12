@@ -17,7 +17,7 @@ const PortfoliPage = ({ data }) => {
 
       {/* SEO keywords */}
       <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
-      <PageHeader image={data.file.childImageSharp.fluid} title="Our Work" subtitle="Let's play show and tell"/>
+      <PageHeader image={data.file.childImageSharp.fluid} title="Our Work" subtitle="Our Work"/>
       <Container>
         <Row className="no-gutters">
           {data.allMarkdownRemark.edges.map((project, index) => {

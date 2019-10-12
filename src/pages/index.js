@@ -45,61 +45,66 @@ const IndexPage = ({data}) => {
           <Button className="green-button">Capabilities & Services</Button>
         </Link> */}
       </Row>
+      </Container>
 
       <Row className="no-gutters justify-content-center" style={{padding:`30px`}}>
-        <Col xs="12" md="4" style={{textAlign:`center`}}>
-          <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
-          <h4>Creative</h4>
-          <p>Building the functionality, tools, and assets to fashion a look, feel, tone and experience consistent with your brand and your mission.</p>
+        <Col xs="12" md="4" className="p-3">
+          <div className="landing-card p-2">
+            <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
+            <h4>Creative</h4>
+            <p>Building the functionality, tools, and assets to fashion a look, feel, tone and experience consistent with your brand and your mission.</p>
+          </div>
         </Col>
-        <Col xs="12" md="4" style={{textAlign:`center`}}>
-          <Img fluid={data.marketing.childImageSharp.fluid} className="landing-image"/>
-          <h4>Marketing</h4>
-          <p>Creating seamless, reliable and effective solutions from engagement through post-purchase delight and back again.</p>
+        <Col xs="12" md="4" className="p-3">
+          <div className="landing-card p-2">
+            <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
+            <h4>Marketing</h4>
+            <p>Creating seamless, reliable and effective solutions from engagement through post-purchase delight and back again.</p>
+          </div>
         </Col>
-        <Col xs="12" md="4" style={{textAlign:`center`}}>
-          <Img fluid={data.technology.childImageSharp.fluid} className="landing-image"/>
-          <h4>Technology</h4>
-          <p>Smart, strategic thinking that provides a pathway and a plan to successfully grow your business and your brand.</p>
+        <Col xs="12" md="4" className="p-3">
+          <div className="landing-card p-2">
+            <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
+            <h4>Technology</h4>
+            <p>Smart, strategic thinking that provides a pathway and a plan to successfully grow your business and your brand.</p>
+          </div>
         </Col>
       </Row>
-    </Container>
 
-    <Row className="no-gutters justify-content-center" style={{padding:`30px`}}>
+    <Row className="no-gutters justify-content-center mb-5">
       <h6>PORTFOLIO</h6>
       <div className="w-100"></div>
-
       <h4>Need proof?</h4>
-      <div className="w-100"></div>
 
-      <Col xs="12">
-      <div style={{position:`relative`, width:`100%`}}>
-        <div className="divider"></div>
-        <Row className="no-gutters justify-content-center">
-          <Link to="/portfolio">
-            <Button style={{postion:`absolute`, margin:`0 auto`, background:`white`}} outline color="danger">See Our Work</Button>
-          </Link>
+      <Col xs="12" className="mb-4">
+        <div style={{position:`relative`, width:`100%`}}>
+          <div className="divider"></div>
+          <Row className="no-gutters justify-content-center">
+            <Link to="/portfolio">
+              <Button className="divider-button">See Our Work</Button>
+            </Link>
+          </Row>
+        </div>
+      </Col>
+
+      <Col xs="12" md="10" lg="6">
+        <Row className="no-gutters">
+          {info.map((project, index) => {
+            console.log()
+            let projectData = project.node;
+            return (
+              <PortfoliCard projectData={projectData}/>             
+              )
+          })}
         </Row>
-      </div>
       </Col>
     </Row>
 
-    <Row className="no-gutters">
-      {info.map((project, index) => {
-        console.log()
-        let projectData = project.node;
-
-        return (
-          <PortfoliCard projectData={projectData}/>             
-          )
-      })}
-    </Row>
-
-    <Row className="no-gutters justify-content-center" style={{padding:`30px`}}>
-      <h6>PORTFOLIO</h6>
+    <Row className="no-gutters justify-content-center mt-5 mb-5">
+      <h6>TESTIMONIALS</h6>
       <div className="w-100"></div>
 
-      <h4>Need proof?</h4>
+      <h4>Kind words from our friends</h4>
       <div className="w-100"></div>
 
       <Col xs="12">
@@ -107,14 +112,21 @@ const IndexPage = ({data}) => {
         <div className="divider"></div>
         <Row className="no-gutters justify-content-center">
           <Link to="/portfolio">
-            <Button style={{postion:`absolute`, margin:`0 auto`, background:`white`}} outline color="danger">See Our Work</Button>
+            <Button className="divider-button">More Testimonials</Button>
           </Link>
         </Row>
       </div>
       </Col>
     </Row>
     <Row className="no-gutters justify-content-center">
-      <Carousel/>
+      <Col xs="12">
+      <h4 style={{textAlign:`center`}}>Testimonials</h4>
+      </Col>
+      <Col xs="12" md="6">
+        <Row className="no-gutters justify-content-center">
+          <p>It was really great working with Aspen Apps. They really know what theyre doing and they know how to make awesome websites. We would love to work with them again.</p>
+        </Row>
+      </Col>
     </Row>
     
   </Layout>

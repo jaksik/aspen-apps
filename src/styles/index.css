@@ -1,38 +1,52 @@
 .landing-image {
-    width: 100px;
-    margin: 0 auto;
-  }
+  width: 100px;
+  margin: 0 auto;
+}
 
-  /* .portfolio-title {
-    position: absolute;
-    z-index: 4;
-    color: white;
-    text-align: center;
-    margin: 0 auto;
-  } */
+.landing-card {
+  text-align: center;
+  border: 1px solid rgba(128, 128, 128, 0.493);
+  border-radius: 10px;
+  height: 100%;
+}
 
 .green-button {
   background: forestgreen;
 }
 
- #button-one {
-   background: forestgreen;
- }
+#button-two {
+  border: 2px solid #f03517;
+  background: none;
+}
 
-  #button-two {
-    border: 2px solid #f03517;
-    background: none;
-  }
+#button-two:hover {
+  border-color: forestgreen;
+  background: forestgreen;
+}
 
-  #button-two:hover {
-    border-color: forestgreen;
-    background: forestgreen;
-  }
+.divider {
+  border-bottom: 1px solid #f03517;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+}
 
-  .divider {
-    border-bottom: 1px solid #f03517;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    z-index: -1;
-  }
+.divider-button {
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid #f03517;
+
+  color: #f03517;
+}
+
+.divider-button:hover {
+  background-color: #f03517;
+  border: 1px solid #f03517;
+  color: white
+}
+
+.support-button {
+  background-color: #f03517;
+}
+

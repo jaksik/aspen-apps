@@ -5,20 +5,15 @@ import Img from "gatsby-image"
 import "./portfolio-card.css"
 
 function PortfolioCard ({ projectData, key}) {
-  console.log("port card: ", projectData)
     return (
-      <Col xs="12" sm="6" md="4" style={{height:`200px`, overflow:`hidden`}}>
-          <div style={{position:`relative`}}>
-            <Img style={{zIndex: `1`, position:`absolute`, width: `100%`}} fluid={projectData.frontmatter.image.childImageSharp.fluid}/>
-            <div className="portfolio-overlay">
-              <div style={{margin:`50px 20px`}}>
-                  <h5 style={{color:`white`}}>{projectData.frontmatter.title}</h5>
-                  <Link to={projectData.fields.slug}>
-                  <Button className="green-button">Case Study</Button>
-                </Link>
-              </div>
-            </div>
+      <Col xs="6" sm="6" style={{height:`200px`, overflow:`hidden`}} className="p-3">
+        <Link to={projectData.fields.slug}>
+          <div className="portfolio-container">
+            <div className="portfolio-overlay"></div>
+            <Img style={{zIndex: `1`, width: `100%`}} fluid={projectData.frontmatter.image.childImageSharp.fluid}/>
+            <h5 className="card-title">{projectData.frontmatter.title}</h5>
           </div>
+        </Link>
       </Col>
     )
 }
