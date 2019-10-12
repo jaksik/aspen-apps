@@ -27,19 +27,19 @@ import {
     render() {
       return (
         <div style={{color:`white`}} style={{zIndex:`3`}}>
-          <Navbar className="text-white" color="dark" light expand="md">
-            <NavbarBrand className="start-navitem" href="/" style={{color:`white`}}>{this.props.siteTitle}</NavbarBrand>
+          <Navbar className="text-white" color="light" light expand="md">
+            <NavbarBrand className="start-navitem" href="/" style={{color:`black`}}>{this.props.siteTitle}</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar >
               <NavItem>
-                  <NavLink style={{color:`white`}} href="/portfolio/">Portfolio</NavLink>
+                  <NavLink style={{color:`black`}} href="/portfolio/">Portfolio</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink style={{color:`white`}} href="/services/">Services</NavLink>
+                  <NavLink style={{color:`black`}} href="/services/">Services</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink style={{color:`white`}} href="/process/">Process</NavLink>
+                  <NavLink style={{color:`black`}} href="/process/">Process</NavLink>
                 </NavItem>
                 {/* <NavItem>
                   <NavLink style={{color:`white`}} href="/company/">Company</NavLink>
@@ -48,7 +48,7 @@ import {
                   <NavLink style={{color:`white`}} href="/news/">News</NavLink>
                 </NavItem> */}
                 <NavItem>
-                  <NavLink className="end-navitem" style={{color:`white`}} href="/contact/">Contact</NavLink>
+                  <NavLink className="end-navitem" style={{color:`black`}} href="/contact/">Contact</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>

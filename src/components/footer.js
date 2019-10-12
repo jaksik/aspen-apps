@@ -7,7 +7,7 @@ const Footer = () => (
     <div className="footer-wrapper">
 
         {/* Form Row */}
-        <Row className="no-gutters">
+        {/* <Row className="no-gutters">
             <Col xs="12" md="3" className="offset-md-1">
                 <h2 style={{textAlign:`center`}}>Go ahead, ask us anything!</h2>
                 <p className="footer-text">Anything at all.</p>
@@ -42,15 +42,15 @@ const Footer = () => (
                     </Form>
                 </Row>
             </Col>
-        </Row>
+        </Row> */}
 
-        <Row className="no-gutters">
+        {/* <Row className="no-gutters">
             <div style={{borderBottom:`1px solid white`, width:`80%`, margin:`0 auto 30px`, color:`blue`}}>.</div>
-        </Row>
+        </Row> */}
 
         {/* Social Row */}
-        <Row className="no-gutters">
-            <Col xs="12" md="2" className="offset-md-1">
+        <Row className="no-gutters pt-md-3">
+            <Col xs="12" lg="2" className="offset-md-1">
                 <Row className="no-gutters justify-content-center" style={{margin:`20px auto`}}>
                     <img className="footer-graphic" src="https://cdn2.iconfinder.com/data/icons/harmonicons-04/64/instagram-512.png"/>
                     <img className="footer-graphic" src="https://image.flaticon.com/icons/png/512/33/33702.png"/>
@@ -59,22 +59,22 @@ const Footer = () => (
                 </Row>
             </Col>
 
-            <Col xs="11" md="2" className="offset-1 offset-md-0">
+            <Col xs="11" md="2" className="offset-1 offset-lg-0">
                 <p>420 Summit Blvd <br/>
                     Frisco, CO 80223
                 </p>
             </Col>
 
-            <Col xs="11" md="2" className="offset-1 offset-md-0">
+            <Col xs="11" md="2" className="offset-1 offset-lg-0">
                 <p>777-777-7777</p>
                 <p>info@summitweb.com</p>
             </Col>
 
 
-            <Col xs="12" md="3">
+            <Col xs="12" md="4">
               <Row className="no-gutters justify-content-center">
                 <Link to="/support">
-                    <Button style={{marginRight:`20px`}}>Support</Button>
+                    <Button className="green-button mr-2">Support</Button>
                 </Link>
 
                 <Link to="/payments">
@@ -83,7 +83,7 @@ const Footer = () => (
               </Row>
             </Col>
         </Row>
-        <p style={{textAlign:`center`, padding:`50px`, marginBottom:`0`}}>© 2019 Connor Jaksik All Rights (and some wrongs) Reserved. For those of you who are interested here's our Privacy Policy.</p>
+        <p style={{textAlign:`center`, padding:`50px`, marginBottom:`0`}}>© 2019 Connor Jaksik All Rights Reserved. Here's our Privacy Policy.</p>
     </div>
 )
 
