@@ -1,19 +1,23 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Col, Button } from "reactstrap"
+import { Row, Col, Button } from "reactstrap"
 import Img from "gatsby-image"
 import "./portfolio-card.css"
 
 function PortfolioCard ({ projectData, key}) {
     return (
-      <Col xs="6" sm="6" style={{height:`200px`, overflow:`hidden`}} className="p-3">
-        <Link to={projectData.fields.slug}>
-          <div className="portfolio-container">
-            <div className="portfolio-overlay"></div>
-            <Img style={{zIndex: `1`, width: `100%`}} fluid={projectData.frontmatter.image.childImageSharp.fluid}/>
-            <h5 className="card-title">{projectData.frontmatter.title}</h5>
-          </div>
-        </Link>
+      <Col xs="6" sm="6">
+        <div className="portfolio-wrapper m-2">
+          <Link to={projectData.fields.slug} style={{textDecoration:`none`}}>
+            <div style={{position:`relative`, overflow:`hidden`}} className="portfolio-container">
+              <div className="portfolio-overlay" style={{position:`absolute`}}>
+                <h5 className="card-title mb-0 d-none d-xl-block" style={{color:`white`}}>{projectData.frontmatter.title}</h5>
+              </div>
+              <Img style={{position:`absolute`, width: `100%`, height:`100%`}} fluid={projectData.frontmatter.image.childImageSharp.fluid}/>
+            </div>
+            <h5 className="card-title mb-0 p-2 d-xl-none">{projectData.frontmatter.title}</h5>
+          </Link>
+        </div>
       </Col>
     )
 }

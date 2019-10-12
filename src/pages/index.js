@@ -7,7 +7,7 @@ import Img from "gatsby-image"
 import SEO from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/index.css"
-import Carousel from "../components/carousel"
+import Divider from "../components/landing-divider"
 
 const IndexPage = ({data}) => {
   console.log("data", data)
@@ -32,22 +32,16 @@ const IndexPage = ({data}) => {
             </Link>
          </div>
       </div>
-    <div className="slant"></div>
-    <Container>
-      <Row className="no-gutters justify-content-center p-5 mt-3">
-        <h2 style={{fontWeight:`bold`}}>How can we help you?</h2>
-        <div className="w-100"></div>
-        <div style={{textAlign:`center`}}>
-          <h3 style={{color:`#f03517`}}>We specialize in web development and mobile app development.</h3>
-        </div>
-        <div className="w-100"></div>
-        {/* <Link to="/services">
-          <Button className="green-button">Capabilities & Services</Button>
-        </Link> */}
-      </Row>
-      </Container>
+      <div className="slant">
+         <div className="slant-container">
+            <h2 className="slant-title" style={{fontWeight:`bold`}}>How Can We Help You?</h2>
+            <div style={{textAlign:`center`}}>
+              <h4 className="slant-text" style={{color:`#f03517`}}>We specialize in web development and mobile app development.</h4>
+            </div>
+         </div>
+      </div>
 
-      <Row className="no-gutters justify-content-center" style={{padding:`30px`}}>
+      <Row className="no-gutters justify-content-center pl-5 pr-5">
         <Col xs="12" md="4" className="p-3">
           <div className="landing-card p-2">
             <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
@@ -71,23 +65,30 @@ const IndexPage = ({data}) => {
         </Col>
       </Row>
 
-    <Row className="no-gutters justify-content-center mb-5">
-      <h6>PORTFOLIO</h6>
-      <div className="w-100"></div>
-      <h4>Need proof?</h4>
+    <Divider title="SERVICES" subtitle="Our Services" button="Our Services"/>
 
-      <Col xs="12" className="mb-4">
-        <div style={{position:`relative`, width:`100%`}}>
-          <div className="divider"></div>
-          <Row className="no-gutters justify-content-center">
-            <Link to="/portfolio">
-              <Button className="divider-button">See Our Work</Button>
-            </Link>
-          </Row>
-        </div>
+    <Row className="no-gutters justify-content-center pl-4 pr-4">
+      <Col xs="10">
+        <Row className="no-gutters">
+          {data.services.edges.map((service, index) => {
+            const serviceData = service.node.frontmatter
+            return (
+              <Col xs="6" md="4" lg="3">
+                <div className="portfolio-wrapper m-2">
+                  <Img fluid={serviceData.image.childImageSharp.fluid} className="landing-image"/>
+                  <p style={{textAlign:`center`}}>{serviceData.title}</p>
+                </div>
+              </Col>          
+            )
+          })}
+        </Row>
       </Col>
+    </Row>
 
-      <Col xs="12" md="10" lg="6">
+    <Divider title="PORTFOLIO" subtitle="Need Proof?" button="See Our Work"/>
+
+    <Row className="no-gutters justify-content-center">
+      <Col xs="12" md="10">
         <Row className="no-gutters">
           {info.map((project, index) => {
             console.log()
@@ -100,30 +101,14 @@ const IndexPage = ({data}) => {
       </Col>
     </Row>
 
-    <Row className="no-gutters justify-content-center mt-5 mb-5">
-      <h6>TESTIMONIALS</h6>
-      <div className="w-100"></div>
+    <Divider title="SERVICES" subtitle="Our Services" button="Our Services"/>
 
-      <h4>Kind words from our friends</h4>
-      <div className="w-100"></div>
-
-      <Col xs="12">
-      <div style={{position:`relative`, width:`100%`}}>
-        <div className="divider"></div>
-        <Row className="no-gutters justify-content-center">
-          <Link to="/portfolio">
-            <Button className="divider-button">More Testimonials</Button>
-          </Link>
-        </Row>
-      </div>
-      </Col>
-    </Row>
     <Row className="no-gutters justify-content-center">
       <Col xs="12">
       <h4 style={{textAlign:`center`}}>Testimonials</h4>
       </Col>
       <Col xs="12" md="6">
-        <Row className="no-gutters justify-content-center">
+        <Row className="no-gutters justify-content-center p-4">
           <p>It was really great working with Aspen Apps. They really know what theyre doing and they know how to make awesome websites. We would love to work with them again.</p>
         </Row>
       </Col>
@@ -164,7 +149,14 @@ export const listQuery = graphql`
         }
       }
     }
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    service: file(relativePath: { eq: "service.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    allMarkdownRemark(filter: { frontmatter: {templateKey: {regex: "/portfolio/"}}} sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           fields{
@@ -184,6 +176,28 @@ export const listQuery = graphql`
                 }
               }
            }
+          }
+        }
+      }
+    }
+    services: allMarkdownRemark(filter: { frontmatter: {templateKey: {regex: "/service/"}}}) {
+      edges {
+        node {
+          fields{
+            slug
+          }
+          frontmatter {
+            title
+            image {
+              childImageSharp {
+                resize(width: 1500, height: 1500) {
+                  src
+                }
+                fluid(maxWidth: 786) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
