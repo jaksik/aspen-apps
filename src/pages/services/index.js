@@ -140,5 +140,17 @@ export const query = graphql`
         }
       }
     }
+    allMarkdownRemark(filter: { frontmatter: {templateKey: {regex: "/website-design/"}}}) {
+      edges {
+        node {
+          fields{
+            slug
+          }
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
   }
 `
