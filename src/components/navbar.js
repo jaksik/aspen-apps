@@ -26,15 +26,15 @@ import {
     }
     render() {
       return (
-        <div style={{color:`white`}} style={{zIndex:`3`}}>
-          <Navbar className="text-white" color="light" light expand="md">
+        <div style={{color:`black`}} style={{zIndex:`3`}}>
+          <Navbar className="text-black" color="light" light expand="md">
             <NavbarBrand className="start-navitem" href="/" style={{color:`black`}}>{this.props.siteTitle}</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar >
-              <NavItem>
+              {/* <NavItem>
                   <NavLink style={{color:`black`}} href="/">Home</NavLink>
-                </NavItem>
+                </NavItem> */}
               <NavItem>
                   <NavLink style={{color:`black`}} href="/portfolio/">Portfolio</NavLink>
                 </NavItem>
@@ -45,10 +45,10 @@ import {
                   <NavLink style={{color:`black`}} href="/process/">Process</NavLink>
                 </NavItem>
                 {/* <NavItem>
-                  <NavLink style={{color:`white`}} href="/company/">Company</NavLink>
+                  <NavLink style={{color:`black`}} href="/company/">Company</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink style={{color:`white`}} href="/news/">News</NavLink>
+                  <NavLink style={{color:`black`}} href="/news/">News</NavLink>
                 </NavItem> */}
                 <NavItem>
                   <NavLink className="end-navitem" style={{color:`black`}} href="/contact/">Contact</NavLink>

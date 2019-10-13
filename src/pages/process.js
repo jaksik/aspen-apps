@@ -93,9 +93,9 @@ export default ProcessPage
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "capital.jpg" }) {
+    file(relativePath: { eq: "bells.png" }) {
       childImageSharp {
-        fluid(maxWidth: 100, quality: 100) {
+        fluid(maxWidth: 2000, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }

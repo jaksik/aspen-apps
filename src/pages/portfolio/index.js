@@ -36,7 +36,7 @@ export default PortfoliPage
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "capital.jpg" }) {
+    file(relativePath: { eq: "independance.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
           ...GatsbyImageSharpFluid

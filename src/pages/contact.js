@@ -26,12 +26,15 @@ const ContactPage = ({ data }) => {
             <input required className="form-input" name="email" placeholder="Email*" type="email" /><br />
 
             <input className="form-input" name="phone" placeholder="Phone Number" type="number" /><br />
+           
+            <input className="form-input" name="company" placeholder="Company" type="text" /><br />
 
-            <textarea className="form-input" name="message" placeholder="Tell us about your project" type="textarea" /><br />
+            <textarea className="form-input" name="message" placeholder="Seriously, ask us anything..." type="textarea" /><br />
 
             <button className="submit-button">Submit</button>
 
           </form>
+
         </Layout>
     )
 }
@@ -40,7 +43,7 @@ export default ContactPage
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "capital.jpg" }) {
+    file(relativePath: { eq: "goat.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
           ...GatsbyImageSharpFluid

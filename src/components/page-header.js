@@ -6,7 +6,7 @@ function PageCoverImg ({ image, title, subtitle, titlethree, description }) {
    return (
       <>
       <div style={{position: `relative`, height: `50vh`, overflow:`hidden`}}>
-         <Img fluid={image} style={{position: `absolute`, zIndex:`1`, height: `70vh`, padding: `50vh`, width: `100%`}}/>
+         <Img fluid={image} style={{position: `absolute`, zIndex:`1`, height: `50vh`, width: `100%`}}/>
          <div className="header-overlay"></div>
          <div className="header-title" style={{width: `100%`}}>
             {/* <h5>{title}</h5> */}

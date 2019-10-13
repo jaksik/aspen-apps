@@ -73,9 +73,9 @@ const Footer = () => (
 
             <Col xs="12" md="4" lg="3">
               <Row className="no-gutters justify-content-center">
-                <Link to="/support">
+                {/* <Link to="/support">
                     <Button className="mr-2 support-button">Support</Button>
-                </Link>
+                </Link> */}
 
                 <Link to="/payments">
                     <Button className="green-button">Payments</Button>

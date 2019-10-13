@@ -7,11 +7,11 @@
 }
 
 .start-navitem {
-    padding-right: 35px;
+    margin-left: 90px;
 }
 
 .end-navitem {
-    margin-right: 0;
+    margin-right: 90px;
 }
 
 @media screen and (min-width: 821px) {
@@ -29,9 +29,9 @@
         padding-right: 20px
     }
 
-    .navbar-brand {
+    /* .navbar-brand {
         padding-left: 20px
-    }
+    } */
 }
 
 @media screen and (min-width: 991px) {
@@ -40,12 +40,12 @@
     } */
    
     .nav-item {
-        padding-right: 35px
+        padding-right: 60px
     }
 
-    .navbar-brand {
+    /* .navbar-brand {
         padding-left: 35px
-    }
+    } */
   }
 /* 
   @media screen and (min-width: 1200px) {
