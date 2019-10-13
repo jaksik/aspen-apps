@@ -10,8 +10,11 @@ collections:
   - name: "website-design"
     label: "Website-design"
     folder: "src/pages/website-design"
+    create: false
+    slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "website-design"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Price", name: "price", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
-      - {label: Services, name: services, widget: list, fields: [{label: Service, name: service, widget: string}, {label: Description, name: description, widget: string}]}
+      - {label: "Services", name: services, widget: list, fields: [{label: Service, name: service, widget: string}, {label: Description, name: description, widget: string}]}

@@ -9,7 +9,6 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="About Limitless Wake" keywords={info.frontmatter.tags} />
     
        <h1>{info.frontmatter.title}</h1>
      
