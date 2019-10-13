@@ -26,6 +26,15 @@
   font-weight: lighter;
 }
 
+.card-lg-title {
+  color: white;
+    position: absolute;
+    z-index: 19;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+}
+
 .card-title:hover {
   text-decoration: red;
 }

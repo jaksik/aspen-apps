@@ -2,27 +2,36 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import PageHeader from "../components/page-header"
+import "../styles/contact.css"
 
 const ContactPage = ({ data }) => {
     return (
         <Layout>
-            <PageHeader image={data.file.childImageSharp.fluid} title="CONTACT" subtitle="All The Ways To Reach Us"  titlethree="Go Ahead, Ask Us Anything!" description="Any Thing At All!"/>
-            <form
-                method="post"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-            >
-                <input style={{ display: `none` }} type="text" /><br />
-                <label for="name">Name: *</label>
-                <input name="name" placeholder="  First and Last Name" type="text" /><br />
-                <label for="email">Email: *</label>
-                <input name="email" placeholder="  Email" type="email" /><br />
-                <label for="phone">Phone:</label>
-                <input name="phone" placeholder="  Phone Number" type="number" /><br />
-                <label for="message">Message:</label>
-                <textarea name="message" placeholder="Your Message Here: " type="textarea" /><br />
-                <button style={{ margin: `15px auto`, borderRadius: `10px` }}>Submit</button>
-            </form>
+          <PageHeader image={data.file.childImageSharp.fluid} title="CONTACT" subtitle="Contact Us"  titlethree="Go Ahead, Ask Us Anything!" description="Any Thing At All!"/>
+          <form
+            name="contact"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            style={{ width: `80%`, margin: `0 auto`}}
+          >
+            <input type="hidden" name="bot-field" />
+
+            <input type="hidden" name="form-name" value="contact" />
+
+            <input style={{display: `none`}} type="text" /><br />
+
+            <input required className="form-input" name="name" placeholder="First and Last Name*" type="text" /><br />
+
+            <input required className="form-input" name="email" placeholder="Email*" type="email" /><br />
+
+            <input className="form-input" name="phone" placeholder="Phone Number" type="number" /><br />
+
+            <textarea className="form-input" name="message" placeholder="Tell us about your project" type="textarea" /><br />
+
+            <button className="submit-button">Submit</button>
+
+          </form>
         </Layout>
     )
 }

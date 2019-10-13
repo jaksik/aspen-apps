@@ -65,7 +65,7 @@ const IndexPage = ({data}) => {
         </Col>
       </Row>
 
-    <Divider title="SERVICES" subtitle="Our Services" button="Our Services"/>
+    <Divider title="SERVICES" subtitle="Our Services" button="Our Services" address="/"/>
 
     <Row className="no-gutters justify-content-center pl-4 pr-4">
       <Col xs="10">
@@ -85,7 +85,7 @@ const IndexPage = ({data}) => {
       </Col>
     </Row>
 
-    <Divider title="PORTFOLIO" subtitle="Need Proof?" button="See Our Work"/>
+    <Divider title="PORTFOLIO" subtitle="Need Proof?" button="See Our Work" address="/portfolio" />
 
     <Row className="no-gutters justify-content-center">
       <Col xs="12" md="10">
@@ -101,7 +101,7 @@ const IndexPage = ({data}) => {
       </Col>
     </Row>
 
-    <Divider title="SERVICES" subtitle="Our Services" button="Our Services"/>
+    <Divider title="TESTIMONIALS" subtitle="Kind Words" button="More Testimonials" address="/testimonials" />
 
     <Row className="no-gutters justify-content-center">
       <Col xs="12">

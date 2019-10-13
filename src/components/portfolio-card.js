@@ -11,7 +11,7 @@ function PortfolioCard ({ projectData, key}) {
           <Link to={projectData.fields.slug} style={{textDecoration:`none`}}>
             <div style={{position:`relative`, overflow:`hidden`}} className="portfolio-container">
               <div className="portfolio-overlay" style={{position:`absolute`}}>
-                <h5 className="card-title mb-0 d-none d-xl-block" style={{color:`white`}}>{projectData.frontmatter.title}</h5>
+                <h3 className="card-title card-lg-title mb-0 d-none d-xl-block" style={{color:`white`}}>{projectData.frontmatter.title}</h3>
               </div>
               <Img style={{position:`absolute`, width: `100%`, height:`100%`}} fluid={projectData.frontmatter.image.childImageSharp.fluid}/>
             </div>
