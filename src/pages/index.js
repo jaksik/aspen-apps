@@ -21,8 +21,8 @@ const IndexPage = ({data}) => {
          <div className="header-overlay"></div>
          <div className="header-title" style={{width: `100%`}}>
             {/* <h4 style={{fontSize:`17px`, color:`orange`, fontWeight:`bold`}}>Discover</h4> */}
-            <h1 style={{fontWeight:`bold`, fontSize:`3.5rem`}}>Business First.<br/>Online Second</h1>
-            <h4 style={{maxWidth:`70%`, textAlign:`center`, margin:`15px auto`, fontSize:`20px`}}>Web & Mobile App Development By Aspen Apps</h4>
+            <h1 style={{fontWeight:`bold`, fontSize:`3.5rem`}}>Inspired By Nature.<br/>Driven By Passion</h1>
+            <h4 style={{maxWidth:`70%`, textAlign:`center`, margin:`15px auto`, fontSize:`20px`}}>Website & Mobile App Development</h4>
             <Link to="/portfolio">
               <Button style={{marginRight:`25px`}} className="green-button">Our Work</Button>
             </Link>
@@ -65,7 +65,7 @@ const IndexPage = ({data}) => {
         </Col>
       </Row>
 
-    <Divider title="SERVICES" subtitle="Our Services" button="Our Services" address="/"/>
+    <Divider title="SERVICES" subtitle="Our Services" button="Our Prices" address="/services"/>
 
     <Row className="no-gutters justify-content-center pl-4 pr-4">
       <Col xs="10">

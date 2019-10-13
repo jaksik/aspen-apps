@@ -18,3 +18,8 @@
 .service-price {
     font-size: 35px;
 }
+
+.red-button {
+    background-color: red;
+    border-color: red;
+}

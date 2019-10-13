@@ -61,7 +61,7 @@ const Footer = () => (
 
             <Col xs="11" md="3" className="offset-1">
                 <p>420 Summit Blvd <br/>
-                    Frisco, CO 80223
+                    Silverthorne, CO 80223
                 </p>
             </Col>
 
@@ -83,7 +83,7 @@ const Footer = () => (
               </Row>
             </Col>
         </Row>
-        <p style={{textAlign:`center`, fontSize:`13px`}} className="mb-0 mt-4 pb-3 pt-2">© 2019 Connor Jaksik All Rights Reserved. Here's our Privacy Policy.</p>
+        <p style={{textAlign:`center`, fontSize:`13px`}} className="mb-0 mt-4 pb-3 pt-2">© 2019 Aspen Applications Company LLC All Rights Reserved. Here's our Privacy Policy.</p>
     </div>
 )
 

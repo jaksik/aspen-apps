@@ -9,7 +9,7 @@ public_folder: /img
 collections:
   - name: "website-design"
     label: "Website-design"
-    folder: "src/pages/website-design"
+    folder: "src/pages/services/website-design"
     create: false
     slug: "{{slug}}"
     fields:

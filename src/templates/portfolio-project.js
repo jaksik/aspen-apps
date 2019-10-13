@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql, Link} from "gatsby"
 import { Container, Button } from "reactstrap"
-import Img from 'gatsby-image';
 import PageHeader from "../components/page-header"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -24,14 +23,9 @@ export default ({ data }) => {
             Visit Site
           </Button>
         </Link>
-          {/* About Page Title */}
-        <p style={{ textAlign: `center`, fontWeight:`bold`}}>{info.frontmatter.description}</p>
-        {/* About Page Photo */}
-        {/* <div style={{ maxWidth: `50%`, margin: `25px auto` }}>
-          <Img fluid={info.frontmatter.image.childImageSharp.fluid} />
-        </div> */}
 
-        {/* About Page Body Text */}
+        <p style={{ textAlign: `center`, fontWeight:`bold`}}>{info.frontmatter.description}</p>
+
         <div style={{ textIndent: `50px` }}>
           <div dangerouslySetInnerHTML={{ __html: info.html }} />
         </div>
