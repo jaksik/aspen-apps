@@ -7,7 +7,13 @@ import "../styles/contact.css"
 const ContactPage = ({ data }) => {
     return (
         <Layout>
-          <PageHeader image={data.file.childImageSharp.fluid} title="CONTACT" subtitle="COMPANY"  titlethree="Born In The High Country" description="Any Thing At All!"/>
+          <PageHeader 
+            image={data.file.childImageSharp.fluid} 
+            headerTitle="CONTACT" 
+            pageTitle="COMPANY"  
+            titlethree="Born In The High Country" 
+            description="Any Thing At All!"
+          />
             <p>Aspen Apps Company was founded on </p>
             
         </Layout>

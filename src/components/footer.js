@@ -66,8 +66,8 @@ const Footer = () => (
             </Col>
 
             <Col xs="11" md="3" className="offset-1 offset-md-0">
-                <p>777-777-7777<br/>
-                info@summitweb.com</p>
+                <p>970-777-7777<br/>
+                info@aspenapps.com</p>
             </Col>
 
 

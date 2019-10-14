@@ -1,81 +1,89 @@
 import React from "react"
-import { graphql, Link } from 'gatsby'
-import { Row, Col, Button } from "reactstrap"
+import { graphql } from "gatsby"
+import { Button, Row, Col } from "reactstrap"
+import Img from "gatsby-image"
+import Divider from "../../components/landing-divider"
 import Layout from "../../components/layout"
 import PageHeader from "../../components/page-header"
-import SEO from "../../components/seo"
-import Collapse from "../../components/collapse"
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "./services.css"
+import "../../styles/contact.css"
 
-const ServicesPage = ({ data }) => {
-  console.log("data: ", data)
-  return (
-    <Layout>
-
-      {/* SEO keywords */}
-      <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
-        
-      <PageHeader image={data.file.childImageSharp.fluid} title="Capabilities and Services" subtitle="Website Development Packages" description="The first thing we do is get know everything about your business. We learn what you do, how you do it, and (most importantly) why you do it. That's B1O2. Then we get busy. Really busy."/>
+const ContactPage = ({ data }) => {
+    return (
+      <Layout>
+        <PageHeader 
+          image={data.file.childImageSharp.fluid} 
+          headerTitle="SERVICES"
+          pageTitle="If You Can Dream It, We Can Build It"  
+          titlethree="Go Ahead, Ask Us Anything!" 
+          description="Any Thing At All!"
+        />
       
-      <Row className="no-gutters">
-        <Col xs="12" sm="8" md="10" lg="12" xl="8" className="offset-sm-2 offset-md-1 offset-lg-0 offset-xl-2">
-          <Row className="no-gutters">
-            {data.allMarkdownRemark.edges.map((node, index) => {
-              const frontmatter = node.node.frontmatter
-              return (
-                <Col xs="12" md="6" lg="3" className="mb-5">
-                  <div className="service-wrapper">
-                    <h3 className="service-title">{frontmatter.title}</h3>
-                    <div className="service-cell">
-                      <span className="service-price">{frontmatter.price}</span>
-                    </div>
-                    {frontmatter.services.map((service, i) => (
-                      <Collapse service={service} />
-                    ))}
-                    <div className="service-cell">
-                      <Link to={node.node.fields.slug}>
-                        <Button className="red-button">Learn More</Button>
-                      </Link>
-                    </div>
-                  </div>
-                </Col>
-              )}
-            )}
-          </Row>
-        </Col>
-      </Row>
-    </Layout>
-  )
+        <Row className="no-gutters">
+          <Col xs="12" sm="10" md="12" lg="10" xl="8" className="offset-sm-1 offset-md-0 offset-lg-1 offset-xl-2">
+            <Row className="no-gutters">
+              {data.services.edges.map((service, index) => {
+                const serviceData = service.node.frontmatter
+                return (
+                  <Col xs="12" md="6" className="p-2 mb-1">
+                      <Row className="no-gutters">
+                        <Col xs="2" className="p-0">
+                          <Img fluid={serviceData.image.childImageSharp.fluid} className="ml-2 mr-2 mb-2"/>
+                        </Col>
+                        <Col xs="10">
+                          <h3>{serviceData.title}</h3>
+                          <p>{serviceData.description}</p>
+                          <div className="w-100"></div>
+                          {/* <Row className="no-gutters justify-content-center">
+                            <Button size="sm" outline>Learn More</Button>
+                          </Row> */}
+                        </Col>
+                      </Row>
+                  </Col>          
+                )
+              })}
+            </Row>
+          </Col>
+        </Row>
+
+        <Divider title="PORTFOLIO" subtitle="Need Proof?" button="See Our Prices" address="/services/pricing" names="no-title" />
+
+      </Layout>
+    )
 }
 
-export default ServicesPage
+export default ContactPage
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "capital.jpg" }) {
+    file(relativePath: { eq: "goat.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    allMarkdownRemark(filter: { frontmatter: {templateKey: {regex: "/website-design/"}}} sort: { order: ASC, fields: [frontmatter___price] }) {
-      edges {
-        node {
-          fields{
-            slug
-          }
-          frontmatter {
-            title
-            price
-            services {
-              service
+    services: allMarkdownRemark(filter: { frontmatter: {templateKey: {regex: "/service/"}}}) {
+        edges {
+          node {
+            fields{
+              slug
+            }
+            frontmatter {
+              title
               description
+              image {
+                childImageSharp {
+                  resize(width: 1500, height: 1500) {
+                    src
+                  }
+                  fluid(maxWidth: 786) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }
       }
-    }
   }
 `

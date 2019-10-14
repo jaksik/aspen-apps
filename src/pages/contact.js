@@ -7,7 +7,13 @@ import "../styles/contact.css"
 const ContactPage = ({ data }) => {
     return (
         <Layout>
-          <PageHeader image={data.file.childImageSharp.fluid} title="CONTACT" subtitle="Contact Us"  titlethree="Go Ahead, Ask Us Anything!" description="Any Thing At All!"/>
+          <PageHeader 
+            image={data.file.childImageSharp.fluid} 
+            headerTitle="CONTACT"
+            pageTitle="Contact Us"  
+            titlethree="Go Ahead, Ask Us Anything!" 
+            description="Any Thing At All!"
+          />
           <form
             name="contact"
             method="post"

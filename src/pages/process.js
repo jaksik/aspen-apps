@@ -19,8 +19,8 @@ const ProcessPage = ({ data }) => {
         
        <PageHeader 
           image={data.file.childImageSharp.fluid} 
-          title="PROCESS" 
-          subtitle="PROCESS" 
+          headerTitle="PROCESS" 
+          pageTitle="PROCESS" 
           titlethree="Our Approach"
           description="Marketing maven Simon Sinek was the first to explore the “Start with Why” concept and “The Golden Circle” model, challenging us to examine the emotional core of what makes employees and customers buy into a company.  We’ve taken it a step further."
        />
@@ -63,6 +63,7 @@ const ProcessPage = ({ data }) => {
                 </Col>
               </Row>
             </Col>
+            
             <Col xs="12" md="6">
             <h5>Managed Services</h5>
               <p>From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.</p>

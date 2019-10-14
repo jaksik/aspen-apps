@@ -83,3 +83,9 @@
   text-align: center;
   padding-bottom: 0px;
 }
+
+.page-title {
+  text-align: center;
+  font-family: cursive;
+  width: 100%;
+}

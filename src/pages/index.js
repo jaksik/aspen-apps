@@ -32,7 +32,7 @@ const IndexPage = ({data}) => {
             </Link>
          </div>
       </div>
-      <div className="slant">
+      <div className="slant pt-5 pb-5">
          <div className="slant-container">
             <h2 className="slant-title" style={{fontWeight:`bold`}}>How Can We Help You?</h2>
             <div style={{textAlign:`center`}}>
@@ -65,9 +65,12 @@ const IndexPage = ({data}) => {
         </Col>
       </Row>
 
-    <Divider title="SERVICES" subtitle="Our Services" button="Our Prices" address="/services"/>
+
+    <Divider title="OUR SERVICES" subtitle="Our Services" button="Aspen Apps's Story" address="/services"/>
+
 
     <Row className="no-gutters justify-content-center pl-4 pr-4">
+      <h2 className="page-title">Our Services</h2>
       <Col xs="10">
         <Row className="no-gutters">
           {data.services.edges.map((service, index) => {
@@ -85,9 +88,13 @@ const IndexPage = ({data}) => {
       </Col>
     </Row>
 
-    <Divider title="PORTFOLIO" subtitle="Need Proof?" button="See Our Work" address="/portfolio" />
+
+    <Divider title="PORTFOLIO" subtitle="Need Proof?" button="See Our Prices" address="/services/pricing" />
+
 
     <Row className="no-gutters justify-content-center">
+    <h2 className="page-title">Portfolio</h2>
+
       <Col xs="12" md="10">
         <Row className="no-gutters">
           {info.map((project, index) => {
@@ -101,16 +108,13 @@ const IndexPage = ({data}) => {
       </Col>
     </Row>
 
-    <Divider title="TESTIMONIALS" subtitle="Kind Words" button="More Testimonials" address="/testimonials" />
+
+    <Divider title="TESTIMONIAL" subtitle="Kind Words" button="See More Of Our Work" address="/portfolio" />
+
 
     <Row className="no-gutters justify-content-center">
-      <Col xs="12">
-      <h4 style={{textAlign:`center`}}>Testimonials</h4>
-      </Col>
       <Col xs="12" md="6">
-        <Row className="no-gutters justify-content-center p-4">
-          <p>It was really great working with Aspen Apps. They really know what theyre doing and they know how to make awesome websites. We would love to work with them again.</p>
-        </Row>
+          <p style={{textAlign:`center`}}>It was really great working with Aspen Apps. They really know what theyre doing and they know how to make awesome websites. We would love to work with them again.</p>
       </Col>
     </Row>
     

@@ -2,6 +2,8 @@
     background: black;
     margin-top: 37px;
     color: white;
+    border-top: 1px solid black;
+    margin-top: 80px;
 }
 
 .footer-input {
