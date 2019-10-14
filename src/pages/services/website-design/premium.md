@@ -1,6 +1,6 @@
 ---
 templateKey: website-design
-title: Premium
+title: Peak
 price: $8,000
 description:
 services:

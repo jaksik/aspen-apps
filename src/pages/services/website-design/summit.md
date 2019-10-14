@@ -1,8 +1,8 @@
 ---
 templateKey: website-design
-title: Starter
-price: $2,750
-description: Up to 5 pages of content
+title: Peak
+price: $7,000
+description:
 services:
   - description: 'That''s assuming you''re very responsive, of course.'
     service: Turnaround in 3-4 weeks
@@ -17,4 +17,3 @@ services:
       everything in between
     service: Mobile Friendly (Responsive) Design
 ---
-

@@ -77,10 +77,12 @@ const IndexPage = ({data}) => {
             const serviceData = service.node.frontmatter
             return (
               <Col xs="6" md="4" lg="3">
-                <div className="portfolio-wrapper m-2">
-                  <Img fluid={serviceData.image.childImageSharp.fluid} className="landing-image"/>
-                  <p style={{textAlign:`center`}}>{serviceData.title}</p>
-                </div>
+                <Link to={service.node.fields.slug}>
+                  <div className="portfolio-wrapper m-2">
+                      <Img fluid={serviceData.image.childImageSharp.fluid} className="landing-image"/>
+                      <p style={{textAlign:`center`}}>{serviceData.title}</p>
+                    </div>
+                </Link>
               </Col>          
             )
           })}
@@ -127,7 +129,7 @@ export const listQuery = graphql`
   query {
     file(relativePath: { eq: "aspens.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000, quality: 100) {
+        fluid(maxWidth: 2000, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }

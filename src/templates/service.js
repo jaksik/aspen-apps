@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Divider from "../components/landing-divider"
 import SEO from "../components/seo"
 
 export default ({ data }) => {
@@ -12,7 +13,8 @@ export default ({ data }) => {
       <SEO title="About Limitless Wake" keywords={info.frontmatter.tags} />
     
        <h1>{info.frontmatter.title}</h1>
-     
+      <p>Pricing starts at bla bla bla bla.</p>
+      <button>Contact Us</button>
     </Layout>
   )
 }

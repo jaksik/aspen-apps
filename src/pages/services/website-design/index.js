@@ -1,12 +1,12 @@
 import React from "react"
 import { graphql, Link } from 'gatsby'
 import { Container, Row, Col, Button } from "reactstrap"
-import Layout from "../../components/layout"
-import PageHeader from "../../components/page-header"
-import SEO from "../../components/seo"
-import Collapse from "../../components/collapse"
+import Layout from "../../../components/layout"
+import PageHeader from "../../../components/page-header"
+import SEO from "../../../components/seo"
+import Collapse from "../../../components/collapse"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./services.css"
+import "../services.css"
 
 const ServicesPage = ({ data }) => {
   console.log("data: ", data)
@@ -18,8 +18,8 @@ const ServicesPage = ({ data }) => {
         
       <PageHeader 
         image={data.file.childImageSharp.fluid} 
-        headerTitle="SERVICES" 
-        pageTitle="Website Design" 
+        headerTitle="WEBSITE DESIGN" 
+        pageTitle="Pricing" 
         description="The first thing we do is get know everything about your business. We learn what you do, how you do it, and (most importantly) why you do it. That's B1O2. Then we get busy. Really busy."
       />
       
@@ -50,13 +50,6 @@ const ServicesPage = ({ data }) => {
           </Row>
         </Col>
       </Row>
-
-      <Container>
-        <Row className="no-gutters">
-          <h2 className="page-title">Additional Services</h2>
-          <p>All other services are on an hourly bases. Send us a message for our current hourly rates.</p>
-        </Row>
-      </Container>
 
     </Layout>
   )
