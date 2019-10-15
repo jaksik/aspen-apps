@@ -7,6 +7,7 @@ description: >-
   (that reflects our B1O2 philosophy) to provide you with a website that is
   user-friendly, business-focused, and tailored for effective search engine
   optimization.
+image: ../../images/graphics/logo-design.png
 ---
 
 

@@ -36,7 +36,7 @@ const IndexPage = ({data}) => {
          <div className="slant-container">
             <h2 className="slant-title" style={{fontWeight:`bold`}}>How Can We Help You?</h2>
             <div style={{textAlign:`center`}}>
-              <h4 className="slant-text" style={{color:`#f03517`}}>We specialize in web development and mobile app development.</h4>
+              <h4 className="slant-text" style={{color:`#f03517`}}>It's our passion to collaborate closely and create elegant technologies that help your business thrive.</h4>
             </div>
          </div>
       </div>
@@ -196,9 +196,6 @@ export const listQuery = graphql`
             title
             image {
               childImageSharp {
-                resize(width: 1500, height: 1500) {
-                  src
-                }
                 fluid(maxWidth: 786) {
                   ...GatsbyImageSharpFluid
                 }

@@ -1,6 +1,8 @@
 import React from "react"
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { Container, Row, Col } from "reactstrap"
+import Divider from "../components/landing-divider"
+
 import Layout from "../components/layout"
 import PageHeader from "../components/page-header"
 import SEO from "../components/seo"
@@ -20,7 +22,7 @@ const ProcessPage = ({ data }) => {
        <PageHeader 
           image={data.file.childImageSharp.fluid} 
           headerTitle="PROCESS" 
-          pageTitle="PROCESS" 
+          pageTitle="Our Collaborative Process" 
           titlethree="Our Approach"
           description="Marketing maven Simon Sinek was the first to explore the “Start with Why” concept and “The Golden Circle” model, challenging us to examine the emotional core of what makes employees and customers buy into a company.  We’ve taken it a step further."
        />
@@ -86,6 +88,30 @@ const ProcessPage = ({ data }) => {
             </Col>
           </Row>
        </Container>
+
+       <Divider title="PORTFOLIO" subtitle="Need Proof?" button="Contact Us" address="/contact" />
+
+       <Row className="no-gutters justify-content-center pl-4 pr-4">
+      <h2 className="page-title">Our Services</h2>
+      <Col xs="10">
+        <Row className="no-gutters">
+          {data.services.edges.map((service, index) => {
+            const serviceData = service.node.frontmatter
+            return (
+              <Col xs="6" md="4" lg="3">
+                <Link to={service.node.fields.slug}>
+                  <div className="portfolio-wrapper m-2">
+                      <Img fluid={serviceData.image.childImageSharp.fluid} className="landing-image"/>
+                      <p style={{textAlign:`center`}}>{serviceData.title}</p>
+                    </div>
+                </Link>
+              </Col>          
+            )
+          })}
+        </Row>
+      </Col>
+    </Row>
+
     </Layout>
   )
 }
@@ -119,6 +145,25 @@ export const query = graphql`
       childImageSharp {
         fluid(maxWidth: 100, quality: 100) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    services: allMarkdownRemark(filter: { frontmatter: {templateKey: {regex: "/service/"}}}) {
+      edges {
+        node {
+          fields{
+            slug
+          }
+          frontmatter {
+            title
+            image {
+              childImageSharp {
+                fluid(maxWidth: 786) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
         }
       }
     }

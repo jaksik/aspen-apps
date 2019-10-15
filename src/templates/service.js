@@ -11,7 +11,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="About Limitless Wake" keywords={info.frontmatter.tags} />
-    
+        {/* <Img fluid={} /> */}
        <h1>{info.frontmatter.title}</h1>
       <p>Pricing starts at bla bla bla bla.</p>
       <button>Contact Us</button>
@@ -24,6 +24,13 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title  
+        image {
+          childImageSharp {
+            fluid(maxWidth: 786) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

@@ -1,8 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Container, Row, Col, Button } from "reactstrap"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Container, Row, Col, Button } from "reactstrap"
 
 export default ({ data }) => {
   const info = data.markdownRemark
@@ -10,6 +11,15 @@ export default ({ data }) => {
 
   return (
     <Layout>
+
+<Row className="no-gutters mt-4 mb-4">
+          <Col xs="2" md="1" className="offset-1">
+            <Img fluid={info.frontmatter.image.childImageSharp.fluid}/>
+          </Col>
+          <Col xs="8" md="7" className="align-self-center">
+            <h2>{info.frontmatter.title}</h2>
+          </Col>
+        </Row>
     
        <Row className="no-gutters justify-content-center pl-5 pr-5">
         <Col xs="12" md="4" className="p-3">
@@ -69,6 +79,13 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title  
+        image {
+          childImageSharp {
+            fluid(maxWidth: 786) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
