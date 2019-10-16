@@ -33,11 +33,9 @@ const IndexPage = ({data}) => {
          </div>
       </div>
       <div className="slant pt-5 pb-5">
-         <div className="slant-container">
-            <h4 className="slant-title" style={{}}>How Can We Help You?</h4>
-            <div style={{textAlign:`center`}}>
-              <h3 className="landing-subtitle red-font">It's our passion to collaborate closely and create elegant technologies that help your business thrive.</h3>
-            </div>
+         <div className="slant-container text-center">
+            <h4>How Can We Help You?</h4>
+            <h3 className="landing-subtitle red-font">It's our passion to collaborate closely and create elegant technologies that help your business thrive.</h3>
          </div>
       </div>
 

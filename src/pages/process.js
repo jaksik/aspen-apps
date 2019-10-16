@@ -22,13 +22,13 @@ const ProcessPage = ({ data }) => {
        <PageHeader 
           image={data.file.childImageSharp.fluid} 
           headerTitle="PROCESS" 
-          pageTitle="Our Collaborative Process" 
-          titlethree="Our Approach"
-          description="Marketing maven Simon Sinek was the first to explore the “Start with Why” concept and “The Golden Circle” model, challenging us to examine the emotional core of what makes employees and customers buy into a company.  We’ve taken it a step further."
+          pageTitle="Why. How. What." 
+          description="Any Thing At All!"
        />
        
+      <h2 className="page-title">Our Process</h2>
+
        <Container>
-  
           <Row>
             <Col xs="12" md="4" >
               <Img fluid={data.discover.childImageSharp.fluid} className="landing-image" style={{maxWidth:`100px`}}/>

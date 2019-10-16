@@ -9,7 +9,7 @@ const landingDivider = ({ button, address }) => (
           <div className="divider-line"></div>
           <Row className="no-gutters justify-content-center">
             <Link to={address}>
-              <Button size="lg" className="divider-button">{button}</Button>
+              <Button size="lg" className="divider-button font-weight-light pl-5 pr-5">{button}</Button>
             </Link>
           </Row>
         </div>

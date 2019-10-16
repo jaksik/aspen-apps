@@ -19,7 +19,9 @@ const PortfolioPage = ({ data }) => {
         headerTitle="Our Work" 
         pageTitle="Our Work"
       />
-      
+                  
+      <h2 className="page-title">Our Work</h2>
+
       <Container>
         <Row className="no-gutters">
           {data.allMarkdownRemark.edges.map((project, index) => {

@@ -11,9 +11,10 @@ const ContactPage = ({ data }) => {
             image={data.file.childImageSharp.fluid} 
             headerTitle="CONTACT"
             pageTitle="Contact Us"  
-            titlethree="Go Ahead, Ask Us Anything!" 
-            description="Any Thing At All!"
           />
+
+          <h2 className="page-title">Go Ahead, Ask Us Anything.</h2>
+
           <form
             name="contact"
             method="post"

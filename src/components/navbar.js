@@ -51,7 +51,7 @@ import {
                                 Website Desgin
                             </DropdownItem>
                         </Link>
-                        <Link to="resources/locations" className="nav-item">
+                        <Link to="services/website-maintenance" className="nav-item">
                             <DropdownItem>
                                 Website Maintenance
                             </DropdownItem>
@@ -61,7 +61,7 @@ import {
                                 Application Development
                             </DropdownItem>
                         </Link>
-                        <Link to="services/coding" className="nav-item">
+                        <Link to="services/custom-coding" className="nav-item">
                             <DropdownItem>
                                 Custom Coding
                             </DropdownItem>
