@@ -2,7 +2,7 @@ import React from 'react'
 import Img from "gatsby-image"
 import './page-header.css'
 
-function PageCoverImg ({ image, headerTitle, pageTitle, titlethree, description }) {
+function PageCoverImg ({ image, headerTitle, pageTitle }) {
    return (
       <>
       <div style={{position: `relative`, height: `50vh`, overflow:`hidden`}}>

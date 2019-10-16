@@ -34,69 +34,72 @@ const IndexPage = ({data}) => {
       </div>
       <div className="slant pt-5 pb-5">
          <div className="slant-container">
-            <h2 className="slant-title" style={{fontWeight:`bold`}}>How Can We Help You?</h2>
+            <h4 className="slant-title" style={{}}>How Can We Help You?</h4>
             <div style={{textAlign:`center`}}>
-              <h4 className="slant-text" style={{color:`#f03517`}}>It's our passion to collaborate closely and create elegant technologies that help your business thrive.</h4>
+              <h3 className="landing-subtitle red-font">It's our passion to collaborate closely and create elegant technologies that help your business thrive.</h3>
             </div>
          </div>
       </div>
 
-      <Row className="no-gutters justify-content-center pl-5 pr-5">
-        <Col xs="12" md="4" className="p-3">
-          <div className="landing-card p-2">
-            <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
-            <h4>Creative</h4>
-            <p>Building the functionality, tools, and assets to fashion a look, feel, tone and experience consistent with your brand and your mission.</p>
-          </div>
-        </Col>
-        <Col xs="12" md="4" className="p-3">
-          <div className="landing-card p-2">
-            <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
-            <h4>Marketing</h4>
-            <p>Creating seamless, reliable and effective solutions from engagement through post-purchase delight and back again.</p>
-          </div>
-        </Col>
-        <Col xs="12" md="4" className="p-3">
-          <div className="landing-card p-2">
-            <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
-            <h4>Technology</h4>
-            <p>Smart, strategic thinking that provides a pathway and a plan to successfully grow your business and your brand.</p>
-          </div>
-        </Col>
-      </Row>
+    <Row className="no-gutters justify-content-center">
+      <Col xs="12" md="4" className="p-3">
+        <div className="landing-card card-border p-2">
+          <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
+          <h4 className="box-title">Creative</h4>
+          <p>Building the functionality, tools, and assets to fashion a look, feel, tone and experience consistent with your brand and your mission.</p>
+        </div>
+      </Col>
+      <Col xs="12" md="4" className="p-3">
+        <div className="landing-card card-border p-2">
+          <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
+          <h4 className="box-title">Marketing</h4>
+          <p>Creating seamless, reliable and effective solutions from engagement through post-purchase delight and back again.</p>
+        </div>
+      </Col>
+      <Col xs="12" md="4" className="p-3">
+        <div className="landing-card card-border p-2">
+          <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
+          <h4 className="box-title">Technology</h4>
+          <p>Smart, strategic thinking that provides a pathway and a plan to successfully grow your business and your brand.</p>
+        </div>
+      </Col>
+    </Row>
 
+    <Divider button="Aspen Apps's Story" address="/services"/>
 
-    <Divider title="OUR SERVICES" subtitle="Our Services" button="Aspen Apps's Story" address="/services"/>
-
-
-    <Row className="no-gutters justify-content-center pl-4 pr-4">
-      <h2 className="page-title">Our Services</h2>
-      <Col xs="10">
-        <Row className="no-gutters">
+    <Row className="no-gutters justify-content-center">
+      <Col xs="12">
+        <h2 className="page-title">Our Services</h2>
+      </Col>
+      <Col xs="12" sm="10">
+        <Row className="no-gutters m-2">
           {data.services.edges.map((service, index) => {
             const serviceData = service.node.frontmatter
             return (
               <Col xs="6" md="4" lg="3">
-                <Link to={service.node.fields.slug}>
-                  <div className="portfolio-wrapper m-2">
+                <div className="card-border m-1">
+                  <Link to={service.node.fields.slug} className="red-font card-border">
+                    <Row className="no-gutters p-2">
                       <Img fluid={serviceData.image.childImageSharp.fluid} className="landing-image"/>
-                      <p style={{textAlign:`center`}}>{serviceData.title}</p>
-                    </div>
-                </Link>
-              </Col>          
+                    </Row>
+                    <Row className="no-gutters justify-content-center">
+                      <p style={{textAlign:`center`}} className="card-text p-2">{serviceData.title}</p>
+                    </Row>
+                  </Link>
+                </div>
+              </Col>        
             )
           })}
         </Row>
       </Col>
     </Row>
 
-
-    <Divider title="PORTFOLIO" subtitle="Need Proof?" button="See Our Prices" address="/services/pricing" />
-
+    <Divider button="See Our Prices" address="/services/pricing" />
 
     <Row className="no-gutters justify-content-center">
-    <h2 className="page-title">Portfolio</h2>
-
+      <Col xs="12">
+          <h2 className="page-title">Portfolio</h2>
+      </Col>
       <Col xs="12" md="10">
         <Row className="no-gutters">
           {info.map((project, index) => {
@@ -110,11 +113,12 @@ const IndexPage = ({data}) => {
       </Col>
     </Row>
 
-
-    <Divider title="TESTIMONIAL" subtitle="Kind Words" button="See More Of Our Work" address="/portfolio" />
-
+    <Divider button="See More Of Our Work" address="/portfolio" />
 
     <Row className="no-gutters justify-content-center">
+      <Col xs="12">
+        <h2 className="page-title">Testimonials</h2>
+      </Col>
       <Col xs="12" md="6">
           <p style={{textAlign:`center`}}>It was really great working with Aspen Apps. They really know what theyre doing and they know how to make awesome websites. We would love to work with them again.</p>
       </Col>

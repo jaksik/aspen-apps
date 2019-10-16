@@ -1,13 +1,24 @@
 .landing-image {
-  width: 100px;
+  width: 80px;
   margin: 0 auto;
+}
+
+.landing-subtitle {
+  font-weight: lighter;
 }
 
 .landing-card {
   text-align: center;
-  border: 1px solid rgba(128, 128, 128, 0.493);
-  border-radius: 10px;
+  border-radius: 7px;
   height: 100%;
+}
+
+.card-border {
+  border: .5px solid rgba(128, 128, 128, 0.2);
+}
+
+.box-title {
+  margin: 45px 0 30px;
 }
 
 .green-button {
@@ -24,12 +35,16 @@
   background: forestgreen;
 }
 
-.divider {
+.divider-line {
   border-bottom: 1px solid #f03517;
   width: 100%;
   position: absolute;
   top: 50%;
   z-index: -1;
+}
+
+.divider-row {
+  margin: 18px 0px;
 }
 
 .divider-button {
@@ -87,9 +102,26 @@
 .page-title {
   text-align: center;
   font-family: cursive;
+  font-size: 40px;
   width: 100%;
+  margin: 27px 0;
 }
 
 .red-font {
   color: #f03517;
 }
+
+@media only screen and (min-width: 768px) {
+
+  .divider-row {
+    margin: 75px 0;
+  }
+  
+  .page-title {
+    font-size: 65px;
+
+    margin: 40px 0;
+  }
+
+}
+
