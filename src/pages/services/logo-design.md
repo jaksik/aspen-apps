@@ -1,6 +1,16 @@
 ---
 templateKey: service
 title: Logo Design
-description: From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.
-image: ../../images/graphics/logo-design.png
+image: ../../images/graphics/custom-code.png
+description: We will make the best logo ever for you.
+services:
+  - description: 'That''s assuming you''re very responsive, of course.'
+    service: Turnaround in 3-4 weeks
+  - description: Update your content whenever you want using the Net
+    service: DIY updates with Netlify CMS
+  - description: Your website will automatically have an easy-to-use blog and contact form.
+    service: Built-In Blog and Contact form
+  - description: Your new website will look great on wide monitors.
+    service: Mobile Friendly (Responsive) Design
 ---
+

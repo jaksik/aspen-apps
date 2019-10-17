@@ -56,11 +56,11 @@ import {
                                 Website Maintenance
                             </DropdownItem>
                         </Link>
-                        <Link to="services/app-development" className="nav-item">
+                        {/* <Link to="services/app-development" className="nav-item">
                             <DropdownItem>
                                 Application Development
                             </DropdownItem>
-                        </Link>
+                        </Link> */}
                         <Link to="services/custom-coding" className="nav-item">
                             <DropdownItem>
                                 Custom Coding
