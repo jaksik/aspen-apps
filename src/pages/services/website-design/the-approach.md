@@ -1,11 +1,11 @@
 ---
 templateKey: website-design
-title: Standard
-price: $5,500
-description:
+title: The Approach
+price: $1,750
+pagecount: Up to 5 pages of content
 services:
   - description: 'That''s assuming you''re very responsive, of course.'
-    service: Turnaround in 3-4 weeks
+    service: Turnaround in 2-3 weeks
   - description: >-
       Update your content whenever you want using the Netlify Content Management
       System
@@ -17,3 +17,4 @@ services:
       everything in between
     service: Mobile Friendly (Responsive) Design
 ---
+

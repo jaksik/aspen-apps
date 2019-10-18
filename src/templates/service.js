@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Row, Col } from "reactstrap"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Divider from "../components/landing-divider"
@@ -12,8 +13,14 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="About Limitless Wake" keywords={info.frontmatter.tags} />
-        <Img fluid={info.frontmatter.image.childImageSharp.fluid} className="landing-image" />
-       <h1>{info.frontmatter.title}</h1>
+      <Row className="no-gutters mt-4 mb-4">
+          <Col xs="2" md="1" className="offset-1">
+            <Img fluid={info.frontmatter.image.childImageSharp.fluid}/>
+          </Col>
+          <Col xs="8" md="7" className="align-self-center">
+            <h2>{info.frontmatter.title}</h2>
+          </Col>
+        </Row>
       {info.frontmatter.services.map((service, index) => (
         <>
           <h2 className="red-font">{service.service}</h2>

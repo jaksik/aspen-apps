@@ -33,17 +33,13 @@ import {
       return (
         <div style={{color:`black`}} style={{zIndex:`3`}}>
           <Navbar className="text-black" color="light" light expand="md">
-            <NavbarBrand className="start-navitem" href="/" style={{color:`black`}}>{this.props.siteTitle}</NavbarBrand>
+            <NavbarBrand className="start-navitem font-weight-bold" href="/" style={{color:`#f03517`}}>{this.props.siteTitle}</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar >
-              {/* <NavItem>
-                  <NavLink style={{color:`black`}} href="/">Home</NavLink>
-                </NavItem> */}
-              
                 <UncontrolledDropdown nav inNavbar>
-                    <DropdownToggle nav caret className="nav-item">
-                        Services
+                    <DropdownToggle nav caret>
+                       <a style={{ color: `black` }}>Services</a>
                     </DropdownToggle>
                     <DropdownMenu>
                         <Link to="services/website-design" className="nav-item">
@@ -64,11 +60,6 @@ import {
                         <Link to="services/custom-coding" className="nav-item">
                             <DropdownItem>
                                 Custom Coding
-                            </DropdownItem>
-                        </Link>
-                        <Link to="services/logo-design" className="nav-item">
-                            <DropdownItem>
-                                Logo Design
                             </DropdownItem>
                         </Link>
                     </DropdownMenu>

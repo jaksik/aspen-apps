@@ -1,11 +1,11 @@
 ---
 templateKey: website-design
-title: Peak
+title: Peak Two
 price: $7,000
-description:
+pagecount: Up to 10 pages of content + eCommerce integration
 services:
   - description: 'That''s assuming you''re very responsive, of course.'
-    service: Turnaround in 3-4 weeks
+    service: Turnaround in 4-6 weeks
   - description: >-
       Update your content whenever you want using the Netlify Content Management
       System

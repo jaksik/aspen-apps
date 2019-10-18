@@ -16,7 +16,7 @@ const PortfolioPage = ({ data }) => {
 
       <PageHeader 
         image={data.file.childImageSharp.fluid} 
-        headerTitle="Our Work" 
+        headerTitle="Portfolio" 
         pageTitle="Our Work"
       />
                   

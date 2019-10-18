@@ -12,14 +12,35 @@ export default ({ data }) => {
   return (
     <Layout>
 
-<Row className="no-gutters mt-4 mb-4">
-          <Col xs="2" md="1" className="offset-1">
-            <Img fluid={info.frontmatter.image.childImageSharp.fluid}/>
-          </Col>
-          <Col xs="8" md="7" className="align-self-center">
-            <h2>{info.frontmatter.title}</h2>
-          </Col>
-        </Row>
+    <Row className="no-gutters mt-4 mb-4">
+      <Col xs="2" md="1" className="offset-1">
+        <Img fluid={info.frontmatter.image.childImageSharp.fluid}/>
+      </Col>
+      <Col xs="8" md="7" className="align-self-center">
+        <h2>{info.frontmatter.title}</h2>
+      </Col>
+    </Row>
+
+
+    <Container>
+      <Row className="no-gutters">
+       <Col xs="12" md="8">
+        <h2>This is what you get.</h2>
+        <p>Whether your website is loaded with complex features or just a bare-bones design, all websites require regular maintenance to ensure they remain functional over time. We’ve designed 3 different maintenance plans to help websites of all sizes stay in top form.</p>
+      </Col>
+       <Col xs="12" md="4">
+          <h2>You also get this...</h2>
+          <ul>
+            <li>Backup</li>
+            <li>Backup</li>
+            <li>Backup</li>
+            <li>Backup</li>
+            <li>Backup</li>
+            <li>Backup</li>
+          </ul>
+       </Col>
+      </Row>
+    </Container>
     
        <Row className="no-gutters justify-content-center pl-5 pr-5">
         <Col xs="12" md="4" className="p-3">
@@ -42,32 +63,7 @@ export default ({ data }) => {
         </Col>
       </Row>
 
-      <Container>
-       <Row className="no-gutters">
-       <Col xs="12" md="8">
-       <h2>This is what you get.</h2>
-        <p>Whether your website is loaded with complex features or just a bare-bones design, all websites require regular maintenance to ensure they remain functional over time. We’ve designed 3 different maintenance plans to help websites of all sizes stay in top form.</p>
-       </Col>
-
-       <Col xs="12" md="4">
-          <h2>You also get this...</h2>
-          <ul>
-            <li>Backup</li>
-            <li>Backup</li>
-
-            <li>Backup</li>
-
-            <li>Backup</li>
-
-            <li>Backup</li>
-
-            <li>Backup</li>
-
-          </ul>
-       </Col>
-       </Row>
-  
-  </Container>
+      
   <button>Contact Us</button>
 
     </Layout>

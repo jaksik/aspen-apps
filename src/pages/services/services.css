@@ -1,9 +1,24 @@
+.page-subtitle {
+    text-align: center;
+    width: 100%;
+}
+
+.section-subtitle {
+    text-align: center;
+    width: 100%;
+}
+
+.page-text {
+    font-size: 17px;
+}
+
+
 .service-wrapper {
     border: 1px solid rgba(128, 128, 128, 0.452);
 }
 
 .service-title {
-    color: red;
+    color: #f03517;
     text-align: center;
     font-weight: lighter
 }
@@ -20,6 +35,6 @@
 }
 
 .red-button {
-    background-color: red;
-    border-color: red;
+    background-color: #f03517;
+    border-color: #f03517;
 }
