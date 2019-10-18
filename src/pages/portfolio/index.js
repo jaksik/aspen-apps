@@ -13,12 +13,12 @@ const PortfolioPage = ({ data }) => {
     <Layout>
 
       <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
-
+{/* 
       <PageHeader 
         image={data.file.childImageSharp.fluid} 
         headerTitle="Portfolio" 
         pageTitle="Our Work"
-      />
+      /> */}
                   
       <h2 className="page-title">Our Work</h2>
 

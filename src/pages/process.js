@@ -19,79 +19,126 @@ const ProcessPage = ({ data }) => {
         {/* SEO keywords */}
         <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
         
-       <PageHeader 
+       {/* <PageHeader 
           image={data.file.childImageSharp.fluid} 
           headerTitle="PROCESS" 
           pageTitle="Why. How. What." 
           description="Any Thing At All!"
-       />
+       /> */}
        
       <h2 className="page-title">Our Process</h2>
 
-       <Container>
-          <Row>
-            <Col xs="12" md="4" >
-              <Img fluid={data.discover.childImageSharp.fluid} className="landing-image" style={{maxWidth:`100px`}}/>
-              <h4>Discover</h4>
-              <p>We dig deep to learn about your business, your goals, and your vision. We identify the pain points, pinpoint any potential obstacles, and determine the full scope of the issues that need to be addressed.</p>
-            </Col>
-
-            <Col xs="12" md="4">
-              <Img fluid={data.plan.childImageSharp.fluid} className="landing-image" style={{maxWidth:`100px`}}/>
-              <h4>Plan</h4>
-              <p>We dig deep to learn about your business, your goals, and your vision. We identify the pain points, pinpoint any potential obstacles, and determine the full scope of the issues that need to be addressed.</p>
-            </Col>
-
-            <Col xs="12" md="4">
-              <Img fluid={data.execute.childImageSharp.fluid} className="landing-image" style={{maxWidth:`100px`}}/>
-              <h4>Execute</h4>
-              <p>We dig deep to learn about your business, your goals, and your vision. We identify the pain points, pinpoint any potential obstacles, and determine the full scope of the issues that need to be addressed.</p>
-            </Col>
-          </Row>
-
-          <Row>
-            <Col xs="12">
-              <h3 style={{textAlign:`center`, margin:`20px auto`}}>Ways We Engage</h3>
-            </Col>
-
-            <Col xs="12" md="6">
-              <Row>
-                <Col xs="2" style={{padding:`0px`}}>
-                  <Img fluid={data.execute.childImageSharp.fluid}/>
+          <Row className="no-gutters">
+            <Col xs="10" md="10" lg="10" className="offset-1 offset-md-1 offset-lg-1">
+            <Row className="no-gutters">
+                <Col xs="12" md="4" >
+                  {/* <Img fluid={data.discover.childImageSharp.fluid} className="landing-image" style={{maxWidth:`100px`}}/> */}
+                  <div className="card-border m-1 p-2">
+                    <h4 className="card-title">Discover</h4>
+                    <p className="card-text">We dig deep to learn about your business, your goals, and your vision. We identify the pain points, pinpoint any potential obstacles, and determine the full scope of the issues that need to be addressed.</p>
+                  </div>
                 </Col>
-                <Col xs="10">
-                  <h5>Full Site Build</h5>
-                  <p>From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.</p>
-                </Col>
+
+                <Col xs="12" md="4">
+                  {/* <Img fluid={data.plan.childImageSharp.fluid} className="landing-image" style={{maxWidth:`100px`}}/> */}
+                  <div className="card-border m-1 p-2">
+                    <h4 className="card-title">Discover</h4>
+                    <p className="card-text">We dig deep to learn about your business, your goals, and your vision. We identify the pain points, pinpoint any potential obstacles, and determine the full scope of the issues that need to be addressed.</p>
+                  </div>
+                   </Col>
+
+                <Col xs="12" md="4">
+                  {/* <Img fluid={data.execute.childImageSharp.fluid} className="landing-image" style={{maxWidth:`100px`}}/> */}
+                  <div className="card-border m-1 p-2">
+                    <h4 className="card-title">Discover</h4>
+                    <p className="card-text">We dig deep to learn about your business, your goals, and your vision. We identify the pain points, pinpoint any potential obstacles, and determine the full scope of the issues that need to be addressed.</p>
+                  </div>
+                   </Col>
               </Row>
-            </Col>
-            
-            <Col xs="12" md="6">
-            <h5>Managed Services</h5>
-              <p>From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.</p>
-            </Col>
-            <Col xs="12" md="6">
-            <h5>Rescues</h5>
-              <p>From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.</p>
-            </Col>
-            <Col xs="12" md="6">
-            <h5>Ongoing Support</h5>
-              <p>From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.</p>
-            </Col>
-            <Col xs="12" md="6">
-            <h5>Digital Marketing</h5>
-              <p>From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.</p>
-            </Col>
-            <Col xs="12" md="6">
-            <h5>Brand & Identity</h5>
-              <p>From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.</p>
+
+              <Row className="no-gutters">
+                <Col xs="12">
+                  <h3 className="page-title">Ways We Engage</h3>
+                </Col>
+
+                <Col xs="12" md="6">
+                <Row className="no-gutters">
+                    <Col xs="2" style={{padding:`0px`}}>
+                      <Img fluid={data.execute.childImageSharp.fluid}/>
+                    </Col>
+                    <Col xs="10">
+                      <h4 className="red-font">Full Site Build</h4>
+                      <p>From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.</p>
+                    </Col>
+                  </Row>
+                </Col>
+              
+                <Col xs="12" md="6">
+                <Row className="no-gutters">
+                    <Col xs="2" style={{}}>
+                      <Img fluid={data.execute.childImageSharp.fluid}/>
+                    </Col>
+                    <Col xs="10">
+                      <h4 className="red-font">Rescues</h4>
+                      <p>From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.</p>
+                    </Col>
+                  </Row>
+                </Col>
+
+                <Col xs="12" md="6">
+                <Row className="no-gutters">
+                    <Col xs="2" style={{padding:`0px`}}>
+                      <Img fluid={data.execute.childImageSharp.fluid}/>
+                    </Col>
+                    <Col xs="10">
+                      <h4 className="red-font">Digital Marketing</h4>
+                      <p>From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.</p>
+                    </Col>
+                  </Row>
+                </Col>
+
+              <Col xs="12" md="6">
+              <Row className="no-gutters">
+                    <Col xs="2" style={{padding:`0px`}}>
+                      <Img fluid={data.execute.childImageSharp.fluid}/>
+                    </Col>
+                    <Col xs="10">
+                      <h4 className="red-font">Full Site Build</h4>
+                      <p>From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.</p>
+                    </Col>
+                  </Row>
+                </Col>
+
+              <Col xs="12" md="6">
+              <Row className="no-gutters">
+                    <Col xs="2" style={{padding:`0px`}}>
+                      <Img fluid={data.execute.childImageSharp.fluid}/>
+                    </Col>
+                    <Col xs="10">
+                      <h4 className="red-font">Full Site Build</h4>
+                      <p>From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.</p>
+                    </Col>
+                  </Row>
+                </Col>
+
+              <Col xs="12" md="6">
+              <Row className="no-gutters">
+                    <Col xs="2" style={{padding:`0px`}}>
+                      <Img fluid={data.execute.childImageSharp.fluid}/>
+                    </Col>
+                    <Col xs="10">
+                      <h4 className="red-font">Full Site Build</h4>
+                      <p>From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.</p>
+                    </Col>
+                  </Row>
+                </Col>
+            </Row>
             </Col>
           </Row>
-       </Container>
 
        <Divider title="PORTFOLIO" subtitle="Need Proof?" button="Contact Us" address="/contact" />
 
-       <Row className="no-gutters justify-content-center pl-4 pr-4">
+       {/* <Row className="no-gutters justify-content-center pl-4 pr-4">
       <h2 className="page-title">Our Services</h2>
       <Col xs="10">
         <Row className="no-gutters">
@@ -110,7 +157,7 @@ const ProcessPage = ({ data }) => {
           })}
         </Row>
       </Col>
-    </Row>
+    </Row> */}
 
     </Layout>
   )

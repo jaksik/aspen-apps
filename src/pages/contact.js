@@ -7,11 +7,11 @@ import "../styles/contact.css"
 const ContactPage = ({ data }) => {
     return (
         <Layout>
-          <PageHeader 
+          {/* <PageHeader 
             image={data.file.childImageSharp.fluid} 
             headerTitle="CONTACT"
             pageTitle="Contact Us"  
-          />
+          /> */}
 
           <h2 className="page-title">Go Ahead, Ask Us Anything.</h2>
 

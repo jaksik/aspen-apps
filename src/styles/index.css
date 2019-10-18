@@ -1,3 +1,32 @@
+.red-font {
+  color: #f03517;
+}
+
+.page-title {
+  text-align: center;
+  font-family: cursive;
+  font-size: 40px;
+  width: 100%;
+  margin: 55px 0;
+}
+
+.card-border {
+  border: .5px solid rgba(128, 128, 128, 0.2);
+}
+
+.card-title {
+  color: #f03517;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 17px;
+}
+
+
+
 .landing-image {
   width: 80px;
   margin: 0 auto;
@@ -13,9 +42,7 @@
   height: 100%;
 }
 
-.card-border {
-  border: .5px solid rgba(128, 128, 128, 0.2);
-}
+
 
 .box-title {
   margin: 45px 0 30px;
@@ -34,6 +61,8 @@
   border-color: forestgreen;
   background: forestgreen;
 }
+
+
 
 .divider-line {
   border-bottom: 1px solid #f03517;
@@ -59,6 +88,8 @@
   border: 1px solid #f03517;
   color: white
 }
+
+
 
 .slant {
   margin-top: -20px;
@@ -95,17 +126,7 @@
   padding-bottom: 0px;
 }
 
-.page-title {
-  text-align: center;
-  font-family: cursive;
-  font-size: 40px;
-  width: 100%;
-  margin: 27px 0;
-}
 
-.red-font {
-  color: #f03517;
-}
 
 @media only screen and (min-width: 768px) {
 
@@ -116,7 +137,7 @@
   .page-title {
     font-size: 65px;
 
-    margin: 40px 0;
+    margin: 70px 0;
   }
 
 }
