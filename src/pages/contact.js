@@ -7,20 +7,14 @@ import "../styles/contact.css"
 const ContactPage = ({ data }) => {
     return (
         <Layout>
-          {/* <PageHeader 
-            image={data.file.childImageSharp.fluid} 
-            headerTitle="CONTACT"
-            pageTitle="Contact Us"  
-          /> */}
 
-          <h2 className="page-title">Go Ahead, Ask Us Anything.</h2>
+          <h4 style={{width:`100%`, textAlign:`center`, marginTop:`50px`}} className="red-font">Go Ahead, Ask Us Anything.</h4>
 
           <form
             name="contact"
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
-            style={{ width: `80%`, margin: `0 auto`}}
           >
             <input type="hidden" name="bot-field" />
 

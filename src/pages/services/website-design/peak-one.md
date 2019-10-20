@@ -2,7 +2,8 @@
 templateKey: website-design
 title: Peak One
 price: $5,500
-pagecount: Up to 20 pages of content
+pagecount: 20
+bellsWhistles: 4
 services:
   - description: 'That''s assuming you''re very responsive, of course.'
     service: Turnaround in 3-4 weeks

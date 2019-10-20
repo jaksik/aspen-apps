@@ -83,7 +83,7 @@ const Footer = () => (
               </Row>
             </Col>
         </Row>
-        <p style={{textAlign:`center`, fontSize:`13px`}} className="mb-0 mt-4 pb-3 pt-2">© 2019 Aspen Applications Company LLC All Rights Reserved. Here's our Privacy Policy.</p>
+        <p style={{textAlign:`center`, fontSize:`13px`}} className="mb-0 mt-4 pb-3 pt-2">© 2019 Aspen Applications LLC All Rights Reserved. Here's our Privacy Policy.</p>
     </div>
 )
 

@@ -1,8 +1,9 @@
 ---
 templateKey: website-design
-title: Peak Two
+title: The Summit
 price: $7,000
-pagecount: Up to 10 pages of content + eCommerce integration
+pagecount: 10
+bellsWhistles: 3
 services:
   - description: 'That''s assuming you''re very responsive, of course.'
     service: Turnaround in 4-6 weeks

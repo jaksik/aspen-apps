@@ -64,11 +64,17 @@ const ServicesPage = ({ data }) => {
                   <div className="service-wrapper">
                     <h3 className="service-title">{frontmatter.title}</h3>
                     <div className="service-cell">
-                      <span className="service-price">{frontmatter.price}</span>
-                    </div>
+                        <span className="service-price">{frontmatter.price}</span>
+                      </div>
                     <div className="service-cell">
-                      <p>{frontmatter.pagecount}</p>
-                    </div>
+                        <p>Up to {frontmatter.pagecount} pages of content</p>
+                      </div>
+                    <div className="service-cell">
+                        <p>Configuring up to {frontmatter.pagecount} email addreses</p>
+                      </div>
+                    <div className="service-cell" style={{display:(frontmatter.bellsWhistles ? `block` : `none`)}}>
+                        <p>Up to {frontmatter.bellsWhistles} Bells & Whistles. <Link to="services/website-design/bells-and-whistles/">Learn More</Link></p>
+                      </div>
                     {frontmatter.services.map((service, i) => (
                       <Collapse service={service} />
                     ))}
@@ -110,6 +116,7 @@ export const query = graphql`
             title
             price
             pagecount
+            bellsWhistles
             services {
               service
               description

@@ -2,7 +2,9 @@
 templateKey: website-design
 title: Basecamp
 price: $3,250
-pagecount: Up to 10 pages of content
+pagecount: 10
+emailAdresses: Configuring up to 10 email addresses
+bellsWhistles: 2
 services:
   - description: 'That''s assuming you''re very responsive, of course.'
     service: Turnaround in 3-4 weeks

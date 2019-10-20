@@ -13,7 +13,6 @@ export default ({ data }) => {
     <Layout>
       <SEO title="About Limitless Wake" keywords={info.frontmatter.tags} />
       <PageHeader image={info.frontmatter.image.childImageSharp.fluid} title={info.frontmatter.title} subTitle={info.frontmatter.title} description={info.frontmatter.title} titlethree={info.frontmatter.title}/>
-       <Container>
          <Link to="/portfolio">
            Back To Portfolio
          </Link>
@@ -29,7 +28,6 @@ export default ({ data }) => {
         <div style={{ textIndent: `50px` }}>
           <div dangerouslySetInnerHTML={{ __html: info.html }} />
         </div>
-       </Container>
     </Layout>
   )
 }

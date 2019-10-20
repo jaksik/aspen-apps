@@ -2,7 +2,8 @@
 templateKey: website-design
 title: The Approach
 price: $1,750
-pagecount: Up to 5 pages of content
+pagecount: 5
+bellsWhistles: null
 services:
   - description: 'That''s assuming you''re very responsive, of course.'
     service: Turnaround in 2-3 weeks
