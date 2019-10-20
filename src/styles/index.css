@@ -1,3 +1,7 @@
+.page-container {
+  margin: 20px;
+}
+
 .red-font {
   color: #f03517;
 }
@@ -126,10 +130,20 @@
   padding-bottom: 0px;
 }
 
+@media only screen and (min-width: 576px) {
+
+  .page-container {
+
+  }
+
+}
+
 
 
 @media only screen and (min-width: 768px) {
-
+  .page-container {
+      margin: 20px;
+    }
   .divider-row {
     margin: 75px 0;
   }
@@ -142,3 +156,18 @@
 
 }
 
+@media only screen and (min-width: 992px) {
+
+  .page-container {
+    margin: 40px;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .page-container {
+    margin: 20px;
+  }
+
+}

@@ -15,11 +15,9 @@ const ServicesPage = ({ data }) => {
   return (
     <Layout>
 
-      {/* SEO keywords */}
-      <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
-    
+      <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />    
 
-        <Row className="no-gutters mt-4 mb-4">
+        {/* <Row className="no-gutters mt-4 mb-4">
           <Col xs="2" md="2" lg="1" className="offset-1 offset-md-0 offset-lg-1">
           <Img fluid={data.file.childImageSharp.fluid}/>
           </Col>
@@ -27,10 +25,10 @@ const ServicesPage = ({ data }) => {
           <h2>Website Design</h2>
           </Col>
         </Row>
-
+ */}
 
       <Row className="no-gutters">
-        <h2 className="red-font page-subtitle">Development Packages</h2>
+        <h2 className="red-font page-subtitle">Website Design & Development Packages</h2>
         <h6 className="section-subtitle text-center">Every website we design and develop includes the following:</h6>
 
         <Col xs="10" md="12" xl="10" className="offset-1 offset-md-0 offset-xl-1 pl-md-3 pr-md-3 pl-lg-4 pr-lg-4 mt-5 mb-5">

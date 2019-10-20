@@ -47,29 +47,30 @@ import {
                                 Website Desgin
                             </DropdownItem>
                         </Link>
-                        <Link to="services/website-maintenance" className="nav-item">
+                        {/* <Link to="services/website-maintenance" className="nav-item">
                             <DropdownItem>
                                 Website Maintenance
                             </DropdownItem>
                         </Link>
-                        {/* <Link to="services/app-development" className="nav-item">
+                        <Link to="services/app-development" className="nav-item">
                             <DropdownItem>
                                 Application Development
                             </DropdownItem>
-                        </Link> */}
+                        </Link>
                         <Link to="services/custom-coding" className="nav-item">
                             <DropdownItem>
                                 Custom Coding
                             </DropdownItem>
-                        </Link>
+                        </Link> */}
                     </DropdownMenu>
                 </UncontrolledDropdown>
                 <NavItem>
-                  <NavLink style={{color:`black`}} href="/portfolio/">Portfolio</NavLink>
-                </NavItem>
-                <NavItem>
                   <NavLink style={{color:`black`}} href="/process/">Process</NavLink>
                 </NavItem>
+                <NavItem>
+                  <NavLink style={{color:`black`}} href="/portfolio/">Portfolio</NavLink>
+                </NavItem>
+              
                 {/* <NavItem>
                   <NavLink style={{color:`black`}} href="/company/">Company</NavLink>
                 </NavItem>
