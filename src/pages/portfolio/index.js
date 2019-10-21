@@ -20,9 +20,10 @@ const PortfolioPage = ({ data }) => {
         pageTitle="Our Work"
       /> */}
                   
-      <h2 className="page-title">Our Work</h2>
 
-      <Container>
+      <div className="page-container">
+      <h2 className="red-font">Our Work</h2>
+      <h5>We proudly present...</h5>
         <Row className="no-gutters">
           {data.allMarkdownRemark.edges.map((project, index) => {
             const projectData = project.node;
@@ -31,7 +32,7 @@ const PortfolioPage = ({ data }) => {
             )
           })}
         </Row>
-      </Container>
+      </div>
 
     </Layout>
   )

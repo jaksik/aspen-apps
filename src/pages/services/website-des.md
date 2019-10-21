@@ -1,7 +1,8 @@
 ---
 templateKey: product
-type: product
-title: Basecamp
+type: service
+image: ../../images/graphics/custom-code.png
+title: Website Design
 pageTitle: Bla Bla
 subTitle: Examples Include
 price: $3,250

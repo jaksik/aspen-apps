@@ -1,5 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
+
 import Layout from "../components/layout"
 import PageHeader from "../components/page-header"
 import "./contact.css"
@@ -8,8 +10,17 @@ const ContactPage = ({ data }) => {
     return (
         <Layout>
 
-          <h4 style={{width:`100%`, textAlign:`center`, marginTop:`50px`}} className="red-font">Go Ahead, Ask Us Anything.</h4>
-
+          <div className="page-container row">
+          
+            <div className="col col-8">
+              <h2 className="red-font">Go Ahead, Ask Us Anything.</h2>
+              <h5>Seriously, ask us anything.</h5>
+              <p>Were here to form partnerships, not transactions. We enjoy being able to create a valuable platform for your business and want to know how we can help.</p>  
+            </div>
+            <div className="col col-4">
+              <Img fluid={data.file.childImageSharp.fluid} />
+            </div>
+          </div>
           <form
             name="contact"
             method="post"
@@ -44,7 +55,7 @@ export default ContactPage
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "goat.png" }) {
+    file(relativePath: { eq: "goat-two.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
           ...GatsbyImageSharpFluid

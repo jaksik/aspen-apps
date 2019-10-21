@@ -113,8 +113,8 @@ export const query = graphql`
             price
             pagecount
             bellsWhistles
-            services {
-              service
+            details {
+              name
               description
             }
           }

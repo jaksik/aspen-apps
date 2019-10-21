@@ -1,21 +1,24 @@
 ---
 templateKey: product
+type: product
 title: The Approach
+pageTitle: Bla Bla
+subTitle: Examples Include
 price: $1,750
 pagecount: 5
 bellsWhistles: Up to 2 Bells and Whistles
-services:
+details:
   - description: 'That''s assuming you''re very responsive, of course.'
-    service: Turnaround in 2-3 weeks
+    name: Turnaround in 3-4 weeks
   - description: >-
       Update your content whenever you want using the Netlify Content Management
       System
-    service: DIY updates with Netlify CMS
+    name: DIY updates with Netlify CMS
   - description: Your website will automatically have an easy-to-use blog and contact form.
-    service: Built-In Blog and Contact form
+    name: Built-In Blog and Contact form
   - description: >-
       Your new website will look great on wide monitors, narrow cell hones, and
       everything in between
-    service: Mobile Friendly (Responsive) Design
+    name: Mobile Friendly (Responsive) Design
 ---
 

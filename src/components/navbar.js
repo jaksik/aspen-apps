@@ -18,7 +18,7 @@ import {
   class Mainnav extends React.Component {
     constructor(props) {
       super(props);
-  
+      console.log("props", props)
       this.toggle = this.toggle.bind(this);
       this.state = {
         isOpen: false
@@ -33,7 +33,7 @@ import {
       return (
         <div style={{color:`black`}} style={{zIndex:`3`}}>
           <Navbar className="text-black" color="light" light expand="md">
-            <NavbarBrand className="start-navitem font-weight-bold" href="/" style={{color:`#f03517`}}>{this.props.siteTitle}</NavbarBrand>
+            <NavbarBrand className="font-weight-bold" href="/" style={{color:`#f03517`}}>{this.props.siteTitle}</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar >
@@ -42,11 +42,13 @@ import {
                        <a style={{ color: `black` }}>Services</a>
                     </DropdownToggle>
                     <DropdownMenu>
-                        <Link to="services/website-design" className="nav-item">
-                            <DropdownItem>
-                                Website Desgin
-                            </DropdownItem>
-                        </Link>
+                        {this.props.services.edges.map((service, index) => (
+                          <Link to={service.node.fields.slug} className="nav-item">
+                          <DropdownItem>
+                              {service.node.frontmatter.title}
+                          </DropdownItem>
+                      </Link>
+                        ))}
                         {/* <Link to="services/website-maintenance" className="nav-item">
                             <DropdownItem>
                                 Website Maintenance

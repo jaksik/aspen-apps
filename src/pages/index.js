@@ -77,12 +77,12 @@ const IndexPage = ({data}) => {
         <h2 className="page-title">Our Services</h2>
       </Col>
       <Col xs="12" sm="10">
-        <Row className="no-gutters m-2">
+        <Row className="no-gutters">
           {data.services.edges.map((service, index) => {
             const serviceData = service.node.frontmatter
             return (
               <Col xs="6" md="4" lg="3">
-                <div className="card-border m-1">
+                <div className="card-border">
                   <Link to={service.node.fields.slug} className="red-font card-border">
                     <Row className="no-gutters p-2">
                       <Img fluid={serviceData.image.childImageSharp.fluid} className="landing-image"/>
@@ -142,7 +142,7 @@ export default IndexPage
 
 export const listQuery = graphql`
   query {
-    file(relativePath: { eq: "aspens.jpg" }) {
+    file(relativePath: { eq: "peakone.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2000, quality: 100) {
           ...GatsbyImageSharpFluid
@@ -150,13 +150,6 @@ export const listQuery = graphql`
       }
     }
     creative: file(relativePath: { eq: "red.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000, quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    marketing: file(relativePath: { eq: "red.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
           ...GatsbyImageSharpFluid
@@ -189,9 +182,6 @@ export const listQuery = graphql`
             title
             image {
               childImageSharp {
-                resize(width: 1500, height: 1500) {
-                  src
-                }
                 fluid(maxWidth: 786) {
                   ...GatsbyImageSharpFluid
                 }
@@ -201,7 +191,7 @@ export const listQuery = graphql`
         }
       }
     }
-    services: allMarkdownRemark(filter: { frontmatter: {templateKey: {regex: "/service/"}}}) {
+    services: allMarkdownRemark(filter: { frontmatter: {type: {regex: "/service/"}}}) {
       edges {
         node {
           fields{

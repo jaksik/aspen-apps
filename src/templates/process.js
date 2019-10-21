@@ -13,10 +13,16 @@ const ProcessPage = ({ data }) => {
   const graphics = data.graphics.edges
   return (
     <Layout>
+
         <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
-       
-        <h2 className="page-title">Our Process</h2>
-        <Row className="no-gutters">
+        
+        <div className="page-container">
+            <h2 className="red-font">Our Process</h2>
+            <h5>Partnerships, not transactions.</h5>
+            <p>At Aspen Apps, we focus on getting to know your business inside and out that way we can make a website that suits your needs.</p>
+        </div>
+        
+         <Row className="no-gutters">
                     {data.process.edges[0].node.frontmatter.processes.map((process, index) => (
                         <Col xs="12" md="4" >
                                    <div className="card-wrapper">
@@ -35,7 +41,7 @@ const ProcessPage = ({ data }) => {
          
         
                 <Row className="no-gutters">
-                <h2 style={{width:`100%`, textAlign:`center`}} className="red-font page-subtitle">Ways we engage</h2><br/>
+                <h2 style={{width:`100%`, textAlign:`left`}} className="red-font page-subtitle">Ways we engage</h2><br/>
 
 
                     {data.process.edges[0].node.frontmatter.engagement.map((section, index) => {
@@ -45,11 +51,11 @@ const ProcessPage = ({ data }) => {
                         return (
                             <Col xs="12" md="6">
                                 <Row className="no-gutters">
-                                    <Col xs="2" style={{padding:`0px`}}>
+                                    <Col xs="2" sm="1" style={{padding:`0px`}}>
                                         <Img fluid={image.node.childImageSharp.fluid}/>
                                     </Col>
                                     <Col xs="10">
-                                        <h4 className="red-font">{section.title}</h4>
+                                        <h4 className="">{section.title}</h4>
                                         <p>From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.</p>
                                     </Col>
                                 </Row>

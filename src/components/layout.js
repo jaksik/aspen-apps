@@ -21,12 +21,24 @@ const Layout = ({ children }) => {
           title
         }
       }
+      services: allMarkdownRemark(filter: { frontmatter: {type: {regex: "/service/"}}} sort: { order: DESC, fields: [frontmatter___date] }) {
+        edges {
+          node {
+            fields{
+              slug
+            }
+            frontmatter {
+              title
+            }
+          }
+        }
+      }
     }
   `)
 
   return (
     <>
-      <Navbar siteTitle={data.site.siteMetadata.title} />
+      <Navbar siteTitle={data.site.siteMetadata.title} services={data.services}/>
         <main>{children}</main>
         <Footer/>
     </>

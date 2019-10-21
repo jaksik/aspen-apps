@@ -17,7 +17,7 @@ export default ({ data }) => {
         <Row className="no-gutters">
           <Col xs="12" lg="8">
             <div className="p-md-5 p-lg-1 m-md-2 m-lg-0 m-xl-2">
-              <h4 className="red-font">{frontmatter.price} Gets you Everything you Need and Nothing You Don't</h4>
+              <h3 className="red-font">{frontmatter.pageTitle}</h3>
               <h6>What Will It Cost?</h6>
               <p>Coding is our passion, we see coding as an opportunity to bring dreams and ideas into reality. If we don't know how to do something, we learn how to do it. Because that's who we are.</p>
               <p><strong>Timeframe: </strong>Coding is our passion, we see coding as an opportunity to bring dreams and ideas into reality. If we don't know how to do something, we learn how to do it. Because that's who we are.</p>    
@@ -26,8 +26,9 @@ export default ({ data }) => {
 
           <Col xs="12" lg="4" className="">
            <div className="p-md-5 p-lg-1 m-md-2 m-lg-0 m-xl-2">
-            <h4 style={{textAlign:`center`, width:`100%`}} className="red-font">What's In The Box</h4>
+            <h4 style={{textAlign:`center`, width:`100%`}} className="red-font">{frontmatter.subTitle}</h4>
               <div className="accordian-wrapper">
+                <div style={{display:(frontmatter.type === "service" ? `none` : `block`)}}>
                 <h4 className="accordian-title">{frontmatter.title} Website Package</h4>
                 <div className="accordian-cell">
                     <span className="accordian-price">{frontmatter.price}</span>
@@ -42,8 +43,9 @@ export default ({ data }) => {
                   <div style={{display:(frontmatter.bellsWhistles ? `block` : `none`)}}>
                         <Collapse service={frontmatter.bellsWhistles} description="Bells and Whistles are extra add ons." show={true} />
                       </div>
-                {frontmatter.services.map((service, i) => (
-                  <Collapse service={service.service} description={service.description} />
+                </div>
+                {frontmatter.details.map((service, i) => (
+                  <Collapse service={service.name} description={service.description} />
                   ))} 
               </div>
            </div>
@@ -59,12 +61,15 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
+        type
         title
+        pageTitle
+        subTitle
         price
         pagecount
         bellsWhistles
-        services {
-          service
+        details {
+          name
           description
         }
       }
