@@ -15,10 +15,10 @@ processes:
     description: We dig deep to learn about your business, your goals, and your vision. We identify the pain points, pinpoint any potential obstacles, and determine the full scope of the issues that need to be addressed.
 engagement:
   - title: Full Site Build
-    graphic: hourly
+    graphic: web-design
     description: We dig deep to learn about your business, your goals, and your vision. We identify the pain points, pinpoint any potential obstacles, and determine the full scope of the issues that need to be addressed.
   - title: Rescues
-    graphic: hourly
+    graphic: copywriting
     description: We dig deep to learn about your business, your goals, and your vision. We identify the pain points, pinpoint any potential obstacles, and determine the full scope of the issues that need to be addressed.
   - title: Digital Marketing
     graphic: hourly

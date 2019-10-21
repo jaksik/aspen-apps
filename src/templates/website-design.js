@@ -2,10 +2,10 @@ import React from "react"
 import { graphql, Link } from 'gatsby'
 import { Container, Row, Col, Button } from "reactstrap"
 import Img from "gatsby-image"
-import Layout from "../../../components/layout"
-import PageHeader from "../../../components/page-header"
-import SEO from "../../../components/seo"
-import Collapse from "../../../components/collapse"
+import Layout from "../components/layout"
+import PageHeader from "../components/page-header"
+import SEO from "../components/seo"
+import Collapse from "../components/collapse"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ServicesPage = ({ data }) => {
@@ -72,8 +72,8 @@ const ServicesPage = ({ data }) => {
                         <Collapse service={frontmatter.bellsWhistles} description="Bells and Whistles are extra add ons." show={true} />
                       </div>
 
-                    {frontmatter.services.map((service, i) => (
-                      <Collapse service={service.service} description={service.description} />
+                    {frontmatter.details.map((service, i) => (
+                      <Collapse service={service.name} description={service.description} />
                     ))}
                     <div className="accordian-cell">
                       <Link to={node.node.fields.slug}>
@@ -94,7 +94,22 @@ const ServicesPage = ({ data }) => {
 export default ServicesPage
 
 export const query = graphql`
-  query {
+query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      frontmatter {
+        type
+        title
+        pageTitle
+        subTitle
+        price
+        pagecount
+        bellsWhistles
+        details {
+          name
+          description
+        }
+      }
+    }
     file(relativePath: { eq: "graphics/logo-design.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
@@ -102,7 +117,7 @@ export const query = graphql`
         }
       }
     }
-    allMarkdownRemark(filter: { frontmatter: {templateKey: {regex: "/product/"}}} sort: { order: ASC, fields: [frontmatter___price] }) {
+    allMarkdownRemark(filter: { frontmatter: {type: {regex: "/product/"}}} sort: { order: ASC, fields: [frontmatter___price] }) {
       edges {
         node {
           fields{

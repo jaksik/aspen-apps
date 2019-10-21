@@ -11,14 +11,13 @@ import "../styles/index.css"
 import "./index.css"
 
 const IndexPage = ({data}) => {
-  console.log("data", data)
   const info = data.allMarkdownRemark.edges;
   return (
   <Layout>
     <SEO title="Home" />
 
     <div style={{position: `relative`, height: `65vh`, overflow:`hidden`}}>
-         <Img fluid={data.file.childImageSharp.fluid} style={{position: `absolute`, zIndex:`1`, height: `65vh`, width: `100%`}}/>
+   <Img fluid={data.file.childImageSharp.fluid} style={{position: `absolute`, zIndex:`1`, height: `65vh`, width: `100%`}}/>
          <div className="header-overlay"></div>
          <div className="header-title" style={{width: `100%`}}>
             {/* <h4 style={{fontSize:`17px`, color:`orange`, fontWeight:`bold`}}>Discover</h4> */}
@@ -35,11 +34,12 @@ const IndexPage = ({data}) => {
       </div>
       <div className="slant pt-5 pb-5">
          <div className="slant-container text-center">
-            <h4>How Can We Help You?</h4>
-            <h3 className="landing-subtitle red-font">It's our passion to collaborate closely and create elegant technologies that help your business thrive.</h3>
+            <h2 className="red-font">How Can We Help You?</h2>
+            <h3 className="landing-subtitle">It's our passion to collaborate closely and create elegant technologies that help your business thrive.</h3>
          </div>
       </div>
 
+    <div className="page-container">
     <Row className="no-gutters justify-content-center">
       <Col xs="12" md="4" >
         <div className="card-wrapper">
@@ -69,19 +69,22 @@ const IndexPage = ({data}) => {
         </div>
       </Col>
     </Row>
+    </div>
 
     <Divider button="Aspen Apps's Story" address="/services"/>
+    <div className="page-container">
 
     <Row className="no-gutters justify-content-center">
       <Col xs="12">
         <h2 className="page-title">Our Services</h2>
       </Col>
-      <Col xs="12" sm="10">
+      <Col xs="12">
         <Row className="no-gutters">
           {data.services.edges.map((service, index) => {
             const serviceData = service.node.frontmatter
             return (
               <Col xs="6" md="4" lg="3">
+                <div className="card-wrapper">
                 <div className="card-border">
                   <Link to={service.node.fields.slug} className="red-font card-border">
                     <Row className="no-gutters p-2">
@@ -92,16 +95,19 @@ const IndexPage = ({data}) => {
                     </Row>
                   </Link>
                 </div>
+                </div>
               </Col>        
             )
           })}
         </Row>
       </Col>
     </Row>
+    </div>
 
     <Divider button="See Our Prices" address="/services/pricing" />
 
       
+      <div className="page-container">
       <Row className="no-gutters justify-content-center">
         <Col xs="12">
           <h2 className="page-title">Portfolio</h2>
@@ -113,28 +119,31 @@ const IndexPage = ({data}) => {
               )
           })}
         </Row>
+      </div>
     
     <Divider button="See More Of Our Work" address="/portfolio" />
 
-    <Row className="no-gutters justify-content-center">
-      <Col xs="12">
-        <h2 className="page-title">Testimonials</h2>
-      </Col>
-      <Col xs="12" md="6">
-          <p style={{textAlign:`center`}}>I had a great experience working with Conner at Jaksik web development. Conner built a website from scratch for my small business that has greatly increased my client market reach.
+    <div className="page-container">
+      <Row className="no-gutters justify-content-center">
+        <Col xs="12"></Col>
+          <h2 className="page-title">Testimonials</h2>
+        <Col xs="12" md="6">
+            <p style={{textAlign:`center`}}>I had a great experience working with Conner at Jaksik web development. Conner built a website from scratch for my small business that has greatly increased my client market reach.
 
-Conner help me to outline the most important element needs of my website and he made sure to build the website around them. Conner set realistic timelines and kept track of our phone discussions through follow-up email transcripts of the work to be completed. 
+              Conner help me to outline the most important element needs of my website and he made sure to build the website around them. Conner set realistic timelines and kept track of our phone discussions through follow-up email transcripts of the work to be completed. 
 
-Conner was very flexible to adjust any visual and grammatical elements that tailored the website to my needs.
+              Conner was very flexible to adjust any visual and grammatical elements that tailored the website to my needs.<br/>
 
-After getting the website live, Conner worked with me to create an admin portal so that I can make any minor adjustments such as pricing, timing, and location updates.
+              After getting the website live, Conner worked with me to create an admin portal so that I can make any minor adjustments such as pricing, timing, and location updates.
 
-Jaksik web development has succeeded in allowing my business to be more interactive for customers and simple to find on Google. This has translated to more costumer contacts and referrals. 
+              Jaksik web development has succeeded in allowing my business to be more interactive for customers and simple to find on Google. This has translated to more costumer contacts and referrals. 
 
-I recommend Jaksik web development to anyone looking for a straightforward website buildout. Conner is a webpage developer who is there to design to your needs from the top to bottom.</p>
-      </Col>
-    </Row>
-    
+              I recommend Jaksik web development to anyone looking for a straightforward website buildout. Conner is a webpage developer who is there to design to your needs from the top to bottom.</p>
+        </Col>
+      </Row>
+    </div>
+    <Divider button="Contact Us" address="/contact/"/>
+
   </Layout>
 )}
 

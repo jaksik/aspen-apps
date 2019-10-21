@@ -1,7 +1,7 @@
 ---
-templateKey: product
+templateKey: website-design
 type: service
-image: ../../images/graphics/custom-code.png
+image: ../../../images/graphics/web-design.png
 title: Website Design
 pageTitle: Bla Bla
 subTitle: Examples Include

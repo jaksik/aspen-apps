@@ -27,7 +27,7 @@ export default ({ data }) => {
           <Col xs="12" lg="4" className="">
            <div className="p-md-5 p-lg-1 m-md-2 m-lg-0 m-xl-2">
             <h4 style={{textAlign:`center`, width:`100%`}} className="red-font">{frontmatter.subTitle}</h4>
-              <div className="accordian-wrapper">
+              <div className="accordian-wrapper" style={{borderTop:(frontmatter.type === "product" ? `` : `none`)}}>
                 <div style={{display:(frontmatter.type === "service" ? `none` : `block`)}}>
                 <h4 className="accordian-title">{frontmatter.title} Website Package</h4>
                 <div className="accordian-cell">

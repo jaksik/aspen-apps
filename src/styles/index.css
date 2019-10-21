@@ -8,10 +8,10 @@
 
 .page-title {
   text-align: center;
-  font-family: cursive;
-  font-size: 40px;
+  font-family: 'playball';
+  font-size: 60px;
   width: 100%;
-  margin: 55px 0;
+  margin-bottom: 20px;
 }
 
 
@@ -69,7 +69,7 @@
 }
 
 .divider-row {
-  margin: 18px 0px;
+  margin: 40px 0px;
 }
 
 .divider-button {
@@ -121,12 +121,16 @@
   .page-title {
     font-size: 65px;
     margin: 0px 0px;
+    margin-bottom: 40px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .page-container {
     margin: 40px;
+  }
+  .page-title {
+    font-size: 80px;
   }
 }
 

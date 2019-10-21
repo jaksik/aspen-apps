@@ -1,9 +1,9 @@
 ---
 templateKey: product
 type: service
-image: ../../images/graphics/custom-code.png
+image: ../../images/graphics/hourly.png
 title: Hourly
-pageTitle: From Audits to Updates, We do it
+pageTitle: From Consulting to Audits, We do it
 subTitle: Examples Include
 price: $3,250
 pagecount: 10

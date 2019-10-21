@@ -1,10 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Container, Row } from "reactstrap"
+import { Row } from "reactstrap"
 import Layout from "../../components/layout"
 import PortfolioCard from "../../components/portfolio-card"
 import SEO from "../../components/seo"
-import PageHeader from "../../components/page-header"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const PortfolioPage = ({ data }) => {
@@ -12,14 +11,7 @@ const PortfolioPage = ({ data }) => {
   return (
     <Layout>
 
-      <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
-{/* 
-      <PageHeader 
-        image={data.file.childImageSharp.fluid} 
-        headerTitle="Portfolio" 
-        pageTitle="Our Work"
-      /> */}
-                  
+      <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />        
 
       <div className="page-container">
       <h2 className="red-font">Our Work</h2>

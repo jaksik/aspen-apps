@@ -1,7 +1,7 @@
 ---
 templateKey: product
 type: service
-image: ../../images/graphics/custom-code.png
+image: ../../images/graphics/maintenance.png
 title: Website Maintenance
 pageTitle: Bla Bla
 subTitle: Examples Include
