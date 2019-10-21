@@ -1,9 +1,9 @@
 ---
-templateKey: website-design
+templateKey: product
 title: The Approach
 price: $1,750
 pagecount: 5
-bellsWhistles: null
+bellsWhistles: Up to 2 Bells and Whistles
 services:
   - description: 'That''s assuming you''re very responsive, of course.'
     service: Turnaround in 2-3 weeks

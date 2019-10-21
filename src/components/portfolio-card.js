@@ -7,7 +7,8 @@ import "./portfolio-card.css"
 function PortfolioCard ({ projectData, key}) {
     return (
       <Col xs="6" sm="6">
-        <div className="portfolio-wrapper m-2">
+        <div className="card-wrapper">
+          <div className="card-border">
           <Link to={projectData.fields.slug} style={{textDecoration:`none`}}>
             <div style={{position:`relative`, overflow:`hidden`}} className="portfolio-container">
               <div className="portfolio-overlay" style={{position:`absolute`}}>
@@ -17,6 +18,7 @@ function PortfolioCard ({ projectData, key}) {
             </div>
             <h5 className="card-title mb-0 p-2 d-xl-none">{projectData.frontmatter.title}</h5>
           </Link>
+          </div>
         </div>
       </Col>
     )

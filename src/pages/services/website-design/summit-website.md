@@ -1,9 +1,9 @@
 ---
-templateKey: website-design
+templateKey: product
 title: The Summit
 price: $7,000
 pagecount: 10
-bellsWhistles: 3
+bellsWhistles: Up to 2 Bells and Whistles
 services:
   - description: 'That''s assuming you''re very responsive, of course.'
     service: Turnaround in 4-6 weeks

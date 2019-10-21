@@ -1,10 +1,10 @@
 ---
-templateKey: website-design
+templateKey: product
 title: Basecamp
 price: $3,250
 pagecount: 10
 emailAdresses: Configuring up to 10 email addresses
-bellsWhistles: 2
+bellsWhistles: Up to 2 Bells and Whistles
 services:
   - description: 'That''s assuming you''re very responsive, of course.'
     service: Turnaround in 3-4 weeks

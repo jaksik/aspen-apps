@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import PageHeader from "../components/page-header"
-import "../styles/contact.css"
+import "./contact.css"
 
 const ContactPage = ({ data }) => {
     return (

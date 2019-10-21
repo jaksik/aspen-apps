@@ -7,7 +7,6 @@ import PageHeader from "../../../components/page-header"
 import SEO from "../../../components/seo"
 import Collapse from "../../../components/collapse"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../services.css"
 
 const ServicesPage = ({ data }) => {
   console.log("data: ", data)
@@ -17,7 +16,8 @@ const ServicesPage = ({ data }) => {
 
       <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />    
 
-        {/* <Row className="no-gutters mt-4 mb-4">
+       <div className="page-container">
+          {/* <Row className="no-gutters mt-4 mb-4">
           <Col xs="2" md="2" lg="1" className="offset-1 offset-md-0 offset-lg-1">
           <Img fluid={data.file.childImageSharp.fluid}/>
           </Col>
@@ -27,56 +27,55 @@ const ServicesPage = ({ data }) => {
         </Row>
  */}
 
-      <Row className="no-gutters">
-        <h2 className="red-font page-subtitle">Website Design & Development Packages</h2>
+        <h2 style={{textAlign:`center`}} className="red-font page-subtitle">Website Design & Development Packages</h2><br/>
         <h6 className="section-subtitle text-center">Every website we design and develop includes the following:</h6>
 
-        <Col xs="10" md="12" xl="10" className="offset-1 offset-md-0 offset-xl-1 pl-md-3 pr-md-3 pl-lg-4 pr-lg-4 mt-5 mb-5">
-          <Row className="no-gutters justify-content-center">
-            <Col xs="12" md="3" className="p-md-2">
+          <Row className="no-gutters justify-content-center m-md-3">
+            <Col xs="12" md="3" className="p-md-1">
                 <h5>Easy to Update with Netlify</h5>
                 <p className="page-text">We always include lifetime, offsite backups, lifetime daily security scans by Sucuri, and lifetime monitoring by UpTime.</p>
               </Col>
-              <Col xs="12" md="3" className="p-md-2">
+              <Col xs="12" md="3" className="p-md-1">
                 <h5>Mobile-Friendly (Responsive)</h5>
                 <p className="page-text">We always include lifetime, offsite backups, lifetime daily security scans by Sucuri, and lifetime monitoring by UpTime.</p>
               </Col>
-              <Col xs="12" md="3" className="p-md-2">
+              <Col xs="12" md="3" className="p-md-1">
                 <h5>Fast, Secure, Reliable</h5>
                 <p className="page-text">We always include lifetime, offsite backups, lifetime daily security scans by Sucuri, and lifetime monitoring by UpTime.</p>
               </Col>
-              <Col xs="12" md="3" className="p-md-2">
+              <Col xs="12" md="3" className="p-md-1">
                 <h5>Search Engine Optimized (SEO)</h5>
                 <p className="page-text">We always include lifetime, offsite backups, lifetime daily security scans by Sucuri, and lifetime monitoring by UpTime.</p>
               </Col>
           </Row>
-        </Col>
     
 
-        <Col xs="12" sm="8" md="10" lg="12" xl="10" className="offset-sm-2 offset-md-1 offset-lg-0 offset-xl-1">
           <Row className="no-gutters">
             {data.allMarkdownRemark.edges.map((node, index) => {
               const frontmatter = node.node.frontmatter
+          
               return (
                 <Col xs="12" md="6" lg="3" className="mb-5">
-                  <div className="service-wrapper">
-                    <h3 className="service-title">{frontmatter.title}</h3>
-                    <div className="service-cell">
-                        <span className="service-price">{frontmatter.price}</span>
+                  <div className="accordian-wrapper">
+                    <h3 className="accordian-title">{frontmatter.title}</h3>
+                    <div className="accordian-cell">
+                        <span className="accordian-price">{frontmatter.price}</span>
                       </div>
-                    <div className="service-cell">
+                    <div className="accordian-cell">
                         <p>Up to {frontmatter.pagecount} pages of content</p>
                       </div>
-                    <div className="service-cell">
+                    <div className="accordian-cell">
                         <p>Configuring up to {frontmatter.pagecount} email addreses</p>
                       </div>
-                    <div className="service-cell" style={{display:(frontmatter.bellsWhistles ? `block` : `none`)}}>
-                        <p>Up to {frontmatter.bellsWhistles} Bells & Whistles. <Link to="services/website-design/bells-and-whistles/">Learn More</Link></p>
+
+                      <div style={{display:(frontmatter.bellsWhistles ? `block` : `none`)}}>
+                        <Collapse service={frontmatter.bellsWhistles} description="Bells and Whistles are extra add ons." show={true} />
                       </div>
+
                     {frontmatter.services.map((service, i) => (
-                      <Collapse service={service} />
+                      <Collapse service={service.service} description={service.description} />
                     ))}
-                    <div className="service-cell">
+                    <div className="accordian-cell">
                       <Link to={node.node.fields.slug}>
                         <Button className="red-button">Learn More</Button>
                       </Link>
@@ -86,9 +85,8 @@ const ServicesPage = ({ data }) => {
               )}
             )}
           </Row>
-        </Col>
-      </Row>
 
+       </div>
     </Layout>
   )
 }
@@ -104,7 +102,7 @@ export const query = graphql`
         }
       }
     }
-    allMarkdownRemark(filter: { frontmatter: {templateKey: {regex: "/website-design/"}}} sort: { order: ASC, fields: [frontmatter___price] }) {
+    allMarkdownRemark(filter: { frontmatter: {templateKey: {regex: "/product/"}}} sort: { order: ASC, fields: [frontmatter___price] }) {
       edges {
         node {
           fields{

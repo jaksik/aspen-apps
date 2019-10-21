@@ -1,7 +1,7 @@
 ---
 templateKey: process
 title: Our Process
-image: ../../images/graphicscustom-code.png
+image: ../../images/graphics/custom-code.png
 description: Our development process.
 processes:
   - title: Discover

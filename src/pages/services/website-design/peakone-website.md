@@ -1,9 +1,9 @@
 ---
-templateKey: website-design
+templateKey: product
 title: Peak One
 price: $5,500
 pagecount: 20
-bellsWhistles: 4
+bellsWhistles: Up to 2 Bells and Whistles
 services:
   - description: 'That''s assuming you''re very responsive, of course.'
     service: Turnaround in 3-4 weeks

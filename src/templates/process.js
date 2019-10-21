@@ -4,7 +4,7 @@ import { Row, Col } from "reactstrap"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Divider from "../components/landing-divider"
+import Divider from "../components/divider-button"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/index.css'
 
@@ -16,25 +16,27 @@ const ProcessPage = ({ data }) => {
         <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
        
         <h2 className="page-title">Our Process</h2>
-
-          <Row className="no-gutters">
-            <Col xs="10" md="10" lg="10" className="offset-1 offset-md-1 offset-lg-1">
-                <Row className="no-gutters">
+        <Row className="no-gutters">
                     {data.process.edges[0].node.frontmatter.processes.map((process, index) => (
                         <Col xs="12" md="4" >
-                            {/* <Img fluid={data.discover.childImageSharp.fluid} className="landing-image" style={{maxWidth:`100px`}}/> */}
-                            <div className="card-border m-1 p-2">
-                                <h4 className="card-title">{process.title}</h4>
-                                <p className="card-text">{process.description}</p>
+                                   <div className="card-wrapper">
+                                   <div className="card-body card-border">
+                                   <Img fluid={data.discover.childImageSharp.fluid} className="landing-image" style={{maxWidth:`100px`}}/>
+
+                                    <h4 className="card-title">{process.title}</h4>
+                                    <p className="card-text">{process.description}</p>
                             </div>
+                                   </div>
                         </Col>
                     ))}
                 </Row>
-
+        
+         <div className="page-container">
+         
+        
                 <Row className="no-gutters">
-                    <Col xs="12">
-                        <h3 className="page-title">Ways We Engage</h3>
-                    </Col>
+                <h2 style={{width:`100%`, textAlign:`center`}} className="red-font page-subtitle">Ways we engage</h2><br/>
+
 
                     {data.process.edges[0].node.frontmatter.engagement.map((section, index) => {
                         const image = graphics.find(n => {
@@ -55,8 +57,8 @@ const ProcessPage = ({ data }) => {
                         )
                     })}
                 </Row>
-            </Col>
-          </Row>
+      
+         </div>
 
        <Divider title="PORTFOLIO" subtitle="Need Proof?" button="Contact Us" address="/contact" />
 
@@ -68,6 +70,13 @@ export default ProcessPage
 
 export const query = graphql`
   query {
+    discover: file(relativePath: { eq: "red.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     graphics: allFile(filter: {relativePath: {regex: "/graphics/.*.png/"}}) {
         edges {
           node {

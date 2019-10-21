@@ -17,6 +17,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Price", name: "price", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
+      - {label: "Bells and Whistles", name: "bellsWhistles", widget: "string"}
       - {label: "Services", name: services, widget: list, fields: [{label: Service, name: service, widget: string}, {label: Description, name: description, widget: string}]}
   
   - name: "services"

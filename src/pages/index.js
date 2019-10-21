@@ -2,12 +2,13 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { Container, Row, Col, Button } from "reactstrap"
 import Layout from "../components/layout"
+import Divider from "../components/divider-button"
 import PortfoliCard from "../components/portfolio-card"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/index.css"
-import Divider from "../components/landing-divider"
+import "./index.css"
 
 const IndexPage = ({data}) => {
   console.log("data", data)
@@ -40,25 +41,31 @@ const IndexPage = ({data}) => {
       </div>
 
     <Row className="no-gutters justify-content-center">
-      <Col xs="12" md="4" className="p-3">
-        <div className="landing-card card-border p-2">
+      <Col xs="12" md="4" >
+        <div className="card-wrapper">
+        <div className="card-body card-border">
           <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
           <h4 className="box-title">Creative</h4>
           <p>Building the functionality, tools, and assets to fashion a look, feel, tone and experience consistent with your brand and your mission.</p>
         </div>
-      </Col>
-      <Col xs="12" md="4" className="p-3">
-        <div className="landing-card card-border p-2">
-          <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
-          <h4 className="box-title">Marketing</h4>
-          <p>Creating seamless, reliable and effective solutions from engagement through post-purchase delight and back again.</p>
         </div>
       </Col>
-      <Col xs="12" md="4" className="p-3">
-        <div className="landing-card card-border p-2">
+      <Col xs="12" md="4" >
+        <div className="card-wrapper">
+        <div className="card-body card-border">
+          <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
+          <h4 className="box-title">Marketing</h4>
+          <p>Building the functionality, tools, and assets to fashion a look, feel, tone and experience consistent with your brand and your mission.</p>
+        </div>
+        </div>
+      </Col>
+      <Col xs="12" md="4" >
+        <div className="card-wrapper">
+        <div className="card-body card-border">
           <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
           <h4 className="box-title">Technology</h4>
-          <p>Smart, strategic thinking that provides a pathway and a plan to successfully grow your business and your brand.</p>
+          <p>Building the functionality, tools, and assets to fashion a look, feel, tone and experience consistent with your brand and your mission.</p>
+        </div>
         </div>
       </Col>
     </Row>
@@ -94,23 +101,19 @@ const IndexPage = ({data}) => {
 
     <Divider button="See Our Prices" address="/services/pricing" />
 
-    <Row className="no-gutters justify-content-center">
-      <Col xs="12">
+      
+      <Row className="no-gutters justify-content-center">
+        <Col xs="12">
           <h2 className="page-title">Portfolio</h2>
       </Col>
-      <Col xs="12" md="10">
-        <Row className="no-gutters">
           {info.map((project, index) => {
-            console.log()
             let projectData = project.node;
             return (
               <PortfoliCard projectData={projectData}/>             
               )
           })}
         </Row>
-      </Col>
-    </Row>
-
+    
     <Divider button="See More Of Our Work" address="/portfolio" />
 
     <Row className="no-gutters justify-content-center">
