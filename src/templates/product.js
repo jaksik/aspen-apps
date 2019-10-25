@@ -17,7 +17,7 @@ export default ({ data }) => {
         <Row className="no-gutters">
           <Col xs="12" lg="8">
             <div className="p-md-5 p-lg-1 m-md-2 m-lg-0 m-xl-2">
-              <h3 className="red-font">{frontmatter.pageTitle}</h3>
+              <h3 className="red-font">{frontmatter.title}</h3>
               <h6>What Will It Cost?</h6>
               <p>Coding is our passion, we see coding as an opportunity to bring dreams and ideas into reality. If we don't know how to do something, we learn how to do it. Because that's who we are.</p>
               <p><strong>Timeframe: </strong>Coding is our passion, we see coding as an opportunity to bring dreams and ideas into reality. If we don't know how to do something, we learn how to do it. Because that's who we are.</p>    
@@ -63,7 +63,6 @@ export const query = graphql`
       frontmatter {
         type
         title
-        pageTitle
         subTitle
         price
         pagecount

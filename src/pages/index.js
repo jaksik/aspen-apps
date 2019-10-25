@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import { Container, Row, Col, Button } from "reactstrap"
+import { Row, Col, Button } from "reactstrap"
 import Layout from "../components/layout"
 import Divider from "../components/divider-button"
 import PortfoliCard from "../components/portfolio-card"
@@ -21,7 +21,7 @@ const IndexPage = ({data}) => {
          <div className="header-overlay"></div>
          <div className="header-title" style={{width: `100%`}}>
             {/* <h4 style={{fontSize:`17px`, color:`orange`, fontWeight:`bold`}}>Discover</h4> */}
-            <h1 style={{fontWeight:`bold`, fontSize:`3.5rem`}}>Inspired By Nature.<br/>Driven By Passion</h1>
+            <h1 style={{fontWeight:`bold`, fontSize:`3.5rem`}}>Business First.<br/>Online Second.</h1>
             <h4 style={{maxWidth:`70%`, textAlign:`center`, margin:`15px auto`, fontSize:`20px`}}>Website & Mobile App Development</h4>
             <Link to="/portfolio">
               <Button style={{marginRight:`25px`}} className="green-button">Our Work</Button>
@@ -159,13 +159,6 @@ export const listQuery = graphql`
       }
     }
     creative: file(relativePath: { eq: "red.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000, quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    technology: file(relativePath: { eq: "red.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
           ...GatsbyImageSharpFluid

@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar siteTitle={data.site.siteMetadata.title} services={data.services}/>
-        <main>{children}</main>
+        <main style={{minHeight:`65vh`}}>{children}</main>
         <Footer/>
     </>
   )

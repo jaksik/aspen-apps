@@ -3,8 +3,8 @@ templateKey: product
 type: service
 image: ../../images/graphics/maintenance.png
 title: Website Maintenance
-pageTitle: Bla Bla
-subTitle: Examples Include
+pageTitle: Website Maintenance and Updates
+subTitle: Maintenance services
 price: $3,250
 pagecount: 10
 emailAdresses: Configuring up to 10 email addresses
