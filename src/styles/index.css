@@ -2,18 +2,32 @@
   margin: 20px;
 }
 
+.third-font {
+  font-size: 19px;
+}
+
 .red-font {
   color: #f03517;
 }
 
-.page-title {
+.red-background {
+ background-color: #f03517; 
+}
+
+.landing-title {
   text-align: center;
   font-family: 'playball';
   font-size: 60px;
   width: 100%;
   margin-bottom: 20px;
 }
-
+.page-title {
+  font-weight: lighter;
+  margin-top: 40px;
+}
+.page-text {
+  font-size: 17px;
+}
 
 .card-wrapper {
   padding: 10px 20px;
@@ -48,17 +62,20 @@
   background: forestgreen;
 }
 
-#button-two {
+.green-button:hover {
   border: 2px solid #f03517;
   background: none;
 }
 
-#button-two:hover {
+.red-button {
+  border: 2px solid #f03517;
+  background: none;
+}
+
+.red-button:hover {
   border-color: forestgreen;
   background: forestgreen;
 }
-
-
 
 .divider-line {
   border-bottom: 1px solid #f03517;
@@ -84,9 +101,6 @@
   border: 1px solid #f03517;
   color: white
 }
-
-
-
 
 .accordian-wrapper {
   border: 1px solid rgba(128, 128, 128, 0.452);
@@ -118,7 +132,7 @@
     margin: 75px 0;
   }
   
-  .page-title {
+  .landing-title {
     font-size: 65px;
     margin: 0px 0px;
     margin-bottom: 40px;
@@ -129,7 +143,7 @@
   .page-container {
     margin: 40px;
   }
-  .page-title {
+  .landing-title {
     font-size: 80px;
   }
 }

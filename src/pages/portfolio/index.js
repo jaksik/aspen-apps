@@ -14,13 +14,14 @@ const PortfolioPage = ({ data }) => {
       <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />        
 
       <div className="page-container">
-      <h2 className="red-font">Our Work</h2>
+      <h2 className="red-font page-title">Our Work</h2>
       <h5>We proudly present...</h5>
         <Row className="no-gutters">
           {data.allMarkdownRemark.edges.map((project, index) => {
+            console.log("index: ", index)
             const projectData = project.node;
             return (
-              <PortfolioCard projectData={projectData}/>             
+              <PortfolioCard projectData={projectData} key={index} cardKey={index}/>             
             )
           })}
         </Row>

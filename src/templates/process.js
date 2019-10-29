@@ -17,17 +17,17 @@ const ProcessPage = ({ data }) => {
       <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
       
       <div className="page-container">
-        <h2 className="red-font">Our Process</h2>
+        <h2 className="red-font page-title">Our Process</h2>
         <h5>Partnerships, not transactions.</h5>
-        <p>At Aspen Apps, we focus on getting to know your business inside and out that way we can make a website that suits your needs.</p>
+        <p className="page-text">At Aspen Apps, we focus on getting to know your business inside and out that way we can make a website that suits your needs.</p>
     
-        <Row className="no-gutters mt-5 mb-5">
+        <Row className="no-gutters">
           {data.markdownRemark.frontmatter.processes.map((process, index) => (
             <Col xs="12" md="4" >
               <div className="card-wrapper">
                 <div className="card-body card-border">
                   <Img fluid={data.discover.childImageSharp.fluid} className="landing-image" style={{maxWidth:`100px`}}/>
-                  <h4 className="card-title">{process.title}</h4>
+                  <h4 className="card-title" style={{margin:`15px auto`}}>{process.title}</h4>
                   <p className="card-text">{process.description}</p>
                 </div>
               </div>
@@ -36,7 +36,7 @@ const ProcessPage = ({ data }) => {
         </Row>
 
         <Row className="no-gutters">
-          <h2 style={{width:`100%`, textAlign:`left`}} className="red-font page-subtitle">Ways we engage</h2><br/>
+          <h2 style={{width:`100%`, textAlign:`left`, marginBottom:`20px`}} className="red-font page-title">Ways we engage</h2><br/>
             {data.markdownRemark.frontmatter.engagement.map((section, index) => {
               const image = graphics.find(n => {
                   return n.node.relativePath === `graphics/${section.graphic}.png`;
@@ -44,12 +44,12 @@ const ProcessPage = ({ data }) => {
               return (
                 <Col xs="12" md="6">
                   <Row className="no-gutters">
-                    <Col xs="2" sm="1" style={{padding:`0px`}}>
+                    <Col xs="2" sm="1" style={{marginRight:`10px`}}>
                         <Img fluid={image.node.childImageSharp.fluid}/>
                     </Col>
                     <Col xs="10">
-                        <h4 className="">{section.title}</h4>
-                        <p>From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.</p>
+                        <h5>{section.title}</h5>
+                        <p className="page-text">From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.</p>
                     </Col>
                   </Row>
                 </Col>

@@ -2,7 +2,6 @@ form {
     width: 80%;
     text-align: center;
     max-width: 576px;
-    margin: 0 auto;
 }
 
 input, select, textarea, label {
@@ -66,8 +65,14 @@ input[type="date"]:before {
     top: 0;
 }
 
+.contact-image {
+    max-height: 250px;
+}
 
 @media only screen and (min-width: 768px) {
+    .contact-image {
+        max-height: 400px;
+    }
 
     #form-sec-one {
         border-right: 2px solid lightgray;

@@ -4,7 +4,7 @@ type: service
 image: ../../images/graphics/hourly.png
 title: Hourly
 pageTitle: From Consulting to Audits
-subTitle: Examples Include
+subTitle: Hourly Services
 price: $3,250
 pagecount: 10
 emailAdresses: Configuring up to 10 email addresses
