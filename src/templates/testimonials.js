@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql, Link} from "gatsby"
 import { Button } from "reactstrap"
-import PageHeader from "../components/page-header"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -12,7 +11,6 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="About Limitless Wake" keywords={info.frontmatter.tags} />
-      <PageHeader image={info.frontmatter.image.childImageSharp.fluid} title={info.frontmatter.title} subTitle={info.frontmatter.title} description={info.frontmatter.title} titlethree={info.frontmatter.title}/>
          <Link to="/portfolio">
            Back To Portfolio
          </Link>
