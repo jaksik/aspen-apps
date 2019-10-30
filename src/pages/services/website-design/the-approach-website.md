@@ -2,8 +2,7 @@
 templateKey: product
 type: product
 title: The Approach
-pageTitle: Bla Bla
-subTitle: Examples Include
+subTitle: The Approach Website Package
 price: $1,750
 pagecount: 5
 bellsWhistles: Up to 2 Bells and Whistles
@@ -21,4 +20,6 @@ details:
       everything in between
     name: Mobile Friendly (Responsive) Design
 ---
-
+### $3,250 Gets you Everything you Need and Nothing You Don't
+##### No Compromises - Just Web Goodness
+If you want something that looks great, has up to 5 pages of info about your product, and helps your customers find you, may we please introduce you to The Halfsie website package. This package includes everything you'll need to come correct. No big whoop.

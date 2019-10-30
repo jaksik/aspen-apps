@@ -3,12 +3,10 @@ templateKey: product
 type: service
 image: ../../images/graphics/custom-code.png
 title: Custom Coding
-pageTitle: Can We Code It? Yes We Can!
-subTitle: Our Coding Expertises
+subTitle: Our Coding Expertise
 price: $3,250
 pagecount: 10
 emailAdresses: Configuring up to 10 email addresses
-bellsWhistles: Up to 2 Bells and Whistles
 details:
   - description: HTML5, CSS3, JavaScript, React JS
     name: Front End
@@ -18,3 +16,10 @@ details:
   - description: MySQL, Mongo DB, Aurora
     name: Databases
 ---
+### Can We Code it? Yes We Can!
+##### From Coding to Consulting, We Do It.
+The sky is only the limit for people who lack imagination. Whatever it is you've dreamt up, our custom code department of web developers would love to turn it into reality.
+ 
+### What Will it Cost?
+##### We'll estimate it at $155/hour
+ Due to the non-standard nature of custom code tasks, it might be very quick and affordable or it might be much, much more. It really just depends.

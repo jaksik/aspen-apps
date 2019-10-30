@@ -41,6 +41,7 @@ const ProcessPage = ({ data }) => {
               const image = graphics.find(n => {
                   return n.node.relativePath === `graphics/${section.graphic}.png`;
                 });
+                console.log("Image: ", image)
               return (
                 <Col xs="12" md="6">
                   <Row className="no-gutters">
@@ -49,7 +50,7 @@ const ProcessPage = ({ data }) => {
                     </Col>
                     <Col xs="10">
                         <h5>{section.title}</h5>
-                        <p className="page-text">From concept to launch, Irish Titan has you covered in all aspects of your digital strategy, design, development, and testing. We have a proven process (that reflects our B1O2 philosophy) to provide you with a website that is user-friendly, business-focused, and tailored for effective search engine optimization.</p>
+                        <p className="page-text">{section.description}</p>
                     </Col>
                   </Row>
                 </Col>

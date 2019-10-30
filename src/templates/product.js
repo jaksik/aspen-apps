@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Collapse from "../components/collapse"
 import Divider from "../components/divider-button"
 import SEO from "../components/seo"
+import "./index.css"
 
 export default ({ data }) => {
   const info = data.markdownRemark
@@ -16,33 +17,29 @@ export default ({ data }) => {
       <div className="page-container">
         <Row className="no-gutters">
           <Col xs="12" lg="8">
-            <div className="p-md-5 p-lg-1 m-md-2 m-lg-0 m-xl-2">
-              <h3 className="red-font page-title">{frontmatter.title}</h3>
-              <h5>What Will It Cost?</h5>
-              <p className="page-text">Coding is our passion, we see coding as an opportunity to bring dreams and ideas into reality. If we don't know how to do something, we learn how to do it. Because that's who we are.</p>
-              <p className="page-text"><strong>Timeframe: </strong>Coding is our passion, we see coding as an opportunity to bring dreams and ideas into reality. If we don't know how to do something, we learn how to do it. Because that's who we are.</p>    
-            </div>
+            <div dangerouslySetInnerHTML={{ __html: info.html }} />
           </Col>
 
           <Col xs="12" lg="4" className="">
            <div className="p-md-5 p-lg-1 m-md-2 m-lg-0 m-xl-2">
-            <h4 style={{textAlign:`center`, width:`100%`}} className="red-font page-title">{frontmatter.subTitle}</h4>
-              <div className="accordian-wrapper" style={{borderTop:(frontmatter.type === "product" ? `` : `none`)}}>
+            <div className="accordian-wrapper" style={{borderTop:(frontmatter.type === "product" ? `` : `none`)}}>
+              <div className="accordian-cell">
+              <h4 className="accordian-title">{frontmatter.subTitle}</h4>
+                    </div>
                 <div style={{display:(frontmatter.type === "service" ? `none` : `block`)}}>
-                <h4 className="accordian-title">{frontmatter.title} Website Package</h4>
-                <div className="accordian-cell">
-                    <span className="accordian-price">{frontmatter.price}</span>
-                  </div>
-                <div className="accordian-cell">
+                  <div className="accordian-cell">
+                      <span className="accordian-price">{frontmatter.price}</span>
+                    </div>
+                  <div className="accordian-cell">
                     <p>Up to {frontmatter.pagecount} pages of content</p>
                   </div>
-                <div className="accordian-cell">
+                  <div className="accordian-cell">
                     <p>Configuring up to {frontmatter.pagecount} email addreses</p>
                   </div>
 
-                  <div style={{display:(frontmatter.bellsWhistles ? `block` : `none`)}}>
-                        <Collapse service={frontmatter.bellsWhistles} description="Bells and Whistles are extra add ons." show={true} />
-                      </div>
+                  {/* <div style={{display:(frontmatter.bellsWhistles ? `block` : `none`)}}>
+                    <Collapse service={frontmatter.bellsWhistles} description="Bells and Whistles are extra add ons." show={true} />
+                  </div> */}
                 </div>
                 {frontmatter.details.map((service, i) => (
                   <Collapse service={service.name} description={service.description} />
@@ -60,13 +57,12 @@ export default ({ data }) => {
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
       frontmatter {
         type
-        title
         subTitle
         price
         pagecount
-        bellsWhistles
         details {
           name
           description
