@@ -21,11 +21,11 @@ export default ({ data }) => {
           </Col>
 
           <Col xs="12" lg="4" className="">
-           <div className="p-md-5 p-lg-1 m-md-2 m-lg-0 m-xl-2">
+           <div className="p-md-5 p-lg-1 m-md-3 m-lg-0 mt-lg-3 m-xl-2 mt-xl-3">
             <div className="accordian-wrapper" style={{borderTop:(frontmatter.type === "product" ? `` : `none`)}}>
-              <div className="accordian-cell">
-              <h4 className="accordian-title">{frontmatter.subTitle}</h4>
-                    </div>
+              <div className="accordian-cell red-background">
+                <h4 className="accordian-title red-background" style={{ color:`white` }}>{frontmatter.subTitle}</h4>
+              </div>
                 <div style={{display:(frontmatter.type === "service" ? `none` : `block`)}}>
                   <div className="accordian-cell">
                       <span className="accordian-price">{frontmatter.price}</span>

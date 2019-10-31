@@ -22,8 +22,8 @@
   margin-bottom: 20px;
 }
 .page-title {
-  font-weight: lighter;
   margin-top: 40px;
+  font-family: sans-serif;
 }
 .page-text {
   font-size: 17px;
@@ -56,6 +56,7 @@
 
 .box-title {
   margin: 45px 0 30px;
+  font-family: sans-serif;
 }
 
 .green-button {
@@ -107,9 +108,12 @@
 }
 
 .accordian-title {
-  color: #f03517;
+  background: #f03517;
+  color: white;
   text-align: center;
-  font-weight: lighter
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 15px;
 }
 
 .accordian-price {

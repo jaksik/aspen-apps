@@ -34,7 +34,7 @@ const IndexPage = ({data}) => {
       </div>
       <div className="slant">
          <div className="slant-container text-center">
-            <h2 className="red-font">How Can We Help You?</h2>
+            <h2 className="red-font page-title">How Can We Help You?</h2>
          </div>
       </div>
 

@@ -17,9 +17,9 @@ details:
     name: Databases
 ---
 ### Can We Code it? Yes We Can!
-##### From Coding to Consulting, We Do It.
+##### If You Can Dream It, We Can Code It
 The sky is only the limit for people who lack imagination. Whatever it is you've dreamt up, our custom code department of web developers would love to turn it into reality.
  
 ### What Will it Cost?
-##### We'll estimate it at $155/hour
+##### We'll estimate it at $59/hour
  Due to the non-standard nature of custom code tasks, it might be very quick and affordable or it might be much, much more. It really just depends.
