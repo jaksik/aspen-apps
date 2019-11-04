@@ -1,14 +1,15 @@
 .footer-wrapper {
     background: black;
     margin-top: 37px;
-    color: white;
+    color: #f03517;
     border-top: 1px solid black;
     margin-top: 80px;
+    height: 30vh;
 }
 
 .footer-input {
     background: none;
-    color: white;
+    color: #f03517;
     margin: 0 auto;
     width: 100%;
     padding: 10px;

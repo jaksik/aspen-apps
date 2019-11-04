@@ -16,17 +16,17 @@ const IndexPage = ({data}) => {
   <Layout>
     <SEO title="Home" />
 
-    <div style={{position: `relative`, height: `65vh`, overflow:`hidden`}}>
-      <Img fluid={data.file.childImageSharp.fluid} style={{position: `absolute`, zIndex:`1`, height: `65vh`, width: `100%`}}/>
+    <div style={{position: `relative`, height: `80vh`, overflow:`hidden`}}>
+      <Img fluid={data.file.childImageSharp.fluid} style={{position: `absolute`, zIndex:`1`, height: `80vh`, width: `100%`}}/>
       <div className="header-overlay"></div>
          <div className="header-title" style={{width: `100%`}}>
             <h1 style={{fontWeight:`bold`, fontSize:`3.5rem`}}>Business First.<br/>Online Second.</h1>
-            <h4 style={{maxWidth:`70%`, textAlign:`center`, margin:`15px auto`, fontSize:`20px`}}>Website & Mobile App Development</h4>
-            <Link to="/portfolio">
+            <h4 style={{maxWidth:`70%`, textAlign:`center`, margin:`15px auto`, fontSize:`20px`}}>Website & Mobile App Development For Your Business</h4>
+            <Link to="/our-work">
               <Button style={{marginRight:`25px`}} className="green-button">Our Work</Button>
             </Link>
             
-            <Link to="/process">
+            <Link to="/about">
               <Button className="red-button">Our Process</Button>
             </Link>
          </div>
@@ -43,7 +43,7 @@ const IndexPage = ({data}) => {
           <div className="card-wrapper">
           <div className="card-body card-border">
             <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
-            <h3 className="box-title">Creative</h3>
+            <h4 className="card-title" style={{margin:`15px auto`}}>Creative</h4>
             <h5 className="secondary-font">Developing your digital ecosystem in a way that represents your brand identy.</h5>
           </div>
           </div>
@@ -52,7 +52,7 @@ const IndexPage = ({data}) => {
           <div className="card-wrapper">
           <div className="card-body card-border">
             <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
-            <h3 className="box-title">Marketing</h3>
+            <h4 className="card-title" style={{margin:`15px auto`}}>Marketing</h4>
             <h5 className="secondary-font">We get to know you and your target audience, then build the bridge.</h5>
           </div>
           </div>
@@ -61,7 +61,7 @@ const IndexPage = ({data}) => {
           <div className="card-wrapper">
           <div className="card-body card-border">
             <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
-            <h3 className="box-title" style={{fontWeight:``}}>Technology</h3>
+            <h4 className="card-title" style={{margin:`15px auto`}}>Technology</h4>
             <h5 className="secondary-font">We love what technology can do and are excited to help you implement it in your business.</h5>
           </div>
           </div>

@@ -17,7 +17,7 @@ const ServicesPage = ({ data }) => {
        
         
         <h2 style={{textAlign:`center`}} className="red-font page-title">Website Design & Development</h2>
-        <h5 className="" style={{fontWeight:`bold`, textAlign:`center`}}>Every website we design and develop includes the following:</h5>
+        <h5 className="" style={{textAlign:`center`}}>Every website we design and develop includes the following:</h5>
         
           {data.markdownRemark.frontmatter.features.map((feature, index) => {
             return (
@@ -93,7 +93,7 @@ const ServicesPage = ({ data }) => {
           <Row className="no-gutters">
           
           <Col xs="12" xl="6">
-          <h2 className="red-font page-title">Get a Free Consultation</h2>
+          <h2 className="red-font page-title" style={{marginBottom:`0px`}}>Get a Free Consultation</h2>
 
           <form
             name="contact"
@@ -102,20 +102,23 @@ const ServicesPage = ({ data }) => {
             data-netlify-honeypot="bot-field"
           >
             <input type="hidden" name="bot-field" />
-
             <input type="hidden" name="form-name" value="contact" />
+            <input style={{display: `none`}} type="text" />
 
-            <input style={{display: `none`}} type="text" /><br />
+            <label for="name">Name *</label>
+            <input required className="form-input" name="name" type="text"/>
 
-            <input required className="form-input" name="name" placeholder="First and Last Name*" type="text" /><br />
+            <label for="email">Email *</label>
+            <input required className="form-input" name="email" type="email"/>
 
-            <input required className="form-input" name="email" placeholder="Email*" type="email" /><br />
-
-            <input className="form-input" name="phone" placeholder="Phone Number" type="number" /><br />
+            <label for="phone">Phone</label>
+            <input className="form-input" name="phone" type="number" />
            
-            <input className="form-input" name="company" placeholder="Company" type="text" /><br />
+            <label for="company">Company</label>
+            <input className="form-input" name="company" type="text" /><br />
 
-            <textarea className="form-input" name="message" placeholder="Seriously, ask us anything..." type="textarea" /><br />
+            <label for="message">Message</label>
+            <textarea className="form-input" name="message" type="textarea" /><br />
 
             <button className="submit-button">Submit</button>
 

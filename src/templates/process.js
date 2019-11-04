@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import { Row, Col } from "reactstrap"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
@@ -17,9 +17,19 @@ const ProcessPage = ({ data }) => {
       <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
       
       <div className="page-container">
-        <h1 className="red-font page-title text-center">Our Process</h1>
-        <h5 className="text-center">Partnerships, not transactions.</h5>
-    
+      <Row className="no-gutters mt-5 mb-5">
+          <Col xs="12" xl="6">
+            <h2 className="red-font page-title">Partnerships. Not Transactions</h2>
+            <h5>This is our process</h5>
+            <p className="page-text pr-xl-2">We love web design and building websites. But we hate haggling. That's why we're going to break from tradition and just tell you our prices. Almost no other web developers list prices on their websites, which we think is kind of obnoxious of them. Makes it hard for you, the customer, to shop. </p>
+          </Col>
+          <Col xs="12" xl="6">
+            <h2 className="red-font page-title">Our Process</h2>
+            <h5>Discover, Plan, Execute</h5>
+            <p className="page-text">Uniquely, we provide free, no-obligation web designs. We won't let you hire us until you're in love with your new website design. That's the only way we know of to guarantee a happy client every time. It also eliminates any risk of you hiring us and not getting what you want.</p>
+          </Col>
+         
+        </Row>
         <Row className="no-gutters">
           {data.markdownRemark.frontmatter.processes.map((process, index) => (
             <Col xs="12" md="4" >
@@ -34,7 +44,7 @@ const ProcessPage = ({ data }) => {
           ))}
         </Row>
 
-        <Row className="no-gutters">
+        <Row className="no-gutters mb-5">
           <h2 style={{width:`100%`, textAlign:`left`, marginBottom:`20px`}} className="red-font page-title">Ways we engage</h2><br/>
             {data.markdownRemark.frontmatter.engagement.map((section, index) => {
               const image = graphics.find(n => {
@@ -56,7 +66,23 @@ const ProcessPage = ({ data }) => {
               )
             })}
         </Row>
+
+        <div style={{width:`80%`, margin:`0 auto`, borderBottom:`1px solid #dddddd`}}></div>
+
+        <Row className="no-gutters mt-3 mb-5">
+          <Col xs="12" xl="6">
+            <h2 className="red-font page-title">Website Design</h2>
+            <p className="page-text pr-xl-2">We love web design and building websites. But we hate haggling. That's why we're going to break from tradition and just tell you our prices. Almost no other web developers list prices on their websites, which we think is kind of obnoxious of them. Makes it hard for you, the customer, to shop. <Link to="web-design">Web Design</Link></p>
+          </Col>
+          <Col xs="12" xl="6">
+            <h2 className="red-font page-title">Aspen Applications LLC</h2>
+            <p className="page-text">Uniquely, we provide free, no-obligation web designs. We won't let you hire us until you're in love with your new website design. That's the only way we know of to guarantee a happy client every time. It also eliminates any risk of you hiring us and not getting what you want. <Link to="about">About Aspen Apps</Link></p>
+          </Col>
+         
+        </Row>
       </div>
+
+
 
       <Divider title="PORTFOLIO" subtitle="Need Proof?" button="Contact Us" address="/contact" />
 

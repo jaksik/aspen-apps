@@ -1,7 +1,5 @@
 form {
-    width: 80%;
     text-align: center;
-    max-width: 576px;
 }
 
 input, select, textarea, label {
@@ -12,18 +10,24 @@ input, select, textarea, label {
 }
 
 .form-input {
-    margin: 10px auto;
-    border-top: none;
+    margin: 0px auto;
+    /* border-top: none;
     border-left: none; 
-    border-right: none;
-    border-bottom: 1px solid gray;
+    border-right: none; */
+    border: 1px solid black;
+    border-radius: 5px;
     font-size: larger;
+    width: 95%;
+    margin-right: 20px;
 }
 
 label {
     margin: 15px 0 -15px;
     color: black;
     text-align: left;
+    font-size: 19px;
+    font-weight: 500;
+    width: 100%;
 }
 
 #waiver-button {
@@ -66,13 +70,13 @@ input[type="date"]:before {
 }
 
 .contact-image {
-    max-height: 250px;
+    max-height: 300px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
-    .contact-image {
-        max-height: 400px;
-    }
+
 
     #form-sec-one {
         border-right: 2px solid lightgray;

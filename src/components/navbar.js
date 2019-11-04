@@ -73,7 +73,7 @@ import {
                   <NavLink style={{color:`black`}} href="/our-work/">Our Work</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink style={{color:`black`}} href="/about/">About</NavLink>
+                  <NavLink style={{color:`black`}} href="/about/">Process</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink className="end-navitem" style={{color:`black`}} href="/contact/">Contact Us</NavLink>

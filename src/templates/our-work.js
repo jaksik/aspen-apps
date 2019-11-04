@@ -14,6 +14,7 @@ export default ({ data }) => {
         <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />        
         <div className="page-container">
             <h1 className="red-font page-title" style={{textAlign:`center`}}>Our Work</h1>
+            <h5 className="text-center mb-3">Let's Play Show and Tell</h5>
             <Row className="no-gutters">
                 {projects.map((project, index) => {
                     console.log("project on work: ", project)
@@ -22,6 +23,7 @@ export default ({ data }) => {
                     )
                 })}
             </Row>
+
             <Row className="no-gutters">
        <Col xs="12" xl="6" className="pr-3">
             <h2 className="red-font page-title">Let's Build Something Great Together</h2>
