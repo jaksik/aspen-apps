@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
           title
         }
       }
-      services: allMarkdownRemark(filter: { frontmatter: {type: {regex: "/service/"}}} sort: { order: DESC, fields: [frontmatter___date] }) {
+      services: allMarkdownRemark(filter: { frontmatter: {type: {regex: "/service/"}}}) {
         edges {
           node {
             fields{

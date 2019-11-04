@@ -17,9 +17,8 @@ const ProcessPage = ({ data }) => {
       <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
       
       <div className="page-container">
-        <h2 className="red-font page-title">Our Process</h2>
-        <h5>Partnerships, not transactions.</h5>
-        <p className="page-text">At Aspen Apps, we focus on getting to know your business inside and out that way we can make a website that suits your needs.</p>
+        <h1 className="red-font page-title text-center">Our Process</h1>
+        <h5 className="text-center">Partnerships, not transactions.</h5>
     
         <Row className="no-gutters">
           {data.markdownRemark.frontmatter.processes.map((process, index) => (

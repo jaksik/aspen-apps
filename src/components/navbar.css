@@ -10,7 +10,6 @@
 
 @media screen and (min-width: 992px) {
     .nav-item {
-        margin-right: 55px;
     }
 
     .navbar-brand {
@@ -20,7 +19,6 @@
 
 @media screen and (min-width: 1200px) {
     .nav-item {
-        padding-right: 80px;
     }
 
     .navbar-brand {

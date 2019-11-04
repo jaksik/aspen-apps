@@ -11,10 +11,10 @@ const ContactPage = ({ data }) => {
         <Layout>
           
           <div className="page-container">
-            {/* <h2 className="page-title red-font">Contact Us</h2>
+            {/* <h2 className="page-title red-font">Contact Us</h2> */}
             <div className="col col-12">
               <Img fluid={data.file.childImageSharp.fluid} className="contact-image"/>
-            </div> */}
+            </div>
             <h2 className="red-font page-title">Go Ahead, Ask Us Anything.</h2>
             <h5>Seriously, ask us anything.</h5>
             <p className="page-text">Were here to form partnerships, not transactions. We enjoy being able to create a valuable platform for your business and want to know how we can help.</p>  

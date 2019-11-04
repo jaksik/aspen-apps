@@ -37,7 +37,7 @@ import {
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar >
-                <UncontrolledDropdown nav inNavbar>
+                {/* <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
                        <a style={{ color: `black` }}>Services</a>
                     </DropdownToggle>
@@ -49,7 +49,7 @@ import {
                           </DropdownItem>
                       </Link>
                         ))}
-                        {/* <Link to="services/website-maintenance" className="nav-item">
+                        <Link to="services/website-maintenance" className="nav-item">
                             <DropdownItem>
                                 Website Maintenance
                             </DropdownItem>
@@ -63,24 +63,20 @@ import {
                             <DropdownItem>
                                 Custom Coding
                             </DropdownItem>
-                        </Link> */}
+                        </Link>
                     </DropdownMenu>
-                </UncontrolledDropdown>
+                </UncontrolledDropdown> */}
                 <NavItem>
-                  <NavLink style={{color:`black`}} href="/process/">Process</NavLink>
+                  <NavLink style={{color:`black`}} href="/web-design/">Web Design</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink style={{color:`black`}} href="/portfolio/">Portfolio</NavLink>
-                </NavItem>
-              
-                {/* <NavItem>
-                  <NavLink style={{color:`black`}} href="/company/">Company</NavLink>
+                  <NavLink style={{color:`black`}} href="/our-work/">Our Work</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink style={{color:`black`}} href="/news/">News</NavLink>
-                </NavItem> */}
+                  <NavLink style={{color:`black`}} href="/about/">About</NavLink>
+                </NavItem>
                 <NavItem>
-                  <NavLink className="end-navitem" style={{color:`black`}} href="/contact/">Contact</NavLink>
+                  <NavLink className="end-navitem" style={{color:`black`}} href="/contact/">Contact Us</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
