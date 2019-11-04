@@ -45,6 +45,7 @@ label {
     font-weight: bold;
     margin: 15px auto;
     padding: 13px;
+    margin-right: 14px;
 }
 
 .submit-button:hover {

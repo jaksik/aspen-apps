@@ -58,7 +58,7 @@ const ContactPage = ({ data }) => {
   
                 <Col md="4">
                   <label for="message">Message *</label>
-                  <textarea className="form-input" style={{ height:`70%`}} name="message" type="textarea" /><br />
+                  <textarea className="form-input" style={{ height:`115px`}} name="message" type="textarea" /><br />
                 </Col>
                 <Col xs="12">
                 <button className="submit-button" style={{float:`right`}}>Submit</button>
