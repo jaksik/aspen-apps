@@ -19,14 +19,12 @@ const ProcessPage = ({ data }) => {
       <div className="page-container">
       <Row className="no-gutters mt-5 mb-5">
           <Col xs="12" xl="6">
-            <h2 className="red-font page-title">Partnerships. Not Transactions</h2>
-            <h5>This is our process</h5>
-            <p className="page-text pr-xl-2">We love web design and building websites. But we hate haggling. That's why we're going to break from tradition and just tell you our prices. Almost no other web developers list prices on their websites, which we think is kind of obnoxious of them. Makes it hard for you, the customer, to shop. </p>
+            <h2 className="red-font page-title">Our Process</h2>
+            <p className="page-text pr-xl-2">B102, as we like to call it, is our Why. It's not about bits, bytes, pixels, or keywords. It's about delivering advanced digital solutions that support your business strategies.</p>
           </Col>
           <Col xs="12" xl="6">
-            <h2 className="red-font page-title">Our Process</h2>
-            <h5>Discover, Plan, Execute</h5>
-            <p className="page-text">Uniquely, we provide free, no-obligation web designs. We won't let you hire us until you're in love with your new website design. That's the only way we know of to guarantee a happy client every time. It also eliminates any risk of you hiring us and not getting what you want.</p>
+            <h2 className="red-font page-title">Partnerships. Not Transactions</h2>
+            <p className="page-text">This is self-explanatory. We're in this for the long haul, and here's the proof. We will be open and transparent in our communications - bad news doesn't get better with age. We will place a premium on managing budget, scope and expectations. And we'll make sure to have some fun along the way.</p>
           </Col>
          
         </Row>
@@ -72,11 +70,11 @@ const ProcessPage = ({ data }) => {
         <Row className="no-gutters mt-3 mb-5">
           <Col xs="12" xl="6">
             <h2 className="red-font page-title">Website Design</h2>
-            <p className="page-text pr-xl-2">We love web design and building websites. But we hate haggling. That's why we're going to break from tradition and just tell you our prices. Almost no other web developers list prices on their websites, which we think is kind of obnoxious of them. Makes it hard for you, the customer, to shop. <Link to="web-design">Web Design</Link></p>
+            <p className="page-text pr-xl-2">We love helping our clients reach their goals and grow their business through developing their online presense. Aspen Apps is passionate about utilizing new technologies and building high quality digital assets, that's why the first thing we do is get to know your business and brand.<Link to="web-design">Web Design</Link></p>
           </Col>
           <Col xs="12" xl="6">
             <h2 className="red-font page-title">Aspen Applications LLC</h2>
-            <p className="page-text">Uniquely, we provide free, no-obligation web designs. We won't let you hire us until you're in love with your new website design. That's the only way we know of to guarantee a happy client every time. It also eliminates any risk of you hiring us and not getting what you want. <Link to="about">About Aspen Apps</Link></p>
+            <p className="page-text">Born in the high country, we provide free, no-obligation web designs. We won't let you hire us until you're in love with your new website design. That's the only way we know of to guarantee a happy client every time. It also eliminates any risk of you hiring us and not getting what you want. <Link to="about">About Aspen Apps</Link></p>
           </Col>
          
         </Row>

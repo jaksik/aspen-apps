@@ -148,9 +148,9 @@ export default IndexPage
 
 export const listQuery = graphql`
   query {
-    file(relativePath: { eq: "peakone.jpg" }) {
+    file(relativePath: { eq: "aspens.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 2000, quality: 100) {
+        fluid(maxWidth: 3000, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -174,6 +174,7 @@ export const listQuery = graphql`
         node {
           frontmatter {
             projects {
+              description
               address
               title
               image {

@@ -32,7 +32,7 @@ export default ({ data }) => {
           </Col>
           <Col xs="12" xl="6">
           <h2 className="red-font page-title">Our Process</h2>
-            <p className="page-text">Uniquely, we provide free, no-obligation web designs. We won't let you hire us until you're in love with your new website design. That's the only way we know of to guarantee a happy client every time. It also eliminates any risk of you hiring us and not getting what you want. <Link to="about">See Our Process</Link> </p>
+            <p className="page-text">We love helping our clients reach their goals and grow their business through developing their online presense. Aspen Apps is passionate about utilizing new technologies and building high quality digital assets, that's why the first thing we do is get to know your business, brand, and unique challenges.<Link to="about"> Learn more about our process</Link> </p>
          
           </Col>
        </Row>

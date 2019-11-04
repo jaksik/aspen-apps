@@ -18,6 +18,7 @@ function PortfolioCard ({ project, cardKey}) {
             <Img style={{position:`absolute`, width: `100%`, height:`100%`}} fluid={project.image.childImageSharp.fluid}/>
           </div>
           <h5 className="card-title mb-0 p-2">{project.title}</h5>
+          <p className="page-text" style={{color:`black`, margin:`0px 20px 20px`}}>{project.description}</p>
         </a>
         </div>
       </div>

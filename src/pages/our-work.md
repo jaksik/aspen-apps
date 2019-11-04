@@ -3,18 +3,16 @@ templateKey: our-work
 image: ../images/graphics/web-design.png
 projects:
   - description: >-
-      Update your content whenever you want using the Netlify Content Management
-      System
+      With over 20 years in business, Timberline Kitchens is the premier cabinetry company in Summit County, Colorado. Aspen Apps strived to develop their online presence in a way that elegantly represented their work.
     address: https://timberlinekitchens.netlify.com
     image: ../images/portfolio/timberline-kitchens.png
     title: Timberline Kitchens
-  - description: Your website will automatically have an easy-to-use blog and contact form.
+  - description: Connor Jaksik is a geographer who has climbed the 59 highest mountains in Colorado and visited 36 countries. He brings his studdies to the world through photography and Aspen Apps worked to bring his photography to the world through the internet.
     address: https://aspen-media.netlify.com
     image: ../images/portfolio/aspen-media.png
     title: Connor Jaksik Photography
   - description: >-
-      Your new website will look great on wide monitors, narrow cell hones, and
-      everything in between
+      Limitless Wake Technologies LLC is a premier wakeboard coaching company in Austin, Texas. They love what they do and love sharing it with others. Aspen Apps developed their online ecosystem to help others find them online.
     image: ../images/portfolio/limitless.png
     address: https://limitlesswake.com
     title: Limitless Wake
