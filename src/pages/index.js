@@ -74,7 +74,7 @@ const IndexPage = ({data}) => {
     <div className="page-container">
       <Row className="no-gutters justify-content-center">
         <Col xs="12">
-          <h2 className="landing-title">Our Service</h2>
+          <h2 className="landing-title">Our Services</h2>
         </Col>
         <Col xs="12">
           <Row className="no-gutters justify-content-center">
@@ -122,7 +122,7 @@ const IndexPage = ({data}) => {
     <div className="page-container">
       <Row className="no-gutters justify-content-center">
         <Col xs="12"></Col>
-          <h2 className="landing-title">Testimonial</h2>
+          <h2 className="landing-title">Testimonials</h2>
         <Col xs="12" md="6">
           <p className="page-text" style={{textIndent:`50px`}}>I had a great experience working with Conner at Jaksik web development. Conner built a website from scratch for my small business                 that has greatly increased my client market reach.
 
