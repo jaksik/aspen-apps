@@ -70,7 +70,7 @@ const ContactPage = ({ data }) => {
 
             </form>
           </Col>
-          <Col xs="12" lg="3" className="offset-1">
+          <Col xs="12" lg="3" className="offset-xs-0 offset-lg-1">
             <h2 className="red-font page-title">The Team</h2>
             <h5>Mike Durigan:</h5>
             <p className="page-text">

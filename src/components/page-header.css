@@ -1,14 +1,5 @@
 /* Page header */
-.header-title {
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    color: white;
-  }
-  
+
 .header-overlay {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;

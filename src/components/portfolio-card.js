@@ -7,7 +7,7 @@ import "./portfolio-card.css"
 function PortfolioCard ({ project, cardKey}) {
   console.log("project: ", project)
   return (
-    <Col xs="6" sm="6">
+    <Col xs="12" sm="6">
       <div style={{padding:(cardKey % 2 === 0 ? `10px 10px 10px 0px` : `10px 0px 10px 10px`)}}>
         <div className="card-border">
         <a href={project.address} style={{textDecoration:`none`}}>

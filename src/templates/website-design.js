@@ -22,12 +22,12 @@ const ServicesPage = ({ data }) => {
           {data.markdownRemark.frontmatter.features.map((feature, index) => {
             return (
               <>
-              <Row className="no-gutters mt-5 mb-5">
-                <Col xs="6" className={(index % 2 ? `order-first pr-2` : `order-last pl-2`)}>
-                  <Img fluid={data.discover.childImageSharp.fluid} style={{width:`200px`, margin:`0 auto`, maxHeight:`300px`}}/>
+              <Row className="no-gutters mt-5 mb-5 align-items-center">
+                <Col xs="12" sm="4" className={`order-xs-first ` + (index % 2 ? `order-first pr-2` : `order-last pl-2`)}>
+                  <Img fluid={data.discover.childImageSharp.fluid} className="info-image mb-4" style={{margin:`0 auto`, maxHeight:`300px`}}/>
                 </Col>
-                <Col xs="6" className={`align-self-center ` + (index % 2 ? `order-last` : `order-first`)}>
-                  <h4 className="red-font" style={{fontWeight:`lighter`}}>{feature.title}</h4>
+                <Col xs="12" sm="8" className={`order-xs-last ` + (index % 2 ? `order-last` : `order-first`)}>
+                  <h4 className="red-font feature-title" style={{fontWeight:`lighter`}}>{feature.title}</h4>
                   <p className="page-text">We always include lifetime, offsite backups, lifetime daily security scans by Sucuri, and lifetime monitoring by UpTime. We always include lifetime, offsite backups, lifetime daily security scans by Sucuri, and lifetime monitoring by UpTime. We always include lifetime, offsite backups, lifetime daily security scans by Sucuri, and lifetime monitoring by UpTime.We always include lifetime, offsite backups, lifetime daily security scans by Sucuri, and lifetime monitoring by UpTime.</p>
                 </Col>
             
@@ -42,11 +42,11 @@ const ServicesPage = ({ data }) => {
           
            
         <Row className="no-gutters mt-5 mb-5">
-          <Col xs="12" xl="6">
+          <Col xs="12" lg="6">
             <h2 className="red-font page-title">Here's the Deal...</h2>
-            <p className="page-text pr-xl-2">We love web design and building websites. But we hate haggling. That's why we're going to break from tradition and just tell you our prices. Almost no other web developers list prices on their websites, which we think is kind of obnoxious of them. Makes it hard for you, the customer, to shop. </p>
+            <p className="page-text pr-lg-2">We love web design and building websites. But we hate haggling. That's why we're going to break from tradition and just tell you our prices. Almost no other web developers list prices on their websites, which we think is kind of obnoxious of them. Makes it hard for you, the customer, to shop. </p>
           </Col>
-          <Col xs="12" xl="6">
+          <Col xs="12" lg="6">
             <h2 className="red-font page-title">Try Before you Buy</h2>
             <p className="page-text">Uniquely, we provide free, no-obligation web designs. We won't let you hire us until you're in love with your new website design. That's the only way we know of to guarantee a happy client every time. It also eliminates any risk of you hiring us and not getting what you want.</p>
           </Col>

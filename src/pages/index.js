@@ -16,10 +16,10 @@ const IndexPage = ({data}) => {
   <Layout>
     <SEO title="Home" />
 
-    <div style={{position: `relative`, height: `80vh`, overflow:`hidden`}}>
-      <Img fluid={data.file.childImageSharp.fluid} style={{position: `absolute`, zIndex:`1`, height: `80vh`, width: `100%`}}/>
+    <div className="landing-header">
+      <Img fluid={data.file.childImageSharp.fluid} className="header-image" style={{position:`absolute`}}/>
       <div className="header-overlay"></div>
-         <div className="header-title" style={{width: `100%`}}>
+         <div className="header-title w-100">
             <h1 style={{fontWeight:`bold`, fontSize:`3.5rem`}}>Business First.<br/>Online Second.</h1>
             <h4 style={{maxWidth:`70%`, textAlign:`center`, margin:`15px auto`, fontSize:`20px`}}>Website & Mobile App Development For Your Business</h4>
             <Link to="/our-work">
