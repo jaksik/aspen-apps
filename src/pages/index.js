@@ -21,7 +21,6 @@ const IndexPage = ({data}) => {
       <div className="header-overlay"></div>
          <div className="header-title w-100">
             <h1 style={{fontWeight:`bold`, fontSize:`3.5rem`}}>Business First.<br/>Online Second.</h1>
-            <h4 style={{maxWidth:`70%`, textAlign:`center`, margin:`15px auto`, fontSize:`20px`}}>Website & Mobile App Development For Your Business</h4>
             <Link to="/our-work">
               <Button style={{marginRight:`25px`}} className="green-button">Our Work</Button>
             </Link>
@@ -34,6 +33,8 @@ const IndexPage = ({data}) => {
       <div className="slant">
          <div className="slant-container text-center">
             <h2 className="red-font page-title">How Can We Help You?</h2>
+            <h4 style={{maxWidth:`70%`, textAlign:`center`, margin:`15px auto`, fontSize:`20px`}}>We are a full service media and digital marketing agency.</h4>
+
          </div>
       </div>
 

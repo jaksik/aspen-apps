@@ -20,7 +20,8 @@ const ProcessPage = ({ data }) => {
       <Row className="no-gutters mt-5 mb-5">
           <Col xs="12" xl="6">
             <h2 className="red-font page-title">Our Process</h2>
-            <p className="page-text pr-xl-2">B102, as we like to call it, is our Why. It's not about bits, bytes, pixels, or keywords. It's about delivering advanced digital solutions that support your business strategies.</p>
+            <p className="page-text pr-xl-2">Partnerships, not transactions. We believe the best work is done through strategic partnerships, and not one off transactions.
+            Before we write one line of code we get to know your business inside and out, then strategically craft a long term plan, make sure your absolutely in love with it, and then we pretty busy.</p>
           </Col>
           <Col xs="12" xl="6">
             <h2 className="red-font page-title">Partnerships. Not Transactions</h2>
@@ -113,7 +114,7 @@ query($slug: String!) {
       }
     }
   }
-    discover: file(relativePath: { eq: "red.png" }) {
+    discover: file(name: { eq: "microscope" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
           ...GatsbyImageSharpFluid

@@ -28,7 +28,7 @@ const ServicesPage = ({ data }) => {
                 </Col>
                 <Col xs="12" sm="8" className={`order-xs-last ` + (index % 2 ? `order-last` : `order-first`)}>
                   <h4 className="red-font feature-title" style={{fontWeight:`lighter`}}>{feature.title}</h4>
-                  <p className="page-text">We always include lifetime, offsite backups, lifetime daily security scans by Sucuri, and lifetime monitoring by UpTime. We always include lifetime, offsite backups, lifetime daily security scans by Sucuri, and lifetime monitoring by UpTime. We always include lifetime, offsite backups, lifetime daily security scans by Sucuri, and lifetime monitoring by UpTime.We always include lifetime, offsite backups, lifetime daily security scans by Sucuri, and lifetime monitoring by UpTime.</p>
+            <p className="page-text">{feature.description}</p>
                 </Col>
             
               </Row>
@@ -43,8 +43,8 @@ const ServicesPage = ({ data }) => {
            
         <Row className="no-gutters mt-5 mb-5">
           <Col xs="12" lg="6">
-            <h2 className="red-font page-title">Here's the Deal...</h2>
-            <p className="page-text pr-lg-2">We love web design and building websites. But we hate haggling. That's why we're going to break from tradition and just tell you our prices. Almost no other web developers list prices on their websites, which we think is kind of obnoxious of them. Makes it hard for you, the customer, to shop. </p>
+            <h2 className="red-font page-title">Less Haggling, More Art</h2>
+            <p className="page-text pr-lg-2">We love designing and building websites, but we hate haggling. That's why we've created flat rates for our most populart web development packages. The less time we spend worrying about a price, the more time we can focus on creating unique and powerful digital ecosystems.</p>
           </Col>
           <Col xs="12" lg="6">
             <h2 className="red-font page-title">Try Before you Buy</h2>
@@ -127,9 +127,14 @@ const ServicesPage = ({ data }) => {
 
            <Col xs="12" xl="6">
             <h2 className="red-font page-title">Need Proof?</h2>
-            <p className="page-text pr-xl-2">We love web design and building websites. But we hate haggling. That's why we're going to break from tradition and just tell you our prices. Almost no other web developers list prices on their websites, which we think is kind of obnoxious of them. Makes it hard for you, the customer, to shop. <Link to="our-work">See Our Work</Link> </p>
+            <p className="page-text pr-xl-2">
+              We proudly show off the websites and apps that we've build. Your digital ecosystem presents and makes your business available to the world, we understand that you don't want to hand this responcibility off to just anyone. Check out some our previous work to ease your worries.
+              <Link to="our-work">See Our Work</Link> 
+            </p>
             <h2 className="red-font page-title">Our Process</h2>
-            <p className="page-text">Uniquely, we provide free, no-obligation web designs. We won't let you hire us until you're in love with your new website design. That's the only way we know of to guarantee a happy client every time. It also eliminates any risk of you hiring us and not getting what you want. <Link to="about">See Our Process</Link> </p>
+            <p className="page-text">Partnerships, not transactions. We believe the best work is done through strategic partnerships, and not one off transactions.
+            Before we write one line of code we get to know your business inside and out, then strategically craft a long term plan, make sure your absolutely in love with it, and then we pretty busy.
+            <Link to="about">See Our Process</Link> </p>
          
           </Col>
         </Row>
