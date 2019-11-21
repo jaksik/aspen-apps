@@ -34,7 +34,7 @@ const ProcessPage = ({ data }) => {
             <Col xs="12" md="4" >
               <div className="card-wrapper">
                 <div className="card-body card-border">
-                  <Img fluid={data.discover.childImageSharp.fluid} className="landing-image" style={{maxWidth:`100px`}}/>
+                  <Img fluid={process.image.childImageSharp.fluid} className="landing-image" style={{maxWidth:`100px`}}/>
                   <h4 className="card-title" style={{margin:`15px auto`}}>{process.title}</h4>
                   <p className="card-text">{process.description}</p>
                 </div>
@@ -99,6 +99,13 @@ query($slug: String!) {
       processes {
           title
           description
+          image {
+            childImageSharp {
+              fluid(maxWidth: 786) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
       }
       engagement {
           title

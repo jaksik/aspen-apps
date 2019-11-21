@@ -5,13 +5,13 @@ image: ../../images/graphics/custom-code.png
 description: Our development process.
 processes:
   - title: Discover
-    graphic: hourly
+    image: ../../images/graphics/microscope.png
     description: We get to know everything about your business, inside and out. Most importantly, what you do and why you do it.
   - title: Plan
-    graphic: hourly
+    image: ../../images/graphics/plan.png
     description: We collaborate with you and your partners to craft and develop a long term strategic plan for your digital ecosystem. Technology, marketing, and creative assets; we make sure you fully understand everything about and are excited to move forward before we write one line of code.
   - title: Execute
-    graphic: hourly
+    image: ../../images/graphics/execute.png
     description: We get to work. Utilizing our team of best in house talent, we create world class digital assets and creative content within budget and on time. This truly is our passion, creating digital ecosystems to help your business thrive world-wide.
 engagement:
   - title: Full Site Build
