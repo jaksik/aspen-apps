@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "aspen-applications",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "An application development company based out of Silverthorne, Colorado.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Connor Jaksik <connor.jaksik@gmail.com>",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gatsby": "^2.15.29",

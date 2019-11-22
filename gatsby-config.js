@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Aspen Apps`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    "description": "An application development company based out of Silverthorne, Colorado.",
+    author: `@jaksik`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -46,7 +46,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `aspen-apps`,
+        name: `aspen-applications`,
         short_name: `aspen`,
         start_url: `/`,
         background_color: `#663399`,
