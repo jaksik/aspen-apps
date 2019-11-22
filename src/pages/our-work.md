@@ -8,7 +8,7 @@ projects:
     image: ../images/portfolio/timberline-kitchens.png
     title: Timberline Kitchens
   - description: Connor Jaksik is a geographer who has climbed the 59 highest mountains in Colorado and visited 36 countries. He brings his studdies to the world through photography and Aspen Apps worked to bring his photography to the world through the internet.
-    address: https://aspen-media.netlify.com
+    address: https://montezumamedia.com
     image: ../images/portfolio/aspen-media.png
     title: Connor Jaksik Photography
   - description: >-
