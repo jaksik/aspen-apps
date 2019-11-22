@@ -2,14 +2,16 @@
 templateKey: product
 type: product
 title: Basecamp
-subTitle: Basecamp Website Package
-price: $3,250
+subTitle: The Basecamp Website Package
+price: $3,999
 pagecount: 10
 emailAdresses: Configuring up to 10 email addresses
 bellsWhistles: Up to 2 Bells and Whistles
 details:
+  - description: 10 unique pages, not including your blog which allows you to create as many additional pages as you like
+    name: Up to 10 pages of Content
   - description: 'That''s assuming you''re very responsive, of course.'
-    name: Turnaround in 3-4 weeks
+    name: Turnaround in 4-5 weeks
   - description: >-
       Update your content whenever you want using the Netlify Content Management
       System

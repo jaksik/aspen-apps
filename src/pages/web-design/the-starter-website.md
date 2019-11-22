@@ -1,9 +1,9 @@
 ---
 templateKey: product
 type: product
-title: The Approach
-subTitle: The Approach Website Package
-price: $1,750
+title: Starter
+subTitle: The Starter Website Package
+price: $2,499
 pagecount: 5
 bellsWhistles: Up to 2 Bells and Whistles
 details:

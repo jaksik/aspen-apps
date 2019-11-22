@@ -1,14 +1,18 @@
 ---
 templateKey: product
 type: product
-title: Summit
-subTitle: Summit Website Package
-price: $5,750
+title: E-Commerce
+subTitle: The E-Commerce Website Package
+price: $5,999
 pagecount: 10
 bellsWhistles: Up to 2 Bells and Whistles
 details:
+  - description: 10 unique pages, not including your blog which allows you to create as many additional pages as you like
+    name: Up to 10 pages of Content
+  - description: We'll get your started with 10 products in your store, you can then create as many additional products as you like
+    name: Up to 10 Products
   - description: 'That''s assuming you''re very responsive, of course.'
-    name: Turnaround in 3-4 weeks
+    name: Turnaround in 5-6 weeks
   - description: >-
       Update your content whenever you want using the Netlify Content Management
       System

@@ -3,20 +3,12 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Row, Col } from "reactstrap"
 import Layout from "../components/layout"
-import PageHeader from "../components/page-header"
 import "./contact.css"
 
 const ContactPage = ({ data }) => {
   return (
     <Layout>
-
       <div className="page-container">
-        {/* <h2 className="page-title red-font">Contact Us</h2> */}
-        <div className="col col-12">
-        </div>
-       
-      
-
         <Row className="no-gutters">
           <Col xs="12" lg="8">
           <h2 className="red-font page-title">Go Ahead, Ask Us Anything</h2>
@@ -108,7 +100,6 @@ const ContactPage = ({ data }) => {
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98312.70026854055!2d-106.13113525855272!3d39.64359531368454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876a5cb86b1d4285%3A0xee63350e2b758bb8!2sSilverthorne%2C%20CO!5e0!3m2!1sen!2sus!4v1573916686623!5m2!1sen!2sus" width="100%" height="300" frameborder="0" style={{border:`0`}} allowfullscreen=""></iframe>
 
          </Col>
-
         </Row>
       </div>
     </Layout>

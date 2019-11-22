@@ -30,16 +30,6 @@ export default ({ data }) => {
                   <div className="accordian-cell">
                       <span className="accordian-price">{frontmatter.price}</span>
                     </div>
-                  <div className="accordian-cell">
-                    <p>Up to {frontmatter.pagecount} pages of content</p>
-                  </div>
-                  <div className="accordian-cell">
-                    <p>Configuring up to {frontmatter.pagecount} email addreses</p>
-                  </div>
-
-                  {/* <div style={{display:(frontmatter.bellsWhistles ? `block` : `none`)}}>
-                    <Collapse service={frontmatter.bellsWhistles} description="Bells and Whistles are extra add ons." show={true} />
-                  </div> */}
                 </div>
                 {frontmatter.details.map((service, i) => (
                   <Collapse service={service.name} description={service.description} />

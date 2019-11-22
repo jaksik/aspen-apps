@@ -19,7 +19,8 @@ const ServicesPage = ({ data }) => {
         <h2 style={{textAlign:`center`}} className="red-font page-title">Website Design & Development</h2>
         <h5 className="" style={{textAlign:`center`}}>Every website we design and develop includes the following:</h5>
         
-          {data.markdownRemark.frontmatter.features.map((feature, index) => {
+         <div style={{maxWidth:`960px`, margin: `0 auto`}}>
+         {data.markdownRemark.frontmatter.features.map((feature, index) => {
             return (
               <>
               <Row className="no-gutters mt-5 mb-5 align-items-center">
@@ -38,6 +39,7 @@ const ServicesPage = ({ data }) => {
               </>
             )
           })}
+         </div>
          
           
            
@@ -70,13 +72,6 @@ const ServicesPage = ({ data }) => {
                     <div className="accordian-cell">
                         <span className="accordian-price">{frontmatter.price}</span>
                       </div>
-                    <div className="accordian-cell">
-                        <p>Up to {frontmatter.pagecount} pages of content</p>
-                      </div>
-                    <div className="accordian-cell">
-                        <p>Configuring up to {frontmatter.pagecount} email addreses</p>
-                      </div>
-
                     {frontmatter.details.map((service, i) => (
                       <Collapse service={service.name} description={service.description} />
                     ))}

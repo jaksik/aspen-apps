@@ -43,7 +43,7 @@ const IndexPage = ({data}) => {
         <Col xs="12" md="4" >
           <div className="card-wrapper">
           <div className="card-body card-border">
-            <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
+          <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
             <h4 className="card-title" style={{margin:`15px auto`}}>Creative</h4>
             <h5 className="secondary-font">Developing your digital ecosystem in a way that represents your brand identy.</h5>
           </div>
@@ -52,7 +52,7 @@ const IndexPage = ({data}) => {
         <Col xs="12" md="4" >
           <div className="card-wrapper">
           <div className="card-body card-border">
-            <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
+            <Img fluid={data.marketing.childImageSharp.fluid} className="landing-image"/>
             <h4 className="card-title" style={{margin:`15px auto`}}>Marketing</h4>
             <h5 className="secondary-font">We get to know you and your target audience, then build the bridge.</h5>
           </div>
@@ -61,7 +61,7 @@ const IndexPage = ({data}) => {
         <Col xs="12" md="4" >
           <div className="card-wrapper">
           <div className="card-body card-border">
-            <Img fluid={data.creative.childImageSharp.fluid} className="landing-image"/>
+            <Img fluid={data.tech.childImageSharp.fluid} className="landing-image"/>
             <h4 className="card-title" style={{margin:`15px auto`}}>Technology</h4>
             <h5 className="secondary-font">We love what technology can do and are excited to help you implement it in your business.</h5>
           </div>
@@ -156,7 +156,21 @@ export const listQuery = graphql`
         }
       }
     }
-    creative: file(relativePath: { eq: "red.png" }) {
+    marketing: file(name: { eq: "marketing" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    creative: file(name: { eq: "light" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    tech: file(name: { eq: "tech" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
           ...GatsbyImageSharpFluid
