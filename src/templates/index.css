@@ -22,6 +22,19 @@ h5 {
   width: 40%;
 }
 
+
+@media only screen and (max-width: 576px) {
+
+  .first {
+    order: -1;
+  }
+  
+  .last {
+    order: 13;
+  }
+  
+}
+
 @media only screen and (min-width: 576px) {
   .feature-title {
     text-align: left;

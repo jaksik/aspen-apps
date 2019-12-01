@@ -17,7 +17,7 @@ const Footer = () => (
                     info@aspenapps.com</h5>
                 </Col>
                 <Col xs="12" md="2" lg="2" className="offset-lg-4 ">
-                    <Button className="green-button payment-button btn-xl-lg pr-4 footer-item">Payments</Button>
+                    <Button className="green-button payment-button btn-lg footer-item">Payments</Button>
                 </Col>
                 
             </Row>

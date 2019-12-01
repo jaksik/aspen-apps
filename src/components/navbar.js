@@ -44,12 +44,6 @@ import {
                   <NavLink style={{color:`black`}} href="/web-design/">Web Design</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink style={{color:`black`}} href="/web-design/">Graphic Design</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink style={{color:`black`}} href="/web-design/">Consulting</NavLink>
-                </NavItem>
-                <NavItem>
                   <NavLink style={{color:`black`}} href="/our-work/">Work</NavLink>
                 </NavItem>
                 <NavItem>

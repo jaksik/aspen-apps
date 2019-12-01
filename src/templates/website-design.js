@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Collapse from "../components/collapse"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./index.css"
 
 const ServicesPage = ({ data }) => {
   console.log("data: ", data)
@@ -24,10 +25,10 @@ const ServicesPage = ({ data }) => {
             return (
               <>
               <Row className="no-gutters mt-5 mb-5 align-items-center">
-                <Col xs="12" sm="4" className={`order-xs-first ` + (index % 2 ? `order-first pr-2` : `order-last pl-2`)}>
+                <Col xs="12" sm="4" className={(index % 2 ? `order-first pr-2` : `order-last pl-2`) + ` first`}>
                   <Img fluid={data.discover.childImageSharp.fluid} className="info-image mb-4" style={{margin:`0 auto`, maxHeight:`300px`}}/>
                 </Col>
-                <Col xs="12" sm="8" className={`order-xs-last ` + (index % 2 ? `order-last` : `order-first`)}>
+                <Col xs="12" sm="8" className={(index % 2 ? `order-last` : `order-first`) + ` last`}>
                   <h4 className="red-font feature-title" style={{}}>{feature.title}</h4>
             <p className="page-text">{feature.description}</p>
                 </Col>
