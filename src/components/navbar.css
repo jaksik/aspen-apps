@@ -1,27 +1,45 @@
+.nav-container {
+    width: 100%;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 15px;
+}
+
 @media screen and (min-width: 768px) {
     .nav-item {
         margin-right: 30px;
     }
-
-    .navbar-brand {
-        margin-left: 30px;
+    .nav-container {
+        display: flex;
     }
+ 
 }
 
 @media screen and (min-width: 992px) {
-    .nav-item {
-    }
-
-    .navbar-brand {
-        margin-left: 55px;
+    .nav-container {
+        margin: 0 20px;
     }
   }
 
 @media screen and (min-width: 1200px) {
-    .nav-item {
+    .nav-container {
+        margin: 0px 30px;
+    }
+    .navbar-brand {
+        margin-left: 30px;
     }
 
+}
+
+
+@media screen and (min-width: 2000px) {
+    .nav-container {
+        margin: 0px 160px;
+    }
     .navbar-brand {
-        padding-left: 80px;
+        padding-left: 0px;
+        margin-left: 0px;
     }
 }

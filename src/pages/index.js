@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { Row, Col, Button } from "reactstrap"
+import lightbulb from "../images/graphics/lightbulb.svg"
 import Layout from "../components/layout"
 import Divider from "../components/divider-button"
 import PortfoliCard from "../components/portfolio-card"
@@ -149,7 +150,7 @@ export default IndexPage
 
 export const listQuery = graphql`
   query {
-    file(relativePath: { eq: "aspens.jpg" }) {
+    file(name: { eq: "capital" }) {
       childImageSharp {
         fluid(maxWidth: 3000, quality: 100) {
           ...GatsbyImageSharpFluid

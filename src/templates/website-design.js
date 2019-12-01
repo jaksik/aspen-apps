@@ -14,12 +14,12 @@ const ServicesPage = ({ data }) => {
     <Layout>
       <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />    
        <div className="page-container">
-       
+       <div style={{maxWidth:`960px`, margin: `0 auto`}}>
         
         <h2 style={{textAlign:`center`}} className="red-font page-title">Website Design & Development</h2>
         <h5 className="" style={{textAlign:`center`}}>Every website we design and develop includes the following:</h5>
         
-         <div style={{maxWidth:`960px`, margin: `0 auto`}}>
+         
          {data.markdownRemark.frontmatter.features.map((feature, index) => {
             return (
               <>
@@ -28,7 +28,7 @@ const ServicesPage = ({ data }) => {
                   <Img fluid={data.discover.childImageSharp.fluid} className="info-image mb-4" style={{margin:`0 auto`, maxHeight:`300px`}}/>
                 </Col>
                 <Col xs="12" sm="8" className={`order-xs-last ` + (index % 2 ? `order-last` : `order-first`)}>
-                  <h4 className="red-font feature-title" style={{fontWeight:`lighter`}}>{feature.title}</h4>
+                  <h4 className="red-font feature-title" style={{}}>{feature.title}</h4>
             <p className="page-text">{feature.description}</p>
                 </Col>
             
@@ -39,7 +39,7 @@ const ServicesPage = ({ data }) => {
               </>
             )
           })}
-         </div>
+       
          
           
            
@@ -87,7 +87,7 @@ const ServicesPage = ({ data }) => {
           </Row>
           <Row className="no-gutters">
           
-          <Col xs="12" xl="6">
+          <Col xs="12" xl="7">
           <h2 className="red-font page-title" style={{marginBottom:`0px`}}>Get a Free Consultation</h2>
 
           <form
@@ -120,7 +120,7 @@ const ServicesPage = ({ data }) => {
           </form>
            </Col>
 
-           <Col xs="12" xl="6">
+           <Col xs="12" xl="5">
             <h2 className="red-font page-title">Need Proof?</h2>
             <p className="page-text pr-xl-2">
               We proudly show off the websites and apps that we've build. Your digital ecosystem presents and makes your business available to the world, we understand that you don't want to hand this responcibility off to just anyone. Check out some our previous work to ease your worries.
@@ -133,7 +133,7 @@ const ServicesPage = ({ data }) => {
          
           </Col>
         </Row>
-
+        </div>
        </div>
     </Layout>
   )

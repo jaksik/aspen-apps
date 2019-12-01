@@ -3,7 +3,14 @@
     margin-top: 37px;
     color: white;
     margin-top: 80px;
-    min-height: 30vh;
+    position: relative;
+}
+
+.footer-container {
+    max-width: 2000px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
 }
 
 .footer-input {
@@ -22,8 +29,35 @@
     text-align: center;
 }
 
+
+
 .footer-graphic {
     width: 30px;
     margin: 10px;
 }
 
+.footer-item {
+    margin-top:20px;
+}
+
+@media screen and (min-width: 992px) {
+    .footer-container {
+        padding: 30px;
+    }
+    .payment-button {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-container {
+        padding: 30px 80px;
+    }
+}
+
+
+@media screen and (min-width: 2000px) {
+    .footer-container {
+        padding: 30px 160px;
+    }
+}

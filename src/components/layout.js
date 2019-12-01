@@ -37,11 +37,15 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div style={{maxWidth:`2000px`}}>
-      <Navbar siteTitle={data.site.siteMetadata.title} services={data.services}/>
+    <>
+          <Navbar siteTitle={data.site.siteMetadata.title} services={data.services}/>
+
+    <div style={{maxWidth:`2000px`, margin: `0 auto`}}>
         <main style={{minHeight:`65vh`}}>{children}</main>
-        <Footer/>
     </div>
+    <Footer/>
+
+    </>
   )
 }
 

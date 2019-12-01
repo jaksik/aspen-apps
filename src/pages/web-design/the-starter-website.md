@@ -3,14 +3,14 @@ templateKey: product
 type: product
 title: Starter
 subTitle: The Starter Website Package
-price: $2,499
+price: $1,499
 pagecount: 5
 bellsWhistles: Up to 2 Bells and Whistles
 details:
   - description: 5 unique pages, not including your blog which allows you to create as many additional pages as you like
     name: Up to 5 pages of Content
   - description: 'That''s assuming you''re very responsive, of course.'
-    name: Turnaround in 3-4 weeks
+    name: Turnaround in 1-2 weeks
   - description: Allow your users to download your website as a mobile or desktop app.
     name: Offline Capable
   - description: >-
