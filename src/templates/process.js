@@ -53,7 +53,7 @@ const ProcessPage = ({ data }) => {
               return (
                 <Col xs="12" md="6">
                   <Row className="no-gutters">
-                    <Col xs="2" sm="1" style={{marginRight:`10px`}}>
+                    <Col xs="2" sm="1" md="2" style={{paddingRight:`10px`}} className="pl-xl-4 pr-xl-4">
                         <Img fluid={image.node.childImageSharp.fluid}/>
                     </Col>
                     <Col xs="10">

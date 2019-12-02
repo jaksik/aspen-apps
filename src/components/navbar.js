@@ -53,7 +53,7 @@ import {
                   <NavLink style={{color:`black`}} href="/about/">About</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="end-navitem" style={{color:`black`}} href="/contact/">Contact Us</NavLink>
+                  <NavLink className="end-navitem" style={{color:`black`}} href="/contact/">Contact</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
