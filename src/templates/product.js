@@ -52,7 +52,6 @@ export const query = graphql`
         type
         subTitle
         price
-        pagecount
         details {
           name
           description
