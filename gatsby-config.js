@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Aspen Apps`,
-    "description": "An application development company based out of Silverthorne, Colorado.",
+    description: `A web and mobile application development company.`,
     author: `@jaksik`,
   },
   plugins: [
@@ -23,7 +23,6 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
@@ -50,12 +49,11 @@ module.exports = {
         short_name: `aspen`,
         start_url: `/`,
         background_color: `#663399`,
-        theme_color: `#663399`,
+        theme_color: `#ffffff`,
         display: `minimal-ui`,
         icon: `src/images/graphics/web-design.png`, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-netlify',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,

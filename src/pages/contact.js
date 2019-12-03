@@ -1,13 +1,17 @@
 import React from "react"
-import { graphql } from "gatsby"
 import Img from "gatsby-image"
+
+import { graphql } from "gatsby"
 import { Row, Col } from "reactstrap"
+
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import "./contact.css"
 
 const ContactPage = ({ data }) => {
   return (
     <Layout>
+      <SEO title="Contact" keywords={[`aspen`, `applications`, `contact`, `web`, `mobile`, `app`, `development`]} />
       <div className="page-container">
         <Row className="no-gutters">
           <Col xs="12" lg="8">
@@ -110,13 +114,6 @@ export default ContactPage
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "goat-two.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000, quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
     summit: file(relativePath: { eq: "summit.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {

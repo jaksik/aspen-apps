@@ -52,7 +52,7 @@
   font-family: sans-serif;
 }
 .page-text {
-  font-size: 17px;
+  font-size: 19px;
 }
 
 .card-wrapper {
@@ -127,7 +127,7 @@
 .divider-button:hover {
   background-color: #f03517;
   border: 1px solid #f03517;
-  color: white
+  color: #ffffff
 }
 
 .accordian-wrapper {
@@ -151,7 +151,7 @@
   border-top: 1px solid rgba(128, 128, 128, 0.452);
   text-align: center;
   padding: 10px;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 @media only screen and (min-width: 768px) {

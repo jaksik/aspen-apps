@@ -1,19 +1,20 @@
 import React from "react"
 import Img from "gatsby-image"
+
 import { graphql, Link } from 'gatsby'
 import { Row, Col, Button } from "reactstrap"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Collapse from "../components/collapse"
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import "./index.css"
 
 const ServicesPage = ({ data }) => {
-  console.log("data: ", data)
 
   return (
     <Layout>
-      <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
+      <SEO title="Web Design" keywords={[`aspen`, `applications`, `website`, `pwa`, `design`, `development`]} />
       <div className="page-container">
         <div style={{ maxWidth: `960px`, margin: `0 auto` }}>
           <h2 style={{ textAlign: `center` }} className="red-font page-title">Website Design & Development</h2>
@@ -115,18 +116,28 @@ const ServicesPage = ({ data }) => {
               </form>
             </Col>
             <Col xs="12" xl="5">
+              {/* <h2 className="red-font page-title">Don't See What You Need?</h2>
+              <p className="page-text pr-xl-2">
+                We've listed the most popular and in demmand products, but we recognize that the online needs of a business can often be unique.
+                We're excited to work with you and develop a unique plan that meets your challenges and needs. 
+                Get in contact with us for a free consultation and we'll help you find exactly what you're looking for.
+                <br/>
+                <Link to="/contact"> Contact Us</Link>
+              </p> */}
               <h2 className="red-font page-title">Need Proof?</h2>
               <p className="page-text pr-xl-2">
                 We proudly show off the websites and apps that we've build.
                 Your digital ecosystem presents and makes your business available to the world, we understand that you don't want to hand this responcibility off to just anyone.
                 Check out some our previous work to ease your worries.
-                <Link to="our-work"> See Our Work</Link>
+                <br />
+                <Link to="/our-work"> Our Work</Link>
               </p>
               <h2 className="red-font page-title">Our Process</h2>
               <p className="page-text">
                 Partnerships, not transactions. We believe the best work is done through strategic partnerships, and not one off transactions.
                 Before we write one line of code we get to know your business inside and out, then strategically craft a long term plan, make sure your absolutely in love with it, and then we pretty busy.
-                <Link to="about"> See Our Process</Link>
+                <br />
+                <Link to="/process"> Our Process</Link>
               </p>
             </Col>
           </Row>

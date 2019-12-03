@@ -5,13 +5,13 @@ import PortfolioCard from "../components/portfolio-card"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Divider from "../components/divider-button"
+
 export default ({ data }) => {
   const projects = data.markdownRemark.frontmatter.projects
-  console.log("info: ", data);
 
   return (
     <Layout>
-        <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />        
+      <SEO title="Our Work" keywords={[`aspen`, `applications`, `portfolio`, `web`, `mobile`, `app`, `development`]} />
         <div className="page-container">
             <h1 className="red-font page-title" style={{textAlign:`center`}}>Our Work</h1>
             <h5 className="text-center mb-3">Let's Play Show and Tell</h5>

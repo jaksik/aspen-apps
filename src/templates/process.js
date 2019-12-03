@@ -9,12 +9,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/index.css'
 
 const ProcessPage = ({ data }) => {
-  console.log("data: ", data);
   const graphics = data.graphics.edges
+
   return (
     <Layout>
-
-      <SEO title="Home" keywords={[`connor`, `jaksik`, `web`, `developer`, `denver`, `colorado`]} />
+      <SEO title="Process" keywords={[`aspen`, `applications`, `process`, `web`, `mobile`, `app`, `development`]} />
       
       <div className="page-container">
       <Row className="no-gutters mt-5 mb-5">

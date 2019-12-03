@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import { Row, Col } from "reactstrap"
 import Layout from "../components/layout"
 import Collapse from "../components/collapse"
@@ -10,10 +10,10 @@ import "./index.css"
 export default ({ data }) => {
   const info = data.markdownRemark
   const frontmatter = data.markdownRemark.frontmatter
-  console.log("info: ", data);
 
   return (
     <Layout>
+      <SEO title={frontmatter.subTitle} keywords={[`aspen`, `applications`, `website`, `pwa`, `design`, `development`, `package`]} />
       <div className="page-container">
         <Row className="no-gutters">
           <Col xs="12" lg="8">

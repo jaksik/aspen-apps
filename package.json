@@ -1,7 +1,7 @@
 {
   "name": "aspen-applications",
   "private": true,
-  "description": "An application development company based out of Silverthorne, Colorado.",
+  "description": "A web and mobile application development company.",
   "version": "0.1.0",
   "author": "Connor Jaksik <connor.jaksik@gmail.com>",
   "dependencies": {
