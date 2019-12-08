@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => {
         <Img fluid={data.file.childImageSharp.fluid} className="header-image" style={{ position: `absolute` }} />
         <div className="header-overlay"></div>
         <div className="header-title w-100">
-          <h1 style={{ fontWeight: `bold`, fontSize: `3.5rem` }}>Business First.<br />Online Second.</h1>
+          <h1 style={{ fontWeight: `bold`, fontSize: `3.5rem` }}>Business 1st.<br />Online 2nd.</h1>
           <Link to="/our-work">
             <Button style={{ marginRight: `25px` }} className="green-button">Our Work</Button>
           </Link>

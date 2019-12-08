@@ -20,6 +20,7 @@ module.exports = {
         name: 'pages',
       },
     },
+    `gatsby-plugin-stripe`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

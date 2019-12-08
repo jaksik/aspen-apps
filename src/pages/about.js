@@ -11,7 +11,6 @@ const AboutPage = () => {
         <Layout>
 
             <SEO title="About" keywords={[`aspen`, `applications`, `web`, `mobile`, `app`, `development`]} />
-
             <div className="page-container">
                 <Row className="no-gutters mt-5 mb-5">
                     <Col xs="12" xl="6">

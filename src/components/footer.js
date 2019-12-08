@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "gatsby"
 import { Row, Col, Button } from 'reactstrap';
 import './footer.css'
 
@@ -7,27 +8,32 @@ const Footer = () => (
         <div className="footer-container pb-0">
             <Row className="no-gutters" style={{ minHeight: `20vh` }}>
                 <Col xs="12" md="5" lg="3">
-                    <h6 className="footer-item">
-                        Silverthorne, CO
-                        <br/>
-                        Elevation: 9,035'
-                    </h6>
+                    <h3 className="footer-title">About Us</h3>
+                    <Link className="footer-item" to="/about/"><p>Our Sory</p></Link>
+                    <Link className="footer-item" to="/contact/"><p>Contact Us</p></Link>
+                    <Link className="footer-item" to="/legal/cookie-policy/"><p>Cookie Policy</p></Link>
+                    <Link className="footer-item" to="/legal/privacy-policy/"><p>Privacy Policy</p></Link>
                 </Col>
-                <Col xs="12" md="5" lg="3">
-                    <h6 className="footer-item">
-                        720-469-9516
-                        <br />
-                        connorjaksik@gmail.com
-                    </h6>
-                </Col>
-                <Col xs="12" md="2" lg="2" className="offset-lg-4 ">
-                    <Button className="green-button payment-button btn-lg footer-item">Payments</Button>
-                </Col>
-            </Row>
-            <Row className="no-gutters">
-                <Col xs="12">
-                    <p style={{ textAlign: `center`, fontSize: `13px`, width: `100%`, bottom: `0` }} className="mt-5 mt-md-0">© 2019 Aspen Applications LLC All Rights Reserved. Here's our Privacy Policy.</p>
 
+                <Col xs="12" md="5" lg="3">
+                    <h3 className="footer-title">Our Services</h3>
+                    <Link className="footer-item" to="/web-design/"><p>Web Design</p></Link>
+                    <Link className="footer-item" to="/web-design/"><p>Graphic Design</p></Link>
+                </Col>
+
+                <Col xs="12" md="5" lg="3">
+                    <h3 className="footer-title">Connect</h3>
+                    <p className="footer-item">720-469-9516</p>
+                    <p className="footer-item">connorjaksik@gmail.com</p>
+                    <p className="footer-item">Boulder, CO</p>
+                    <p className="footer-item">Elevation: 9,035'</p>
+                </Col>
+
+            </Row>
+
+            <Row className="no-gutters mt-5">
+                <Col xs="12">
+                    <p style={{ textAlign: `center`, fontSize: `13px`, width: `100%`, bottom: `0` }} className="mt-5 mt-md-0 mb-0">© 2019 Aspen Applications All Rights Reserved. Here's our Privacy Policy.</p>
                 </Col>
             </Row>
         </div>

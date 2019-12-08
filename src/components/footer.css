@@ -29,15 +29,28 @@
     text-align: center;
 }
 
-
-
 .footer-graphic {
     width: 30px;
     margin: 10px;
 }
 
+.footer-title {
+    color: white;
+}
+
+.footer-item p {
+    color: white;
+    margin-bottom: 0;
+}
+
 .footer-item {
-    margin-top:20px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.footer-item:hover  {
+    color: white;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 992px) {
