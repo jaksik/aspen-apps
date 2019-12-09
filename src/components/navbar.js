@@ -32,7 +32,7 @@ import {
     render() {
       return (
         <div style={{color:`black`}} style={{zIndex:`3`}}>
-          <Navbar className="text-black" color="light" light expand="md">
+          <Navbar className="text-black" color="light" light expand="lg">
             <div style={{maxWidth:`2000px`, width:`100%`, margin:`0 auto`, display:`flex`}}>
             <div className="nav-container">
 
@@ -44,7 +44,10 @@ import {
                   <NavLink style={{color:`black`}} href="/web-design/">Web Design</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink style={{color:`black`}} href="/our-work/">Work</NavLink>
+                  <NavLink style={{color:`black`}} href="/consulting/">Consulting</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink style={{color:`black`}} href="/portfolio/">Portfolio</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink style={{color:`black`}} href="/process/">Process</NavLink>

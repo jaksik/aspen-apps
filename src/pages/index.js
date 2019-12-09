@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => {
       <div className="slant">
         <div className="slant-container text-center">
           <h2 className="red-font page-title">How Can We Help You?</h2>
-          <h4 style={{ maxWidth: `70%`, textAlign: `center`, margin: `15px auto`, fontSize: `20px` }}>We are a full service media and digital marketing agency.</h4>
+          <h4 style={{ maxWidth: `70%`, textAlign: `center`, margin: `15px auto`, fontSize: `20px` }}>We are a full service digital media and web app development agency.</h4>
         </div>
       </div>
 

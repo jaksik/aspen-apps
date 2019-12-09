@@ -130,14 +130,14 @@ const ServicesPage = ({ data }) => {
                 Your digital ecosystem presents and makes your business available to the world, we understand that you don't want to hand this responcibility off to just anyone.
                 Check out some our previous work to ease your worries.
                 <br />
-                <Link to="/our-work"> Our Work</Link>
+                <Link to="/our-work"> This is our work.</Link>
               </p>
               <h2 className="red-font page-title">Our Process</h2>
               <p className="page-text">
                 Partnerships, not transactions. We believe the best work is done through strategic partnerships, and not one off transactions.
-                Before we write one line of code we get to know your business inside and out, then strategically craft a long term plan, make sure your absolutely in love with it, and then we pretty busy.
+                Before we write one line of code we get to know your business inside and out, then strategically craft a long term plan, make sure your absolutely in love with it, and then we get pretty busy.
                 <br />
-                <Link to="/process"> Our Process</Link>
+                <Link to="/process"> This is our process.</Link>
               </p>
             </Col>
           </Row>
