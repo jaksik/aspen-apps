@@ -11,7 +11,7 @@ import "./contact.css"
 const ContactPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Contact" keywords={[`aspen`, `applications`, `contact`, `web`, `mobile`, `app`, `development`]} />
+      <SEO title="Contact" keywords={[`aspen`, `digital`, `marketing`, `contact`]} />
       <div className="page-container">
         <Row className="no-gutters">
           <Col xs="12" lg="8">

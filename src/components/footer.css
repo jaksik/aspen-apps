@@ -36,6 +36,7 @@
 
 .footer-title {
     color: white;
+    margin-top: 30px;
 }
 
 .footer-item p {
@@ -46,6 +47,7 @@
 .footer-item {
     color: white;
     margin-bottom: 0;
+    font-size: 18px;
 }
 
 .footer-item:hover  {

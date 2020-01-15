@@ -10,7 +10,7 @@ const AboutPage = () => {
     return (
         <Layout>
 
-            <SEO title="About" keywords={[`aspen`, `applications`, `web`, `mobile`, `app`, `development`]} />
+            <SEO title="About" keywords={[`aspen`, `marketing`, `digital`]} />
             <div className="page-container">
                 <Row className="no-gutters mt-5 mb-5">
                     <Col xs="12" xl="6">

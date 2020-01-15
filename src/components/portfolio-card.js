@@ -10,7 +10,7 @@ function PortfolioCard ({ project, cardKey}) {
     <Col xs="12" sm="6">
       <div style={{padding:(cardKey % 2 === 0 ? `10px 10px 10px 0px` : `10px 0px 10px 10px`)}}>
         <div className="card-border">
-        <a href={project.address} style={{textDecoration:`none`}}>
+        <a href={project.address} style={{textDecoration:`none`}} target="_blank" rel="noopener noreferrer">
           <div style={{position:`relative`, overflow:`hidden`}} className="portfolio-container">
             <div className="portfolio-overlay" style={{position:`absolute`}}>
               {/* <h3 className="card-title card-lg-title mb-0 d-none d-xl-block" style={{color:`white`}}>{project.title}</h3> */}

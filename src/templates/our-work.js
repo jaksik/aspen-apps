@@ -11,7 +11,7 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Our Work" keywords={[`aspen`, `applications`, `portfolio`, `web`, `mobile`, `app`, `development`]} />
+      <SEO title="Our Work" keywords={[`aspen`, `digital`, `marketing`, `portfolio`]} />
         <div className="page-container">
             <h1 className="red-font page-title" style={{textAlign:`center`}}>Our Work</h1>
             <h5 className="text-center mb-3">Let's Play Show and Tell</h5>

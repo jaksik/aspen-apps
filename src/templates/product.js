@@ -13,7 +13,7 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={frontmatter.subTitle} keywords={[`aspen`, `applications`, `website`, `pwa`, `design`, `development`, `package`]} />
+      <SEO title={frontmatter.subTitle} keywords={[`aspen`, `marketing`, `website`, `pwa`, `design`, `development`]} />
       <div className="page-container">
         <Row className="no-gutters">
           <Col xs="12" lg="8">

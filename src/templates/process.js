@@ -13,7 +13,7 @@ const ProcessPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Process" keywords={[`aspen`, `applications`, `process`, `web`, `mobile`, `app`, `development`]} />
+      <SEO title="Process" keywords={[`aspen`, `digital`, `marketing`, `strategy`]} />
 
       <div className="page-container">
         <Row className="no-gutters mt-5 mb-5">

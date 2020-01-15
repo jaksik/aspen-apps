@@ -10,7 +10,7 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={frontmatter.subTitle} keywords={[`aspen`, `applications`, `website`, `pwa`, `design`, `development`, `package`]} />
+      <SEO title={frontmatter.subTitle} />
       <div className="content-container" style={{maxWidth:`960px`, margin:`0 auto`}}>
         <h1>{info.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: info.html }} />

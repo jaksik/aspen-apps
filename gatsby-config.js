@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Aspen Apps`,
-    description: `A web and mobile application development company.`,
+    title: `Aspen Digital Marketing`,
+    description: `A full service digital marketing agency in Aspen, Colorado.`,
     author: `@jaksik`,
   },
   plugins: [
@@ -46,8 +46,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `aspen-applications`,
-        short_name: `aspen`,
+        name: `aspen-digital-marketing`,
+        short_name: `aspendm`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#ffffff`,

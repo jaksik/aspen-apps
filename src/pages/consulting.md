@@ -2,24 +2,15 @@
 templateKey: consulting
 type: service
 title: Tech Consulting
-image: ../images/graphics/consulting/audit.png
+image: ../images/graphics/consulting/teach.png
 features:
+  - title: Digital Marketing 101
+    image: ../images/graphics/consulting/teach-black.png
+    description: Are you completely new to digital marketing? We know it can be overwhelming and we're here to help you through every step of the process. If you're new to digital marketing or just want to be briefed on the latest technologies and strategies we're happy to share our comprehensive knowledge of the market and get you started on the right path.
+  - title: Marketing Strategies
+    image: ../images/graphics/consulting/therapy.png
+    description: Once you have an understanding of the market and the various strategies to navigate it, we get to know your business inside and out then develop a long-term strategic plan that works specifically for your business.
   - title: Website Audits
     image: ../images/graphics/consulting/audit.png
-    description: Website templates are cool, but they're just that, cool.
-  - title: Tech 101 Briefing
-    image: ../images/graphics/consulting/teach.png
-    description: Our websites are built as a PWA (Progressive Web App).
-  - title: Tech Therapy
-    image: ../images/graphics/consulting/therapy.png
-    description: Just kidding. Actually we're serious, we can be your tech therapist. We know how overwhelming all of this can be.
-  - title: Mobile Friendly
-    image: ../images/graphics/consulting/therapy.png
-    description:  It's 2020, over half of all internet.
-  - title: SEO Optimized
-    image: ../images/graphics/consulting/therapy.png
-    description: Search engines can be picky.
-  - title: Built In Blog and Contact Form
-    image: ../images/graphics/consulting/therapy.png
-    description: What's a website without a blog or contact form?
+    description: If your business already has a website we use the latest tools to run a complete audit on it and provide you with a comprehensive report. Through an audit you can discover if your website is performing optimaly and if not we provide you with reccomendations how it can be improved.
 ---

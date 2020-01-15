@@ -12,13 +12,13 @@ export default ({ data }) => {
 
     return (
         <Layout>
-            <SEO title="Consulting" keywords={[`aspen`, `applications`, `consulting`, `technology`, `colorado`]} />
+            <SEO title="Consulting" keywords={[`aspen`, `marketing`, `website`, `technology`, `consulting`]} />
 
             <div className="page-container">
         <div style={{ maxWidth: `960px`, margin: `0 auto` }}>
 
-                <h1 style={{ textAlign: `center` }} className="red-font page-title">Technology Consulting</h1>
-                <h5 style={{ textAlign: `center` }}>Ways We Engage...</h5>
+                <h1 style={{ textAlign: `center` }} className="red-font page-title">Consulting</h1>
+                <h5 style={{ textAlign: `center` }}>Our consulting services...</h5>
                 {data.markdownRemark.frontmatter.features.map((feature, index) => {
                     return (
                         <>
@@ -50,7 +50,7 @@ export default ({ data }) => {
                     <Col xs="12" lg="6">
                         <h2 className="red-font page-title">Advice From The Nerds</h2>
                         <p className="page-text">
-                            We know nothing about cars and that's why go to our local mechanic for advice about cars. However, we know a lot about technology and that's why we proudly offer advice to those who don't.
+                            We know nothing about cars and that's why we go to our local mechanic for advice about cars. However, we know a lot about technology and that's why we proudly offer advice to those who don't.
                             Technology is our passion, we love what it can do and the tools that it provides.
                         </p>
                     </Col>

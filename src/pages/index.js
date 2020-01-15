@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Home" keywords={[`aspen`, `applications`, `web`, `mobile`, `app`, `development`]} />
+      <SEO title="Aspen Marketing" keywords={[`aspen`, `marketing`, `website`, `development`]} />
       <div className="landing-header">
         <Img fluid={data.file.childImageSharp.fluid} className="header-image" style={{ position: `absolute` }} />
         <div className="header-overlay"></div>
@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => {
       <div className="slant">
         <div className="slant-container text-center">
           <h2 className="red-font page-title">How Can We Help You?</h2>
-          <h4 style={{ maxWidth: `70%`, textAlign: `center`, margin: `15px auto`, fontSize: `20px` }}>We are a full service digital media and web app development agency.</h4>
+          <h4 style={{ maxWidth: `70%`, textAlign: `center`, margin: `15px auto`, fontSize: `20px` }}>We are a full service digital marketing agency located in Aspen, Colorado.</h4>
         </div>
       </div>
 
@@ -116,7 +116,7 @@ const IndexPage = ({ data }) => {
         </Row>
       </div>
 
-      <Divider button="See More Of Our Work" address="/our-work/" />
+      <Divider button="See More Of Our Work" address="/portfolio/" />
 
       <div className="page-container">
         <Row className="no-gutters justify-content-center">
@@ -158,28 +158,28 @@ export const listQuery = graphql`
   query {
     file(name: { eq: "capital" }) {
       childImageSharp {
-        fluid(maxWidth: 3000, quality: 100) {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     marketing: file(name: { eq: "marketing" }) {
       childImageSharp {
-        fluid(maxWidth: 1000, quality: 100) {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     creative: file(name: { eq: "light" }) {
       childImageSharp {
-        fluid(maxWidth: 1000, quality: 100) {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     tech: file(name: { eq: "tech" }) {
       childImageSharp {
-        fluid(maxWidth: 1000, quality: 100) {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }

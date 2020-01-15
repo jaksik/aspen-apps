@@ -18,8 +18,7 @@ const Footer = () => (
                 <Col xs="12" sm="4" lg="3">
                     <h3 className="footer-title">Our Services</h3>
                     <Link className="footer-item" to="/web-design/"><p>Web Design</p></Link>
-                    <Link className="footer-item" to="/web-design/"><p>Graphic Design</p></Link>
-                    <Link className="footer-item" to="/web-design/"><p>Tech Consulting</p></Link>
+                    <Link className="footer-item" to="/consulting/"><p>Tech Consulting</p></Link>
                 </Col>
 
                 <Col xs="12" md="4" lg="3">

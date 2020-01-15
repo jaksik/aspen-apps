@@ -14,7 +14,7 @@ const ServicesPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Web Design" keywords={[`aspen`, `applications`, `website`, `pwa`, `design`, `development`]} />
+      <SEO title="Web Design" keywords={[`aspen`, `marketing`, `website`, `design`, `development`]} />
       <div className="page-container">
         <div style={{ maxWidth: `960px`, margin: `0 auto` }}>
           <h2 style={{ textAlign: `center` }} className="red-font page-title">Website Design & Development</h2>
@@ -75,7 +75,7 @@ const ServicesPage = ({ data }) => {
                     ))}
                     <div className="accordian-cell">
                       <Link to={node.node.fields.slug}>
-                        <Button className="red-button" style={{ background: `#f03517` }}>Learn More</Button>
+                        <Button className="card-button">Learn More</Button>
                       </Link>
                     </div>
                   </div>
@@ -157,7 +157,7 @@ query($slug: String!) {
           title
           image {
             childImageSharp {
-              fluid(maxWidth: 1000, quality: 100) {
+              fluid(quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
